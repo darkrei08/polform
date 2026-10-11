@@ -1,19 +1,41 @@
 <header class="site-header">
   <div class="wrap site-header-inner">
-    <a href="/" class="brand-logo">
-      <img src="/img/logo.gif" alt="Polform Logo" width="42" height="32" style="border-radius: 4px; object-fit: contain;">
-      <span>POLFORM</span>
-      <span class="brand-badge">Matera · 1999</span>
-    </a>
+    <div class="header-brand-group">
+      <a href="{{ site.Home.RelPermalink }}" class="brand-logo">
+        <img src="{{ "img/logo.gif" | relURL }}" alt="Polform Logo" width="38" height="28" class="brand-logo-img">
+        <span class="brand-name">POLFORM</span>
+      </a>
+      <div class="brand-status-chip" title="Impianti di taglio e sagomatura attivi a Matera">
+        <span class="status-dot"></span>
+        <span class="status-label">Matera · 1999</span>
+      </div>
+    </div>
     
-    <nav class="nav-menu">
-      {{ range .Site.Menus.main }}
-        {{ if eq .Identifier "preventivo" }}
-          <a href="{{ .URL }}" class="nav-btn">{{ .Name }}</a>
-        {{ else }}
-          <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
+    <div class="header-actions-group">
+      <nav class="nav-menu" aria-label="Navigazione principale">
+        {{ range .Site.Menus.main }}
+          {{ if eq .Identifier "preventivo" }}
+            <!-- Preventivo button moved to right action group for prominence -->
+          {{ else }}
+            <a href="{{ .URL | relURL }}" class="nav-link">{{ .Name }}</a>
+          {{ end }}
         {{ end }}
-      {{ end }}
-    </nav>
+      </nav>
+
+      <!-- Pulsante Ricerca Istantanea Stile Le Alternative -->
+      <button type="button" class="search-trigger-btn" data-search-trigger aria-label="Cerca nel catalogo (Ctrl+K)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <span class="search-shortcut">Ctrl K</span>
+      </button>
+
+      <!-- Switch Tema Chiaro / Scuro -->
+      {{ partial "theme-toggle.html" . }}
+
+      <!-- Call to Action Primaria -->
+      <a href="{{ "preventivo/" | relURL }}" class="nav-btn">
+        {{ partial "icon.html" (dict "name" "email" "size" "15") }}
+        <span>Invia CAD</span>
+      </a>
+    </div>
   </div>
 </header>

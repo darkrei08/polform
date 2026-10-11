@@ -2,35 +2,45 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-col">
-        <h4>POLFORM S.r.l.</h4>
-        <p>Trasformazione e sagomatura di precisione di poliuretano espanso flessibile per l'industria italiana ed europea.</p>
-        <p><strong>Fondata nel gennaio 1999</strong> a Matera.</p>
+        <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem;">
+          <img src="{{ "img/logo.gif" | relURL }}" alt="Polform" width="32" height="24" style="border-radius: 3px;">
+          <h4 style="margin: 0; font-size: 1.1rem; color: var(--text);">POLFORM S.r.l.</h4>
+        </div>
+        <p>Centro di trasformazione, sagomatura CNC e accoppiamento di poliuretano espanso flessibile per l'industria italiana ed europea.</p>
+        <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted);">REG. IMPRESE MATERA · DAL GENNAIO 1999</p>
       </div>
+
       <div class="footer-col">
-        <h4>Sede & Stabilimento</h4>
+        <h4>Stabilimento & Sede</h4>
         <p>{{ .Site.Params.address }}</p>
-        <p>Sede Storica: Via Rosselli 26 / Via Delle Arti 1</p>
-        <p>P.IVA: {{ .Site.Params.piva }}</p>
+        <p style="font-size: 0.85rem; color: var(--muted);">Sede Legale Storica: Via Rosselli 26 / Via Delle Arti 1</p>
+        <p><strong>P.IVA:</strong> <span style="font-family: var(--font-mono);">{{ .Site.Params.piva }}</span></p>
       </div>
+
       <div class="footer-col">
-        <h4>Contatto Diretto</h4>
-        <p>Tel: <a href="tel:{{ .Site.Params.phone_clean }}">{{ .Site.Params.phone }}</a></p>
-        <p>WhatsApp: <a href="https://wa.me/{{ .Site.Params.phone_clean }}">Chat con i Responsabili</a></p>
-        <p>Email: <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
+        <h4>Contatti Diretti di Fabbrica</h4>
+        <p>Centralino: <a href="tel:{{ .Site.Params.phone_clean }}"><strong>{{ .Site.Params.phone }}</strong></a></p>
+        <p>WhatsApp: <a href="https://wa.me/{{ .Site.Params.phone_clean }}">Chat Tecnica di Produzione</a></p>
+        <p>Email Ufficiale: <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
       </div>
+
       <div class="footer-col">
-        <h4>Settori Chiave</h4>
+        <h4>Navigazione Veloce</h4>
         <ul>
-          <li><a href="/settori/">Packaging Tecnico</a></li>
-          <li><a href="/settori/">Fonoassorbenza & Acustica</a></li>
-          <li><a href="/settori/">Nautica Drenante</a></li>
-          <li><a href="/settori/">Sicurezza & DPI</a></li>
-          <li><a href="/settori/">Arredo & Contract</a></li>
+          <li><a href="{{ "settori/" | relURL }}">Tutti gli 8 Settori Industriali</a></li>
+          <li><a href="{{ "materiali/" | relURL }}">Catalogo Schede Tecniche Schiume</a></li>
+          <li><a href="{{ "certificazioni/" | relURL }}">CertiPUR, 1IM, Crib 5, ISO</a></li>
+          <li><a href="{{ "chi-siamo/" | relURL }}">Storia & Impianti dal 1999</a></li>
+          <li><a href="{{ "preventivo/" | relURL }}">Richiedi Preventivo / Invia Disegno</a></li>
         </ul>
       </div>
     </div>
+
     <div class="footer-bottom">
-      &copy; {{ now.Format "2006" }} POLFORM S.r.l. — Tutti i diritti riservati. Realizzato con Hugo. Zero cookie di profilazione.
+      <div>&copy; {{ now.Format "2006" }} POLFORM S.r.l. — Tutti i diritti riservati. Manifattura e lavorazione poliuretano espanso.</div>
+      <div style="font-size: 0.8rem; color: var(--muted); margin-top: 0.35rem;">
+        Architettura statica JAMstack Hugo ad alte prestazioni. Zero tracciamento invasivo, zero cookie di terze parti.
+      </div>
     </div>
   </div>
 </footer>

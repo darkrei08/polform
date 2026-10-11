@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "it" }}">
+<html lang="{{ .Site.LanguageCode | default "it-IT" }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ if not .IsHome }}{{ .Title }} — {{ end }}{{ .Site.Title }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-  <link rel="icon" href="/img/logo.gif">
+  <link rel="icon" href="{{ "img/logo.gif" | relURL }}">
   
+  <!-- Anti-FOUC Theme Script (Light / Dark nativo con persistenza) -->
+  <script>
+    (function() {
+      try {
+        var stored = localStorage.getItem('polform-theme');
+        if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
   {{ $css := resources.Get "css/style.css" | minify }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
+  {{ $js := resources.Get "js/main.js" | minify }}
+  <script src="{{ $js.RelPermalink }}" defer></script>
 </head>
-<body>
+<body data-search-url="{{ "index.json" | relURL }}">
   {{ partial "header.html" . }}
 
   <main id="main">
@@ -18,5 +35,22 @@
   </main>
 
   {{ partial "footer.html" . }}
+  {{ partial "search-modal.html" . }}
+
+  <!-- Mobile Quick Dock Bar -->
+  <aside class="mobile-dock" aria-label="Contatto rapido mobile">
+    <a href="tel:{{ .Site.Params.phone_clean }}" class="dock-btn dock-btn-call">
+      {{ partial "icon.html" (dict "name" "phone" "size" "18") }}
+      <span>Chiama</span>
+    </a>
+    <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text=Salve%20Polform,%20vorrei%20informazioni%20su%20una%20fornitura" class="dock-btn dock-btn-wa" target="_blank" rel="noopener">
+      {{ partial "icon.html" (dict "name" "whatsapp" "size" "18") }}
+      <span>WhatsApp</span>
+    </a>
+    <a href="{{ "preventivo/" | relURL }}" class="dock-btn dock-btn-rfq">
+      {{ partial "icon.html" (dict "name" "email" "size" "18") }}
+      <span>Invia CAD</span>
+    </a>
+  </aside>
 </body>
 </html>

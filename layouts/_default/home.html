@@ -1,10 +1,11 @@
 {{ define "main" }}
+<!-- 1. Hero Section con Metriche di Affidabilità -->
 <section class="hero">
   <div class="wrap">
     <div class="hero-tag">Manifattura del Poliuretano dal 1999 · Matera</div>
     <h1 class="hero-title">Sagomatura e Trasformazione di Poliuretano Espanso ad Alta Precisione</h1>
     <p class="hero-subtitle">
-      Oltre 27 anni di perizia industriale nel taglio CNC, pantografatura e accoppiamento di schiume poliuretaniche speciali per packaging tecnico, acustica ambientale, nautica, sicurezza sul lavoro e arredo contract.
+      Oltre 27 anni di perizia industriale nel taglio CNC, pantografatura a filo e accoppiamento di schiume tecniche per packaging protettivo, acustica ambientale, nautica, sicurezza sul lavoro e arredo contract.
     </p>
     <div class="hero-actions">
       <a href="tel:{{ .Site.Params.phone_clean }}" class="btn btn-primary">
@@ -15,9 +16,9 @@
         {{ partial "icon.html" (dict "name" "whatsapp" "size" "18") }}
         WhatsApp con i Tecnici
       </a>
-      <a href="/preventivo/" class="btn btn-outline">
+      <a href="{{ "preventivo/" | relURL }}" class="btn btn-outline">
         {{ partial "icon.html" (dict "name" "email" "size" "18") }}
-        Invia Disegno CAD / RFQ
+        Invia Disegno CAD / Richiedi RFQ
       </a>
     </div>
 
@@ -43,175 +44,250 @@
   </div>
 </section>
 
-<!-- Settori Industriali (8 Pilastri) -->
-<section style="padding: 4rem 0;">
+<!-- 2. Bento Grid Industriale: Gli 8 Settori di Diversificazione -->
+<section style="padding: 4.5rem 0;">
   <div class="wrap">
     <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2.5rem; flex-wrap: wrap; gap: 1rem;">
       <div>
-        <span class="brand-badge">Applicazioni Industriali</span>
-        <h2 style="font-size: 2.1rem; margin: 0.5rem 0 0; letter-spacing: -0.02em;">Settori di Fornitura Specialistica</h2>
+        <span class="brand-badge">Diversificazione Manifatturiera</span>
+        <h2 style="font-size: 2.2rem; margin: 0.5rem 0 0; letter-spacing: -0.025em;">Settori Industriali Serviti</h2>
       </div>
-      <a href="/settori/" style="font-weight: 600; font-size: 0.95rem;">Tutti gli 8 settori industriali &rarr;</a>
+      <a href="{{ "settori/" | relURL }}" style="font-weight: 600; font-size: 0.95rem;">Tutti gli 8 settori di fornitura &rarr;</a>
     </div>
 
-    <div class="grid-4">
-      <div class="card">
+    <div class="bento-grid">
+      <!-- Card Principale (Featured Spanning 8 cols) -->
+      <div class="bento-card bento-col-8 bento-featured">
         <div>
           <div class="card-header-bar">
-            <span class="card-code">SEC-01 // PACK</span>
+            <span class="card-code">SEC-01 // PACKAGING TECNICO</span>
             <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "box" "size" "20") }}</div>
           </div>
-          <h3 class="card-title"><a href="/settori/packaging-tecnico/">Packaging Tecnico & Dunnage</a></h3>
-          <p class="card-text">Alloggiamenti fresati e sagomati CNC per valigie tecniche ermetiche (Explorer, GT Line), droni, ottiche e packaging luxury.</p>
+          <h3 class="card-title" style="font-size: 1.45rem;">
+            <a href="{{ "settori/packaging-tecnico/" | relURL }}">Inserti Sagomati per Valigie Ermetiche & Dunnage Industriale</a>
+          </h3>
+          <p class="card-text">
+            Alloggiamenti fresati e sagomati su disegno CAD/DXF per valigie di sicurezza (Explorer Cases, GT Line, Peli Cases), elettronica di misura, droni, ottiche e packaging luxury per bottiglie di pregio.
+          </p>
+          
+          <div class="schematic-box">
+            <div class="schematic-grid">
+              <div class="schematic-col">
+                <strong>SPECIFICHE LAVORAZIONE</strong>
+                Pantografo CNC a filo oscillante / fresatura 3D
+              </div>
+              <div class="schematic-col">
+                <strong>TOLLERANZA</strong>
+                ±0.5 mm su geometrie complesse
+              </div>
+              <div class="schematic-col">
+                <strong>FORMATI COMPATIBILI</strong>
+                .DXF · .DWG · .STEP · .PDF
+              </div>
+            </div>
+          </div>
         </div>
-        <a href="/settori/packaging-tecnico/" class="card-link">Specifiche packaging &rarr;</a>
+        <a href="{{ "settori/packaging-tecnico/" | relURL }}" class="card-link" style="font-size: 0.95rem;">
+          Specifiche tecniche packaging protettivo &rarr;
+        </a>
       </div>
 
-      <div class="card">
+      <!-- Card Secondaria (Spanning 4 cols): Acustica -->
+      <div class="bento-card bento-col-4">
         <div>
           <div class="card-header-bar">
-            <span class="card-code">SEC-02 // SOUND</span>
+            <span class="card-code">SEC-02 // ACUSTICA</span>
             <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "sound" "size" "20") }}</div>
           </div>
-          <h3 class="card-title"><a href="/settori/acustica-fonoassorbimento/">Acustica & Fonoassorbimento</a></h3>
-          <p class="card-text">Pannelli piramidali, bugnati e carterature insonorizzate per uffici, sale musicali e insonorizzazione macchinari industriali.</p>
+          <h3 class="card-title">
+            <a href="{{ "settori/acustica-fonoassorbimento/" | relURL }}">Fonoassorbimento & Acustica Ambientale</a>
+          </h3>
+          <p class="card-text">
+            Pannelli bugnati e piramidali per correzione del riverbero in uffici, studi musicali e insonorizzazione carter macchinari.
+          </p>
+          <div style="font-family: var(--font-mono); font-size: 0.8rem; background: var(--bg-subtle); padding: 0.6rem; border-radius: 4px; margin-bottom: 1rem;">
+            COEFF. ASSORBIMENTO: NRC 0.65 – 0.85
+          </div>
         </div>
-        <a href="/settori/acustica-fonoassorbimento/" class="card-link">Soluzioni acustiche &rarr;</a>
+        <a href="{{ "settori/acustica-fonoassorbimento/" | relURL }}" class="card-link">Pannelli acustici &rarr;</a>
       </div>
 
-      <div class="card">
+      <!-- Card Nautica (Spanning 6 cols) -->
+      <div class="bento-card bento-col-6">
         <div>
           <div class="card-header-bar">
-            <span class="card-code">SEC-03 // MARINE</span>
+            <span class="card-code">SEC-03 // NAUTICA</span>
             <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "anchor" "size" "20") }}</div>
           </div>
-          <h3 class="card-title"><a href="/settori/nautica-drenante/">Nautica & Yachting (Dryfeel)</a></h3>
-          <p class="card-text">Schiume reticolate drenanti a cellula aperta per cuscinerie prendisole che lasciano defluire l'acqua e non trattengono muffa.</p>
-        </div>
-        <a href="/settori/nautica-drenante/" class="card-link">Drenante nautico &rarr;</a>
-      </div>
-
-      <div class="card">
-        <div>
-          <div class="card-header-bar">
-            <span class="card-code">SEC-04 // SAFE</span>
-            <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "safety" "size" "20") }}</div>
+          <h3 class="card-title">
+            <a href="{{ "settori/nautica-drenante/" | relURL }}">Nautica, Yachting & Drenante Dryfeel</a>
+          </h3>
+          <p class="card-text">
+            Poliuretano reticolato a celle aperte per cuscinerie esterne e prendisole: l'acqua defluisce per gravità, asciugatura ultra-rapida al sole, totale immunità a muffe e funghi.
+          </p>
+          <div class="badge-list">
+            <span class="badge">100% RETICOLATO</span>
+            <span class="badge">TRATTAMENTO ANTIMUFFA</span>
+            <span class="badge">NORMA IMO FTP PART 8</span>
           </div>
-          <h3 class="card-title"><a href="/settori/sicurezza-dpi/">Sicurezza Industriale & DPI</a></h3>
-          <p class="card-text">Paracolpi antitrauma bicolore per pilastri di magazzino, scaffalature e baie di carico; imbottiture per DPI e filtri cabina.</p>
         </div>
-        <a href="/settori/sicurezza-dpi/" class="card-link">Paracolpi sicurezza &rarr;</a>
+        <a href="{{ "settori/nautica-drenante/" | relURL }}" class="card-link">Drenante nautico Dryfeel &rarr;</a>
       </div>
 
-      <div class="card">
+      <!-- Card Sanità (Spanning 6 cols) -->
+      <div class="bento-card bento-col-6">
         <div>
           <div class="card-header-bar">
-            <span class="card-code">SEC-05 // MED</span>
+            <span class="card-code">SEC-05 // MEDICALE</span>
             <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "health" "size" "20") }}</div>
           </div>
-          <h3 class="card-title"><a href="/settori/sanita-silver-economy/">Sanità & Silver Economy</a></h3>
-          <p class="card-text">Cuscini e lastre antidecubito sagomate in HR e viscoelastico memory foam per carrozzine, degenze RSA e posizionatori.</p>
+          <h3 class="card-title">
+            <a href="{{ "settori/sanita-silver-economy/" | relURL }}">Sanità, Ortopedia & Silver Economy</a>
+          </h3>
+          <p class="card-text">
+            Cuscini compositi antidecubito in HR e Memory Foam per carrozzine e degenza RSA, cunei di posizionamento per fisioterapia e lastre ergonomiche ospedaliere.
+          </p>
+          <div class="badge-list">
+            <span class="badge">CE MDR CLASSE I</span>
+            <span class="badge">MEMORY VISCOELASTICO</span>
+            <span class="badge">DETRAIBILE 19%</span>
+          </div>
         </div>
-        <a href="/settori/sanita-silver-economy/" class="card-link">Ausili antidecubito &rarr;</a>
+        <a href="{{ "settori/sanita-silver-economy/" | relURL }}" class="card-link">Presidi antidecubito &rarr;</a>
       </div>
 
-      <div class="card">
+      <!-- 4 Card Compatte per gli altri settori (4 cols ciascuna) -->
+      <div class="bento-card bento-col-4">
         <div>
           <div class="card-header-bar">
-            <span class="card-code">SEC-06 // AUTO</span>
+            <span class="card-code">SEC-04 // SICUREZZA</span>
+            <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "safety" "size" "20") }}</div>
+          </div>
+          <h3 class="card-title"><a href="{{ "settori/sicurezza-dpi/" | relURL }}">Sicurezza & DPI</a></h3>
+          <p class="card-text">Paracolpi industriali bicolore per scaffali e banchine carico; imbottiture per ginocchiere professionali e filtri reticolati.</p>
+        </div>
+        <a href="{{ "settori/sicurezza-dpi/" | relURL }}" class="card-link">Paracolpi & DPI &rarr;</a>
+      </div>
+
+      <div class="bento-card bento-col-4">
+        <div>
+          <div class="card-header-bar">
+            <span class="card-code">SEC-06 // AGRITECH</span>
             <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "truck" "size" "20") }}</div>
           </div>
-          <h3 class="card-title"><a href="/settori/automotive-agritech/">Automotive & Van Life</a></h3>
-          <p class="card-text">Sedili antivibranti ad alta densità per macchine agricole e movimento terra; materassi sagomati su misura per furgoni camperizzati.</p>
+          <h3 class="card-title"><a href="{{ "settori/automotive-agritech/" | relURL }}">Agritech & Camper</a></h3>
+          <p class="card-text">Sedili antivibranti ad alta densità per trattori e macchine movimento terra; materassi snodati su misura per van conversion.</p>
         </div>
-        <a href="/settori/automotive-agritech/" class="card-link">Soluzioni agritech &rarr;</a>
+        <a href="{{ "settori/automotive-agritech/" | relURL }}" class="card-link">Agritech & camper &rarr;</a>
       </div>
 
-      <div class="card">
+      <div class="bento-card bento-col-4">
         <div>
           <div class="card-header-bar">
-            <span class="card-code">SEC-07 // SPORT</span>
-            <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "shield" "size" "20") }}</div>
-          </div>
-          <h3 class="card-title"><a href="/settori/sport-palestre/">Sport & Palestre</a></h3>
-          <p class="card-text">Crash pad per bouldering e arrampicata, anime per tatami in agglomerato compatto e protezioni murali per palestre scolastiche.</p>
-        </div>
-        <a href="/settori/sport-palestre/" class="card-link">Attrezzature sportive &rarr;</a>
-      </div>
-
-      <div class="card">
-        <div>
-          <div class="card-header-bar">
-            <span class="card-code">SEC-08 // 1IM</span>
+            <span class="card-code">SEC-08 // CONTRACT</span>
             <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "flame" "size" "20") }}</div>
           </div>
-          <h3 class="card-title"><a href="/settori/arredo-contract/">Arredo Contract & Teatri</a></h3>
-          <p class="card-text">Imbottiture ignifughe certificate Classe 1IM (UNI 9175) e British Standard Crib 5 per hotel, cinema, sale conferenze e navi.</p>
+          <h3 class="card-title"><a href="{{ "settori/arredo-contract/" | relURL }}">Contract 1IM & Teatri</a></h3>
+          <p class="card-text">Imbottiture ignifughe omologate Classe 1IM (UNI 9175) e British Standard Crib 5 per hotel, cinema, sale conferenze e navi.</p>
         </div>
-        <a href="/settori/arredo-contract/" class="card-link">Espansi ignifughi &rarr;</a>
+        <a href="{{ "settori/arredo-contract/" | relURL }}" class="card-link">Espansi ignifughi &rarr;</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Materiali e Schede Tecniche Highlight -->
-<section style="background: var(--surface); padding: 4rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+<!-- 3. Matrice Comparativa Materiali & Schede Tecniche -->
+<section style="background: var(--surface); padding: 4.5rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
   <div class="wrap">
-    <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2.5rem; flex-wrap: wrap; gap: 1rem;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
       <div>
-        <span class="brand-badge">Specifiche Tecniche</span>
-        <h2 style="font-size: 2.1rem; margin: 0.5rem 0 0; letter-spacing: -0.02em;">Catalogo Schiume & Densità</h2>
+        <span class="brand-badge">Dati Fisico-Meccanici</span>
+        <h2 style="font-size: 2.2rem; margin: 0.5rem 0 0; letter-spacing: -0.025em;">Matrice Comparativa delle Schiume</h2>
       </div>
-      <a href="/materiali/" style="font-weight: 600; font-size: 0.95rem;">Tutte le schede tecniche &rarr;</a>
+      <a href="{{ "materiali/" | relURL }}" style="font-weight: 600; font-size: 0.95rem;">Tutte le 6 schede tecniche &rarr;</a>
     </div>
 
-    <div class="grid-3">
-      <div class="card">
-        <div>
-          <div class="card-header-bar">
-            <span class="card-code">MAT-01 // HR FOAM</span>
-            <span class="badge">35–45 kg/m³</span>
-          </div>
-          <h3 class="card-title"><a href="/materiali/alta-resilienza-hr/">Alta Resilienza (HR)</a></h3>
-          <p class="card-text">Microcellulare ad altissima elasticità, indeformabile nel tempo per sedute intensive e supporti ergonomici.</p>
-        </div>
-        <a href="/materiali/alta-resilienza-hr/" class="card-link">Scheda tecnica &rarr;</a>
-      </div>
-
-      <div class="card">
-        <div>
-          <div class="card-header-bar">
-            <span class="card-code">MAT-02 // MEMORY</span>
-            <span class="badge">45–55 kg/m³</span>
-          </div>
-          <h3 class="card-title"><a href="/materiali/memory-viscoelastico/">Viscoelastico (Memory Foam)</a></h3>
-          <p class="card-text">Schiuma termosensibile a lento ritorno elastico per distribuzione uniforme del peso e presidi antidecubito.</p>
-        </div>
-        <a href="/materiali/memory-viscoelastico/" class="card-link">Scheda tecnica &rarr;</a>
-      </div>
-
-      <div class="card">
-        <div>
-          <div class="card-header-bar">
-            <span class="card-code">MAT-05 // FLAME</span>
-            <span class="badge">Classe 1IM / Crib 5</span>
-          </div>
-          <h3 class="card-title"><a href="/materiali/ignifugo-1im/">Poliuretano Ignifugo</a></h3>
-          <p class="card-text">Formulato con additivi intumescenti per il rispetto delle normative antincendio nei luoghi aperti al pubblico.</p>
-        </div>
-        <a href="/materiali/ignifugo-1im/" class="card-link">Scheda tecnica &rarr;</a>
-      </div>
+    <div class="spec-table-wrap">
+      <table class="spec-table">
+        <thead>
+          <tr>
+            <th>Tipologia Schiuma</th>
+            <th>Codice</th>
+            <th>Densità (ISO 845)</th>
+            <th>Portanza 40% (ISO 2439)</th>
+            <th>Caratteristica Chiave</th>
+            <th>Reazione al Fuoco</th>
+            <th>Scheda</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Alta Resilienza (HR)</strong></td>
+            <td><span class="spec-val">MAT-01</span></td>
+            <td><span class="spec-val">35 – 45 kg/m³</span></td>
+            <td><span class="spec-val">3.2 – 4.5 kPa</span></td>
+            <td>Ritorno elastico istantaneo (>55% rebound)</td>
+            <td>CertiPUR / Standard</td>
+            <td><a href="{{ "materiali/alta-resilienza-hr/" | relURL }}">Dettagli &rarr;</a></td>
+          </tr>
+          <tr>
+            <td><strong>Viscoelastico (Memory)</strong></td>
+            <td><span class="spec-val">MAT-02</span></td>
+            <td><span class="spec-val">45 – 55 kg/m³</span></td>
+            <td><span class="spec-val">1.2 – 1.8 kPa</span></td>
+            <td>Termosensibile, zero compressione vascolare</td>
+            <td>OEKO-TEX Cl. I / MDR</td>
+            <td><a href="{{ "materiali/memory-viscoelastico/" | relURL }}">Dettagli &rarr;</a></td>
+          </tr>
+          <tr>
+            <td><strong>Reticolato Drenante (Dryfeel)</strong></td>
+            <td><span class="spec-val">MAT-03</span></td>
+            <td><span class="spec-val">30 – 35 kg/m³</span></td>
+            <td><span class="spec-val">2.8 – 3.4 kPa</span></td>
+            <td>Celle 100% aperte, deflusso acqua immediato</td>
+            <td>IMO FTP Part 8 opt.</td>
+            <td><a href="{{ "materiali/drenante-nautico/" | relURL }}">Dettagli &rarr;</a></td>
+          </tr>
+          <tr>
+            <td><strong>Fonoassorbente Bugnato</strong></td>
+            <td><span class="spec-val">MAT-04</span></td>
+            <td><span class="spec-val">28 – 35 kg/m³</span></td>
+            <td><span class="spec-val">2.5 – 3.2 kPa</span></td>
+            <td>Profilatura alveolare, NRC 0.65 – 0.85</td>
+            <td>UL 94 HF-1 Autoest.</td>
+            <td><a href="{{ "materiali/fonoassorbente-bugnato/" | relURL }}">Dettagli &rarr;</a></td>
+          </tr>
+          <tr>
+            <td><strong>Ignifugo Omologato 1IM</strong></td>
+            <td><span class="spec-val">MAT-05</span></td>
+            <td><span class="spec-val">30 – 50 kg/m³</span></td>
+            <td><span class="spec-val">3.0 – 5.0 kPa</span></td>
+            <td>Additivi intumescenti per luoghi pubblici</td>
+            <td><strong>Classe 1IM / Crib 5</strong></td>
+            <td><a href="{{ "materiali/ignifugo-1im/" | relURL }}">Dettagli &rarr;</a></td>
+          </tr>
+          <tr>
+            <td><strong>Agglomerato (Bonded Foam)</strong></td>
+            <td><span class="spec-val">MAT-06</span></td>
+            <td><span class="spec-val">80 – 220 kg/m³</span></td>
+            <td><span class="spec-val">> 8.0 kPa</span></td>
+            <td>Riciclo circolare >85%, anticalpestio sottomassetto</td>
+            <td>EN 13501-1 Cl. E</td>
+            <td><a href="{{ "materiali/agglomerato-bonded-foam/" | relURL }}">Dettagli &rarr;</a></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
 
-<!-- Il Trivio del Contatto Diretto Ingegnerizzato -->
-<section style="background: var(--surface-2); padding: 4rem 0;">
+<!-- 4. Il Trivio del Contatto Diretto Ingegnerizzato -->
+<section style="background: var(--surface-2); padding: 4.5rem 0;">
   <div class="wrap">
     <div class="contact-hub">
       <div style="text-align: center; max-width: 44rem; margin: 0 auto 1.5rem;">
-        <span class="brand-badge">Nessun Modulo Complesso · Risposta Rapida</span>
-        <h2 style="font-size: 1.9rem; margin: 0.5rem 0 0.5rem; letter-spacing: -0.02em;">Canali di Contatto Diretto con lo Stabilimento</h2>
+        <span class="brand-badge">Nessun Modulo Complesso · Risposta Diretta</span>
+        <h2 style="font-size: 2rem; margin: 0.5rem 0 0.5rem; letter-spacing: -0.025em;">Canali di Contatto con lo Stabilimento</h2>
         <p style="color: var(--muted); margin: 0;">Scegli la modalità più comoda: consulenza vocale immediata, chat tecnica WhatsApp o invio disegno CAD per quotazione.</p>
       </div>
 
@@ -259,13 +335,13 @@
   </div>
 </section>
 
-<!-- Sezione Storia & Credibilità Istituzionale -->
-<section style="padding: 4rem 0;">
+<!-- 5. Sezione Storia & Credibilità Istituzionale -->
+<section style="padding: 4.5rem 0;">
   <div class="wrap">
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); gap: 3rem; align-items: center;">
       <div>
         <div class="hero-tag">Radici Manifatturiere</div>
-        <h2 style="font-size: 2rem; margin: 0 0 1rem; letter-spacing: -0.02em;">Oltre 27 Anni di Maestria nel Poliuretano</h2>
+        <h2 style="font-size: 2.1rem; margin: 0 0 1rem; letter-spacing: -0.025em;">Oltre 27 Anni di Maestria nel Poliuretano</h2>
         <p style="color: var(--muted); line-height: 1.7;">
           La Polform S.r.l. nasce nel <strong>gennaio 1999</strong> a Matera dall'iniziativa dei <strong>Soci Fondatori</strong>, dopo oltre un decennio di esperienza operativa diretta nella trasformazione del poliuretano espanso e del dacron nel polo industriale di Matera e Bari.
         </p>
@@ -280,10 +356,10 @@
         </div>
       </div>
       <div style="background: var(--surface); border: 1px solid var(--border); padding: 2.25rem; border-radius: var(--radius-lg); text-align: center; box-shadow: var(--shadow);">
-        <img src="/img/logo.gif" alt="Logo Storico Polform" style="margin: 0 auto 1.5rem; max-width: 180px;">
+        <img src="{{ "img/logo.gif" | relURL }}" alt="Logo Storico Polform" style="margin: 0 auto 1.5rem; max-width: 180px;">
         <h3 style="margin: 0 0 0.5rem; font-size: 1.25rem;">POLFORM S.r.l.</h3>
         <p style="color: var(--muted); font-size: 0.92rem; margin: 0 0 1.5rem;">Stabilimento: Z.I. La Martella, Via Giovanni Agnelli s.n.c., 75100 Matera (MT)</p>
-        <a href="/chi-siamo/" class="btn btn-outline" style="width: 100%; justify-content: center;">Leggi la storia aziendale &rarr;</a>
+        <a href="{{ "chi-siamo/" | relURL }}" class="btn btn-outline" style="width: 100%; justify-content: center;">Leggi la storia aziendale &rarr;</a>
       </div>
     </div>
   </div>

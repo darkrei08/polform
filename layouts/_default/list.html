@@ -1,21 +1,21 @@
 {{ define "main" }}
 <section class="wrap" style="padding: 2.5rem 1.25rem 5rem;">
   <nav class="breadcrumbs" aria-label="Breadcrumb">
-    <a href="/">Home</a>
+    <a href="{{ site.Home.RelPermalink }}">Home</a>
     <span class="breadcrumb-sep">/</span>
     <span>{{ .Title }}</span>
   </nav>
 
   <header style="margin-bottom: 2.5rem; text-align: center; max-width: 44rem; margin-inline: auto;">
-    <h1 style="font-size: 2.5rem; margin: 0 0 0.5rem; letter-spacing: -0.02em;">{{ .Title }}</h1>
+    <h1 style="font-size: 2.5rem; margin: 0 0 0.5rem; letter-spacing: -0.025em;">{{ .Title }}</h1>
     {{ with .Description }}
       <p style="font-size: 1.15rem; color: var(--muted); margin: 0;">{{ . }}</p>
     {{ end }}
   </header>
 
-  <div class="grid-3">
+  <div class="bento-grid">
     {{ range .Pages }}
-      <div class="card">
+      <div class="bento-card bento-col-4">
         <div>
           <div class="card-header-bar">
             {{ with .Params.code }}
@@ -32,7 +32,7 @@
           </h2>
           <p class="card-text">{{ .Description }}</p>
         </div>
-        <a href="{{ .RelPermalink }}" class="card-link">Visualizza scheda dettagliata &rarr;</a>
+        <a href="{{ .RelPermalink }}" class="card-link">Visualizza scheda tecnica &rarr;</a>
       </div>
     {{ end }}
   </div>

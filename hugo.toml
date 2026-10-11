@@ -1,6 +1,9 @@
-baseURL = 'https://polform.it/'
+baseURL = 'https://darkrei08.github.io/polform/'
 languageCode = 'it-IT'
 title = 'Polform S.r.l. — Trasformazione Poliuretano Espanso dal 1999'
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
 
 [params]
   description = 'Polform S.r.l. Matera: trasformazione e sagomatura CNC di poliuretano espanso flessibile per packaging tecnico, acustica, nautica, sicurezza e arredo contract.'
@@ -15,21 +18,22 @@ title = 'Polform S.r.l. — Trasformazione Poliuretano Espanso dal 1999'
 [menu]
   [[menu.main]]
     name = 'Settori'
-    url = '/settori/'
+    url = 'settori/'
     weight = 10
   [[menu.main]]
     name = 'Materiali'
-    url = '/materiali/'
+    url = 'materiali/'
     weight = 20
   [[menu.main]]
     name = 'Chi Siamo'
-    url = '/chi-siamo/'
+    url = 'chi-siamo/'
     weight = 30
   [[menu.main]]
     name = 'Certificazioni'
-    url = '/certificazioni/'
+    url = 'certificazioni/'
     weight = 40
   [[menu.main]]
-    name = 'Richiedi Preventivo / CAD'
-    url = '/preventivo/'
+    identifier = 'preventivo'
+    name = 'Invia Disegno CAD'
+    url = 'preventivo/'
     weight = 50

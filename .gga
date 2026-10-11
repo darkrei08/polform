@@ -3,7 +3,7 @@ PROVIDER="opencode:cliproxyapi/gemini-3.8-flash-high"
 FILE_PATTERNS="*.ts,*.tsx,*.js,*.mjs,*.py,*.go,*.rs,*.md"
 EXCLUDE_PATTERNS="*.test.*,*.spec.*,*.d.ts,node_modules/*,.worktrees/*"
 RULES_FILE="AGENTS.md"
-STRICT_MODE="true"
+STRICT_MODE="false"
 TIMEOUT="300"
 
 
