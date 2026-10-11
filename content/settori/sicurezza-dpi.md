@@ -1,7 +1,8 @@
 ---
 title: "Sicurezza sul Lavoro, Protezione Industriale & DPI"
 description: "Paracolpi antitrauma per magazzini, imbottiture ergonomiche per DPI e filtri reticolati industriali."
-icon: "🦺"
+code: "SEC-04"
+icon: "safety"
 category: "Settore Sicurezza"
 ---
 

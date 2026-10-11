@@ -1,7 +1,8 @@
 ---
 title: "Poliuretano Espanso Ignifugo (Classe 1IM / Crib 5)"
 description: "Schiume con additivi intumescenti per il rispetto delle normative antincendio nei luoghi pubblici e contract."
-icon: "🔥"
+code: "MAT-05"
+icon: "flame"
 category: "Schiuma Ignifuga"
 ---
 

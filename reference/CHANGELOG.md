@@ -12,7 +12,7 @@ Tutte le modifiche rilevanti, le nuove indagini di mercato, le definizioni di de
   * Estrapolazione completa dei token CSS (Light/Dark mode, System UI typography, `--max: 52rem`, `--wide: 74rem`, `--radius: 12px`, palette identitaria semantica).
   * Analisi dei componenti chiave: Pagefind per ricerca statica WebAssembly, GoatCounter per analytics etici, workflow Git su Codeberg e media storage S3.
 * **Capitolo 02 - Profilo Polform & Crisi del Distretto:**
-  * Censimento anagrafico di Polform S.r.l. (Zona Industriale La Martella, Matera; soci Luciano Cirillo, Francesco Tataranni, Emanuele Cifarelli).
+  * Censimento anagrafico di Polform S.r.l. (Zona Industriale La Martella, Matera; compagine dei soci fondatori e maestranze).
   * Report macroeconomico sulla crisi strutturale del polo Matera - Altamura - Santeramo (crisi Natuzzi con CIGS all'80% per circa 1.800 lavoratori, 400-500 esuberi e chiusura di 3 stabilimenti murgiani; tavolo di crisi MIMIT).
   * Identificazione della "trappola del monosettore" legata alla subfornitura esclusiva per salotti e divani.
 * **Capitolo 03 - Mappatura Competitor Locali e Nazionali:**

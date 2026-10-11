@@ -1,7 +1,8 @@
 ---
 title: "Poliuretano Fonoassorbente Bugnato e Piramidale"
 description: "Pannelli profilati a rulli con superficie alveolare per l'abbattimento acustico e la correzione del riverbero sonoro."
-icon: "🔊"
+code: "MAT-04"
+icon: "sound"
 category: "Schiuma Acustica"
 ---
 

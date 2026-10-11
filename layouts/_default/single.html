@@ -1,14 +1,27 @@
 {{ define "main" }}
-<article class="wrap-narrow" style="padding: 3rem 1.25rem 5rem;">
+<article class="wrap-narrow" style="padding: 2.5rem 1.25rem 5rem;">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span class="breadcrumb-sep">/</span>
+    {{ with .Parent }}
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <span class="breadcrumb-sep">/</span>
+    {{ end }}
+    <span>{{ .Title }}</span>
+  </nav>
+
   <header style="margin-bottom: 2.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1.5rem;">
     {{ with .Params.category }}
       <span class="hero-tag">{{ . }}</span>
     {{ end }}
-    <h1 style="font-size: clamp(2rem, 4vw, 2.8rem); line-height: 1.2; margin: 0.5rem 0 1rem; letter-spacing: -0.02em;">
+    {{ with .Params.code }}
+      <span class="badge" style="margin-left: 0.5rem;">{{ . }}</span>
+    {{ end }}
+    <h1 style="font-size: clamp(2rem, 4vw, 2.7rem); line-height: 1.2; margin: 0.5rem 0 1rem; letter-spacing: -0.02em;">
       {{ .Title }}
     </h1>
     {{ with .Description }}
-      <p style="font-size: 1.15rem; color: var(--muted); margin: 0; line-height: 1.5;">{{ . }}</p>
+      <p style="font-size: 1.15rem; color: var(--muted); margin: 0; line-height: 1.55;">{{ . }}</p>
     {{ end }}
   </header>
 
@@ -17,14 +30,23 @@
   </div>
 
   <div style="margin-top: 3.5rem; padding: 2rem; background: var(--surface-2); border-radius: var(--radius-lg); border: 1px solid var(--border);">
-    <h3 style="margin: 0 0 0.5rem;">Richiedi Informazioni o Campioni su Questa Scheda</h3>
+    <h3 style="margin: 0 0 0.5rem; font-size: 1.2rem;">Richiedi Informazioni o Campioni su Questa Scheda</h3>
     <p style="color: var(--muted); margin: 0 0 1.25rem; font-size: 0.95rem;">
-      I nostri responsabili di stabilimento possono formulare quote su misura, tolleranze dimensionali e campionature fisiche.
+      I responsabili di stabilimento possono formulare quote su misura, tolleranze dimensionali e campionature fisiche rapide.
     </p>
     <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-      <a href="tel:{{ .Site.Params.phone_clean }}" class="btn btn-primary">📞 Chiama {{ .Site.Params.phone }}</a>
-      <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text=Salve%20Polform,%20vorrei%20informazioni%20su:%20{{ .Title | urlquery }}" class="btn btn-whatsapp" target="_blank" rel="noopener">💬 WhatsApp</a>
-      <a href="mailto:{{ .Site.Params.email }}?subject=Richiesta%20Info:%20{{ .Title }}&body=Salve,%20vorrei%20maggiori%20dettagli%20su%20{{ .Title }}" class="btn btn-outline">✉️ Invia Email</a>
+      <a href="tel:{{ .Site.Params.phone_clean }}" class="btn btn-primary">
+        {{ partial "icon.html" (dict "name" "phone" "size" "16") }}
+        Chiama {{ .Site.Params.phone }}
+      </a>
+      <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text=Salve%20Polform,%20vorrei%20informazioni%20su:%20{{ .Title | urlquery }}" class="btn btn-whatsapp" target="_blank" rel="noopener">
+        {{ partial "icon.html" (dict "name" "whatsapp" "size" "16") }}
+        WhatsApp Tecnico
+      </a>
+      <a href="mailto:{{ .Site.Params.email }}?subject=Richiesta%20Info:%20{{ .Title }}&body=Salve,%20vorrei%20maggiori%20dettagli%20su%20{{ .Title }}" class="btn btn-outline">
+        {{ partial "icon.html" (dict "name" "email" "size" "16") }}
+        Invia Email
+      </a>
     </div>
   </div>
 </article>

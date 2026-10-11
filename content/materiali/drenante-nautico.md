@@ -1,7 +1,8 @@
 ---
 title: "Poliuretano Reticolato Drenante (Dryfeel)"
 description: "Espanso a celle completamente aperte per cuscinerie esterne marine, idrorepellente e ad asciugatura ultra-rapida."
-icon: "⚓"
+code: "MAT-03"
+icon: "anchor"
 category: "Schiuma Nautica"
 ---
 

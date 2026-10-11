@@ -10,7 +10,7 @@ In Polform crediamo nella concretezza e nella rapidità di risposta. Non utilizz
 ## 1. Contatto Diretto per Urgenze e Chiarimenti
 
 * **Telefonata in Stabilimento:**
-  Parla direttamente con **Luciano Cirillo, Francesco Tataranni o Emanuele Cifarelli** per una consulenza immediata sulla scelta della densità e portanza più adatta al tuo progetto:  
+  Parla direttamente con i **responsabili di stabilimento e di produzione** per una consulenza immediata sulla scelta della densità e portanza più adatta al tuo progetto:  
   👉 **[Chiama lo 0835 309182](tel:0835309182)**
 
 * **WhatsApp Aziendale Diretto:**

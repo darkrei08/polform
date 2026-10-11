@@ -6,11 +6,11 @@ description: "Da oltre 27 anni maestri nella trasformazione del poliuretano espa
 ## Radici Manifatturiere nel Distretto del Poliuretano
 
 La **Polform S.r.l.** nasce nel **gennaio 1999** dall'iniziativa dei tre soci fondatori:
-* **Luciano Cirillo** — Direzione aziendale e commerciale.
-* **Francesco Tataranni** — Produzione e relazioni tecniche territoriali.
-* **Emanuele Cifarelli** — Gestione operativa e approvvigionamenti.
+* **Direzione Generale & Amministrazione** — Gestione aziendale, contratti e relazioni commerciali.
+* **Direzione di Produzione & Stabilimento** — Controllo impianti, perizia tecnica di taglio e relazioni territoriali.
+* **Gestione Operativa & Approvvigionamenti** — Selezione materie prime, pianificazione lotti e logistica.
 
-I fondatori hanno maturato precedentemente oltre un decennio di esperienza operativa, con ruoli direttivi di produzione e commerciali, all'interno della più grande realtà di trasformazione di poliuretano espanso e dacron del distretto industriale Bari-Matera.
+I soci fondatori hanno maturato precedentemente oltre un decennio di esperienza operativa diretta, con ruoli chiave di produzione e commerciali, all'interno della più grande realtà di trasformazione di poliuretano espanso e dacron del distretto industriale Bari-Matera.
 
 Questa solida eredità, unita alla profonda padronanza chimico-fisica dei materiali espansi, ha permesso a Polform di consolidare un marchio ultra-decennale fondato sulla precisione del taglio, sull'affidabilità delle consegne e sulla capacità di risolvere problematiche tecniche complesse.
 

@@ -1,7 +1,8 @@
 ---
 title: "Poliuretano ad Alta Resilienza (HR)"
 description: "Schiuma microcellulare ad altissima elasticità, indeformabile nel tempo per sedute e cuscineria ergonomica."
-icon: "🛋️"
+code: "MAT-01"
+icon: "armchair"
 category: "Schiuma HR"
 ---
 

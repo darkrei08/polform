@@ -2,7 +2,7 @@
 
 ## 1. La Sfida Organizzativa: Conciliare l'Anima Telefonica con il Mercato Digitale
 
-I soci di Polform (Luciano Cirillo, Francesco Tataranni, Emanuele Cifarelli) incarnano la migliore tradizione manifatturiera italiana: pragmatismo, altissima conoscenza della materia prima, relazione diretta e preferenza assoluta per il **contatto telefonico e personale**.
+I soci fondatori di Polform incarnano la migliore tradizione manifatturiera italiana: pragmatismo, altissima conoscenza della materia prima, relazione diretta e preferenza consolidata per il **contatto telefonico e personale**.
 
 Imporre a questa realtà un CRM complesso (HubSpot, Salesforce) o un portale e-commerce pesante significherebbe andare incontro al rigetto operativo.
 La strategia vincente è invece la **"Tecnologia Ponte" (Bridge Strategy)**: il sito web moderno deve generare lead digitali qualificati da tutta Italia ed Europa, ma **incanalarli immediatamente nello strumento che i titolari già sanno usare con maestria: il telefono e WhatsApp**.

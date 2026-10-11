@@ -1,7 +1,8 @@
 ---
 title: "Poliuretano Viscoelastico (Memory Foam)"
 description: "Schiuma a lento ritorno elastico termosensibile, ideale per la distribuzione uniforme dei picchi di pressione e ausili antidecubito."
-icon: "🛏️"
+code: "MAT-02"
+icon: "health"
 category: "Schiuma Viscoelastica"
 ---
 

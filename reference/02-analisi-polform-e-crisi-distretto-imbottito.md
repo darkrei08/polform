@@ -5,7 +5,7 @@
 * **Denominazione:** POLFORM S.r.l.
 * **Sede Operativa e Legale:** Matera (MT), Zona Industriale La Martella / Contrada Monacelle (Via Giovanni Agnelli s.n.c., CAP 75100).
 * **Partita IVA:** 00671260776.
-* **Soci ed Esponenti Chiave:** Luciano Cirillo (Amministratore / socio storico), Emanuele Cifarelli (socio / compagine societaria), Francesco Tataranni (socio / produzione e relazioni territoriali).
+* **Soci ed Esponenti Chiave:** I Soci Fondatori (compagine societaria storica che unisce direzione aziendale, conduzione tecnica degli impianti di taglio e gestione degli approvvigionamenti).
 * **Core Business Tradizionale:** lavorazione, taglio, sagomatura e trasformazione di poliuretano espanso flessibile, lastre e blocchi per l'industria dell'imbottitura (cuscini di seduta, schienali, braccioli, componenti sagomati per divani e poltrone).
 * **Modello Operativo Attuale:**
   * Modello relazionale B2B "old school", fondato sul contatto telefonico diretto, sulla conoscenza personale e su accordi verbali consolidati nel distretto.

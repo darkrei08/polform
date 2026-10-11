@@ -1,30 +1,26 @@
 /* Polform S.r.l. — Design System Industriale B2B
-   Ispirato all'architettura leggera di Le Alternative e alla trasparenza tecnica B2B.
-   Zero framework CSS. Pura semantica, variabili CSS, alta leggibilità, dark mode nativo. */
+   Rigore ingegneristico, anti-slop, tipografia di sistema, dark mode nativo.
+   Ispirato alla pulizia JAMstack di Le Alternative. Zero dipendenze runtime. */
 
 :root {
   /* Brand Identitario */
   --brand-blue: #0b2545;
+  --brand-blue-hover: #133966;
   --brand-blue-ink: #07192f;
   --brand-accent: #f4a261;
-  --brand-accent-ink: #d06d22;
-
-  /* Colori Semantici Materiali (Schiume Poliuretaniche) */
-  --foam-comfort: #e9c46a;
-  --foam-memory: #457b9d;
-  --foam-acoustic: #2b2d42;
-  --foam-nautical: #2a9d8f;
-  --foam-flame: #e76f51;
+  --brand-accent-ink: #c25910;
 
   /* Superfici e Testo (Tema Chiaro) */
   --bg: #f8f9fa;
   --surface: #ffffff;
   --surface-2: #f1f3f5;
+  --surface-3: #e9ecef;
   --text: #1a1a24;
   --muted: #5c677d;
   --border: #e2e8f0;
-  --border-focus: #0b2545;
-  --shadow: 0 1px 3px rgba(11,37,69,0.06), 0 8px 24px rgba(11,37,69,0.06);
+  --border-subtle: #edf2f7;
+  --shadow: 0 1px 3px rgba(11,37,69,0.05), 0 8px 24px rgba(11,37,69,0.04);
+  --shadow-hover: 0 4px 6px rgba(11,37,69,0.08), 0 12px 32px rgba(11,37,69,0.08);
 
   /* Dimensioni Layout */
   --max: 56rem;
@@ -42,13 +38,18 @@
     --bg: #0d1117;
     --surface: #161b22;
     --surface-2: #21262d;
+    --surface-3: #2d333b;
     --text: #f0f6fc;
     --muted: #8b949e;
     --border: #30363d;
-    --border-focus: #58a6ff;
+    --border-subtle: #21262d;
     --shadow: none;
+    --shadow-hover: 0 0 0 1px #388bfd;
     --brand-blue: #58a6ff;
+    --brand-blue-hover: #79c0ff;
     --brand-blue-ink: #79c0ff;
+    --brand-accent: #f0883e;
+    --brand-accent-ink: #ffa657;
   }
 }
 
@@ -74,10 +75,13 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
 
 :focus-visible { outline: 2px solid var(--brand-accent-ink); outline-offset: 2px; }
 
+/* Icone Vettoriali */
+.icon-svg { display: inline-block; vertical-align: middle; flex-shrink: 0; }
+
 /* Testata Sticky */
 .site-header {
   position: sticky; top: 0; z-index: 50;
-  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
@@ -92,25 +96,35 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
 }
 .brand-logo:hover { text-decoration: none; }
 .brand-badge {
-  font-size: 0.75rem; font-weight: 600; text-transform: uppercase;
-  background: var(--surface-2); padding: 0.15rem 0.5rem; border-radius: 4px;
-  color: var(--muted); border: 1px solid var(--border);
+  font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
+  background: var(--surface-2); padding: 0.2rem 0.55rem; border-radius: 4px;
+  color: var(--muted); border: 1px solid var(--border); font-family: var(--font-mono);
 }
 
 .nav-menu { display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; }
 .nav-link {
-  font-weight: 600; font-size: 0.95rem; color: var(--muted);
+  font-weight: 600; font-size: 0.92rem; color: var(--muted);
   padding: 0.4rem 0.75rem; border-radius: var(--radius);
   transition: color 0.15s, background 0.15s;
 }
 .nav-link:hover { color: var(--text); background: var(--surface-2); text-decoration: none; }
 .nav-btn {
   background: var(--brand-blue); color: #ffffff !important;
-  font-weight: 600; font-size: 0.9rem; padding: 0.45rem 0.9rem;
+  font-weight: 600; font-size: 0.9rem; padding: 0.45rem 0.95rem;
   border-radius: var(--radius); text-decoration: none !important;
-  transition: opacity 0.15s;
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  transition: opacity 0.15s, transform 0.1s;
 }
-.nav-btn:hover { opacity: 0.9; }
+.nav-btn:hover { opacity: 0.92; transform: translateY(-1px); }
+
+/* Breadcrumbs */
+.breadcrumbs {
+  display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;
+  font-size: 0.85rem; color: var(--muted); margin-bottom: 1.5rem;
+}
+.breadcrumbs a { color: var(--muted); }
+.breadcrumbs a:hover { color: var(--text); }
+.breadcrumb-sep { opacity: 0.5; font-size: 0.75rem; }
 
 /* Hero Section */
 .hero {
@@ -120,68 +134,105 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
 }
 .hero-tag {
   display: inline-flex; align-items: center; gap: 0.5rem;
-  font-size: 0.85rem; font-weight: 700; text-transform: uppercase;
+  font-size: 0.8rem; font-weight: 700; text-transform: uppercase;
   color: var(--brand-accent-ink); background: color-mix(in srgb, var(--brand-accent) 15%, transparent);
-  padding: 0.25rem 0.75rem; border-radius: 20px; margin-bottom: 1rem;
+  padding: 0.25rem 0.75rem; border-radius: 20px; margin-bottom: 1.25rem;
+  font-family: var(--font-mono);
 }
 .hero-title {
-  font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.15;
+  font-size: clamp(2.1rem, 5vw, 3.4rem); line-height: 1.15;
   font-weight: 800; letter-spacing: -0.03em; margin: 0 0 1.25rem;
 }
 .hero-subtitle {
-  font-size: 1.2rem; color: var(--muted); max-width: 44rem;
-  margin: 0 0 2rem; line-height: 1.55;
+  font-size: 1.18rem; color: var(--muted); max-width: 46rem;
+  margin: 0 0 2rem; line-height: 1.6;
 }
-.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; margin-bottom: 3rem; }
+
+/* Barra Metriche Industriali (High-Trust Strip) */
+.metrics-strip {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 1.25rem; padding-top: 2rem; border-top: 1px solid var(--border);
+}
+.metric-item { display: flex; flex-direction: column; }
+.metric-val {
+  font-size: 1.85rem; font-weight: 800; letter-spacing: -0.03em;
+  color: var(--text); font-family: var(--font-mono); line-height: 1.1;
+}
+.metric-label { font-size: 0.85rem; color: var(--muted); margin-top: 0.35rem; line-height: 1.4; }
 
 /* Pulsanti */
 .btn {
-  display: inline-flex; align-items: center; gap: 0.5rem;
-  font-weight: 600; font-size: 1rem; padding: 0.75rem 1.4rem;
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  font-weight: 600; font-size: 0.95rem; padding: 0.75rem 1.35rem;
   border-radius: var(--radius); cursor: pointer; text-decoration: none !important;
   transition: transform 0.1s, box-shadow 0.15s, opacity 0.15s;
   border: 1px solid transparent;
 }
 .btn-primary { background: var(--brand-blue); color: #fff; }
-.btn-primary:hover { opacity: 0.92; }
+.btn-primary:hover { opacity: 0.92; transform: translateY(-1px); }
 .btn-whatsapp { background: #25d366; color: #fff; }
-.btn-whatsapp:hover { opacity: 0.92; }
+.btn-whatsapp:hover { opacity: 0.92; transform: translateY(-1px); }
 .btn-outline { background: var(--surface); color: var(--text); border-color: var(--border); }
-.btn-outline:hover { background: var(--surface-2); }
+.btn-outline:hover { background: var(--surface-2); border-color: var(--muted); }
 
 /* Griglie e Card */
+.grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1.25rem; margin: 2rem 0; }
 .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); gap: 1.5rem; margin: 2rem 0; }
 .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr)); gap: 1.5rem; margin: 2rem 0; }
 
 .card {
   background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius-lg); padding: 1.75rem;
-  box-shadow: var(--shadow); transition: transform 0.15s, border-color 0.15s;
+  border-radius: var(--radius-lg); padding: 1.6rem;
+  box-shadow: var(--shadow); transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+  display: flex; flex-direction: column; justify-content: space-between;
 }
-.card:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--brand-blue) 40%, var(--border)); }
-.card-icon { font-size: 1.8rem; margin-bottom: 0.75rem; }
-.card-title { font-size: 1.25rem; font-weight: 700; margin: 0 0 0.5rem; letter-spacing: -0.01em; }
-.card-text { font-size: 0.95rem; color: var(--muted); margin: 0 0 1rem; line-height: 1.55; }
+.card:hover {
+  transform: translateY(-2px); box-shadow: var(--shadow-hover);
+  border-color: color-mix(in srgb, var(--brand-blue) 40%, var(--border));
+}
+.card-header-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border-subtle);
+}
+.card-code {
+  font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700;
+  color: var(--muted); letter-spacing: 0.05em; text-transform: uppercase;
+}
+.card-icon-wrap {
+  width: 40px; height: 40px; border-radius: var(--radius);
+  background: var(--surface-2); display: flex; align-items: center; justify-content: center;
+  color: var(--brand-blue); border: 1px solid var(--border);
+}
+.card-title { font-size: 1.2rem; font-weight: 700; margin: 0 0 0.5rem; letter-spacing: -0.01em; line-height: 1.35; }
+.card-title a { color: var(--text); }
+.card-title a:hover { color: var(--brand-blue); text-decoration: none; }
+.card-text { font-size: 0.92rem; color: var(--muted); margin: 0 0 1.25rem; line-height: 1.55; }
+.card-link { font-weight: 600; font-size: 0.9rem; color: var(--brand-blue); display: inline-flex; align-items: center; gap: 0.35rem; margin-top: auto; }
 
 /* Tabelle Tecniche per Materiali */
+.spec-table-wrap { overflow-x: auto; margin: 1.5rem 0; }
 .spec-table {
-  width: 100%; border-collapse: collapse; margin: 1.5rem 0;
-  font-size: 0.95rem; background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius); overflow: hidden;
+  width: 100%; border-collapse: collapse;
+  font-size: 0.92rem; background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius);
 }
 .spec-table th, .spec-table td {
   padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); text-align: left;
 }
 .spec-table th { background: var(--surface-2); font-weight: 700; color: var(--text); }
+.spec-table tr:last-child td { border-bottom: 0; }
+.spec-table tr:nth-child(even) td { background: var(--border-subtle); }
 .spec-table td:first-child { font-weight: 600; }
-.spec-val { font-family: var(--font-mono); font-size: 0.9rem; }
+.spec-val { font-family: var(--font-mono); font-size: 0.88rem; }
 
 /* Badge Certificazioni */
 .badge-list { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1rem 0; }
 .badge {
-  font-size: 0.8rem; font-weight: 700; padding: 0.25rem 0.6rem;
+  font-size: 0.8rem; font-weight: 700; padding: 0.3rem 0.65rem;
   border-radius: 4px; background: var(--surface-2); border: 1px solid var(--border);
-  color: var(--text); display: inline-flex; align-items: center; gap: 0.35rem;
+  color: var(--text); display: inline-flex; align-items: center; gap: 0.4rem;
+  font-family: var(--font-mono);
 }
 
 /* Sezione Contatto Diretto Ingegnerizzata (Trivio) */
@@ -190,13 +241,13 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
   border-radius: var(--radius-lg); padding: 2.5rem; margin: 3rem 0;
   box-shadow: var(--shadow);
 }
-.hub-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+.hub-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1.5rem; margin-top: 1.75rem; }
 .hub-box {
-  padding: 1.5rem; border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 1.75rem; border: 1px solid var(--border); border-radius: var(--radius);
   background: var(--bg); display: flex; flex-direction: column; justify-content: space-between;
 }
-.hub-box h3 { margin: 0 0 0.5rem; font-size: 1.15rem; }
-.hub-box p { font-size: 0.9rem; color: var(--muted); margin: 0 0 1.25rem; }
+.hub-box h3 { margin: 0 0 0.5rem; font-size: 1.15rem; display: flex; align-items: center; gap: 0.5rem; }
+.hub-box p { font-size: 0.92rem; color: var(--muted); margin: 0 0 1.5rem; line-height: 1.55; }
 
 /* Footer */
 .site-footer {

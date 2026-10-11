@@ -1,7 +1,8 @@
 ---
 title: "Acustica Ambientale & Fonoassorbimento Industriale"
 description: "Pannelli fonoassorbenti bugnati, piramidali e carter insonorizzati per la correzione del riverbero e il controllo del rumore."
-icon: "🔊"
+code: "SEC-02"
+icon: "sound"
 category: "Settore Acustico"
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: "Packaging Tecnico Protettivo & Dunnage Industriale"
 description: "Inserti sagomati e fresati CNC in gommapiuma e polietilene per valigie tecniche, droni, ottiche e packaging luxury."
-icon: "📦"
+code: "SEC-01"
+icon: "box"
 category: "Settore Industriale"
 ---
 

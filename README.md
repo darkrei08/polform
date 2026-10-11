@@ -13,10 +13,7 @@ Industrial B2B showcase website, strategic market intelligence, and diversificat
 
 ## 1. Executive Summary & Company Profile
 
-**POLFORM S.r.l.** was founded in **January 1999** in Matera (Basilicata, Southern Italy) by three experienced partners:
-* **Luciano Cirillo** — Corporate administration & commercial management
-* **Francesco Tataranni** — Plant production & regional technical relations
-* **Emanuele Cifarelli** — Operations & material procurement
+**POLFORM S.r.l.** was founded in **January 1999** in Matera (Basilicata, Southern Italy) by three founding partners who brought complementary leadership across corporate administration, plant production, and material procurement.
 
 Prior to founding Polform, the partners worked for more than a decade in senior operational and commercial roles in the largest polyurethane and dacron conversion facility in the Bari-Matera industrial district. With **over 27 years of uninterrupted activity** (and 37+ years of cumulative expertise), Polform specializes in CNC contour cutting, splitting, and bonding of flexible polyurethane foam.
 

@@ -1,7 +1,8 @@
 ---
 title: "Nautica, Yachting & Cuscineria Drenante Dryfeel"
 description: "Schiume reticolate idro-drenanti per esterni barca e imbottiture ignifughe certificate IMO per cabine yacht."
-icon: "⚓"
+code: "SEC-03"
+icon: "anchor"
 category: "Settore Nautico"
 ---
 
