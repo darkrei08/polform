@@ -7,6 +7,13 @@
 
 > **Live Production Preview:** [https://darkrei08.github.io/polform/](https://darkrei08.github.io/polform/)
 
+## Promo video
+
+<video controls preload="metadata" poster="docs/media/polform-promo-poster.png" width="100%">
+  <source src="docs/media/polform-promo.mp4" type="video/mp4">
+  [Download the promo video](docs/media/polform-promo.mp4)
+</video>
+
 Industrial B2B showcase website, strategic market intelligence, and diversification architecture for **POLFORM S.r.l.** (Matera, Italy), built with **Hugo JAMstack** and a custom **Zero-Framework Design System**.
 
 ---
