@@ -1,0 +1,36 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>POLFORM S.r.l.</h4>
+        <p>Trasformazione e sagomatura di precisione di poliuretano espanso flessibile per l'industria italiana ed europea.</p>
+        <p><strong>Fondata nel gennaio 1999</strong> a Matera.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Sede & Stabilimento</h4>
+        <p>{{ .Site.Params.address }}</p>
+        <p>Sede Storica: Via Rosselli 26 / Via Delle Arti 1</p>
+        <p>P.IVA: {{ .Site.Params.piva }}</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contatto Diretto</h4>
+        <p>Tel: <a href="tel:{{ .Site.Params.phone_clean }}">{{ .Site.Params.phone }}</a></p>
+        <p>WhatsApp: <a href="https://wa.me/{{ .Site.Params.phone_clean }}">Chat con i Responsabili</a></p>
+        <p>Email: <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Settori Chiave</h4>
+        <ul>
+          <li><a href="/settori/">Packaging Tecnico</a></li>
+          <li><a href="/settori/">Fonoassorbenza & Acustica</a></li>
+          <li><a href="/settori/">Nautica Drenante</a></li>
+          <li><a href="/settori/">Sicurezza & DPI</a></li>
+          <li><a href="/settori/">Arredo & Contract</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; {{ now.Format "2006" }} POLFORM S.r.l. — Tutti i diritti riservati. Realizzato con Hugo. Zero cookie di profilazione.
+    </div>
+  </div>
+</footer>

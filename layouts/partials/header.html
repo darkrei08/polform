@@ -1,0 +1,19 @@
+<header class="site-header">
+  <div class="wrap site-header-inner">
+    <a href="/" class="brand-logo">
+      <img src="/img/logo.gif" alt="Polform Logo" width="42" height="32" style="border-radius: 4px; object-fit: contain;">
+      <span>POLFORM</span>
+      <span class="brand-badge">Matera · 1999</span>
+    </a>
+    
+    <nav class="nav-menu">
+      {{ range .Site.Menus.main }}
+        {{ if eq .Identifier "preventivo" }}
+          <a href="{{ .URL }}" class="nav-btn">{{ .Name }}</a>
+        {{ else }}
+          <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
+        {{ end }}
+      {{ end }}
+    </nav>
+  </div>
+</header>

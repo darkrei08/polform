@@ -1,0 +1,27 @@
+# Hugo build outputs
+public/
+resources/
+.hugo_build.lock
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Industrial secrets & proprietary CAD/NDA files
+secrets/
+private-cad/
+nda/
+*.step
+*.stp
+*.dwg
+*.bak
+
+
+# Pi Herdr Orchestration runtime state
+.worktrees/
+.codegraph/
+.atl/

@@ -1,0 +1,35 @@
+baseURL = 'https://polform.it/'
+languageCode = 'it-IT'
+title = 'Polform S.r.l. — Trasformazione Poliuretano Espanso dal 1999'
+
+[params]
+  description = 'Polform S.r.l. Matera: trasformazione e sagomatura CNC di poliuretano espanso flessibile per packaging tecnico, acustica, nautica, sicurezza e arredo contract.'
+  phone = '+39 0835 309182'
+  phone_clean = '0835309182'
+  whatsapp = '+390835309182'
+  email = 'info@polform.com'
+  address = 'Via Giovanni Agnelli s.n.c., Z.I. La Martella, 75100 Matera (MT)'
+  piva = '00671260776'
+  founded = '1999'
+
+[menu]
+  [[menu.main]]
+    name = 'Settori'
+    url = '/settori/'
+    weight = 10
+  [[menu.main]]
+    name = 'Materiali'
+    url = '/materiali/'
+    weight = 20
+  [[menu.main]]
+    name = 'Chi Siamo'
+    url = '/chi-siamo/'
+    weight = 30
+  [[menu.main]]
+    name = 'Certificazioni'
+    url = '/certificazioni/'
+    weight = 40
+  [[menu.main]]
+    name = 'Richiedi Preventivo / CAD'
+    url = '/preventivo/'
+    weight = 50

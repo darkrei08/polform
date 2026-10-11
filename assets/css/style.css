@@ -1,0 +1,210 @@
+/* Polform S.r.l. — Design System Industriale B2B
+   Ispirato all'architettura leggera di Le Alternative e alla trasparenza tecnica B2B.
+   Zero framework CSS. Pura semantica, variabili CSS, alta leggibilità, dark mode nativo. */
+
+:root {
+  /* Brand Identitario */
+  --brand-blue: #0b2545;
+  --brand-blue-ink: #07192f;
+  --brand-accent: #f4a261;
+  --brand-accent-ink: #d06d22;
+
+  /* Colori Semantici Materiali (Schiume Poliuretaniche) */
+  --foam-comfort: #e9c46a;
+  --foam-memory: #457b9d;
+  --foam-acoustic: #2b2d42;
+  --foam-nautical: #2a9d8f;
+  --foam-flame: #e76f51;
+
+  /* Superfici e Testo (Tema Chiaro) */
+  --bg: #f8f9fa;
+  --surface: #ffffff;
+  --surface-2: #f1f3f5;
+  --text: #1a1a24;
+  --muted: #5c677d;
+  --border: #e2e8f0;
+  --border-focus: #0b2545;
+  --shadow: 0 1px 3px rgba(11,37,69,0.06), 0 8px 24px rgba(11,37,69,0.06);
+
+  /* Dimensioni Layout */
+  --max: 56rem;
+  --wide: 74rem;
+  --radius: 8px;
+  --radius-lg: 12px;
+
+  /* Tipografia */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Code", monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --surface-2: #21262d;
+    --text: #f0f6fc;
+    --muted: #8b949e;
+    --border: #30363d;
+    --border-focus: #58a6ff;
+    --shadow: none;
+    --brand-blue: #58a6ff;
+    --brand-blue-ink: #79c0ff;
+  }
+}
+
+/* Reset essenziale */
+*, *::before, *::after { box-sizing: border-box; }
+html { font-size: 17px; scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: var(--wide); margin-inline: auto; padding-inline: 1.25rem; }
+.wrap-narrow { max-width: var(--max); margin-inline: auto; padding-inline: 1.25rem; }
+
+a { color: var(--brand-blue); text-decoration: none; text-underline-offset: 3px; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; height: auto; display: block; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
+
+:focus-visible { outline: 2px solid var(--brand-accent-ink); outline-offset: 2px; }
+
+/* Testata Sticky */
+.site-header {
+  position: sticky; top: 0; z-index: 50;
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.site-header-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.85rem 0; gap: 1rem; flex-wrap: wrap;
+}
+.brand-logo {
+  display: flex; align-items: center; gap: 0.75rem;
+  font-weight: 800; font-size: 1.25rem; color: var(--text);
+  letter-spacing: -0.02em;
+}
+.brand-logo:hover { text-decoration: none; }
+.brand-badge {
+  font-size: 0.75rem; font-weight: 600; text-transform: uppercase;
+  background: var(--surface-2); padding: 0.15rem 0.5rem; border-radius: 4px;
+  color: var(--muted); border: 1px solid var(--border);
+}
+
+.nav-menu { display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; }
+.nav-link {
+  font-weight: 600; font-size: 0.95rem; color: var(--muted);
+  padding: 0.4rem 0.75rem; border-radius: var(--radius);
+  transition: color 0.15s, background 0.15s;
+}
+.nav-link:hover { color: var(--text); background: var(--surface-2); text-decoration: none; }
+.nav-btn {
+  background: var(--brand-blue); color: #ffffff !important;
+  font-weight: 600; font-size: 0.9rem; padding: 0.45rem 0.9rem;
+  border-radius: var(--radius); text-decoration: none !important;
+  transition: opacity 0.15s;
+}
+.nav-btn:hover { opacity: 0.9; }
+
+/* Hero Section */
+.hero {
+  padding: 4.5rem 0 3.5rem;
+  background: radial-gradient(circle at 10% 20%, color-mix(in srgb, var(--brand-accent) 8%, transparent) 0%, transparent 60%);
+  border-bottom: 1px solid var(--border);
+}
+.hero-tag {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-size: 0.85rem; font-weight: 700; text-transform: uppercase;
+  color: var(--brand-accent-ink); background: color-mix(in srgb, var(--brand-accent) 15%, transparent);
+  padding: 0.25rem 0.75rem; border-radius: 20px; margin-bottom: 1rem;
+}
+.hero-title {
+  font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.15;
+  font-weight: 800; letter-spacing: -0.03em; margin: 0 0 1.25rem;
+}
+.hero-subtitle {
+  font-size: 1.2rem; color: var(--muted); max-width: 44rem;
+  margin: 0 0 2rem; line-height: 1.55;
+}
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+
+/* Pulsanti */
+.btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-weight: 600; font-size: 1rem; padding: 0.75rem 1.4rem;
+  border-radius: var(--radius); cursor: pointer; text-decoration: none !important;
+  transition: transform 0.1s, box-shadow 0.15s, opacity 0.15s;
+  border: 1px solid transparent;
+}
+.btn-primary { background: var(--brand-blue); color: #fff; }
+.btn-primary:hover { opacity: 0.92; }
+.btn-whatsapp { background: #25d366; color: #fff; }
+.btn-whatsapp:hover { opacity: 0.92; }
+.btn-outline { background: var(--surface); color: var(--text); border-color: var(--border); }
+.btn-outline:hover { background: var(--surface-2); }
+
+/* Griglie e Card */
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+
+.card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 1.75rem;
+  box-shadow: var(--shadow); transition: transform 0.15s, border-color 0.15s;
+}
+.card:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--brand-blue) 40%, var(--border)); }
+.card-icon { font-size: 1.8rem; margin-bottom: 0.75rem; }
+.card-title { font-size: 1.25rem; font-weight: 700; margin: 0 0 0.5rem; letter-spacing: -0.01em; }
+.card-text { font-size: 0.95rem; color: var(--muted); margin: 0 0 1rem; line-height: 1.55; }
+
+/* Tabelle Tecniche per Materiali */
+.spec-table {
+  width: 100%; border-collapse: collapse; margin: 1.5rem 0;
+  font-size: 0.95rem; background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden;
+}
+.spec-table th, .spec-table td {
+  padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); text-align: left;
+}
+.spec-table th { background: var(--surface-2); font-weight: 700; color: var(--text); }
+.spec-table td:first-child { font-weight: 600; }
+.spec-val { font-family: var(--font-mono); font-size: 0.9rem; }
+
+/* Badge Certificazioni */
+.badge-list { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1rem 0; }
+.badge {
+  font-size: 0.8rem; font-weight: 700; padding: 0.25rem 0.6rem;
+  border-radius: 4px; background: var(--surface-2); border: 1px solid var(--border);
+  color: var(--text); display: inline-flex; align-items: center; gap: 0.35rem;
+}
+
+/* Sezione Contatto Diretto Ingegnerizzata (Trivio) */
+.contact-hub {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 2.5rem; margin: 3rem 0;
+  box-shadow: var(--shadow);
+}
+.hub-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+.hub-box {
+  padding: 1.5rem; border: 1px solid var(--border); border-radius: var(--radius);
+  background: var(--bg); display: flex; flex-direction: column; justify-content: space-between;
+}
+.hub-box h3 { margin: 0 0 0.5rem; font-size: 1.15rem; }
+.hub-box p { font-size: 0.9rem; color: var(--muted); margin: 0 0 1.25rem; }
+
+/* Footer */
+.site-footer {
+  background: var(--surface); border-top: 1px solid var(--border);
+  padding: 3.5rem 0 2rem; margin-top: 5rem; font-size: 0.9rem; color: var(--muted);
+}
+.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 2rem; margin-bottom: 2.5rem; }
+.footer-col h4 { color: var(--text); font-size: 1rem; margin: 0 0 1rem; }
+.footer-col ul { list-style: none; padding: 0; margin: 0; }
+.footer-col li { margin-bottom: 0.5rem; }
+.footer-bottom { border-top: 1px solid var(--border); padding-top: 1.5rem; text-align: center; font-size: 0.85rem; }

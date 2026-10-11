@@ -1,0 +1,150 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-tag">Manifattura del Poliuretano dal 1999 · Matera</div>
+    <h1 class="hero-title">Sagomatura e Trasformazione di Poliuretano Espanso ad Alta Precisione</h1>
+    <p class="hero-subtitle">
+      Oltre 27 anni di perizia nel taglio CNC e nell'accoppiamento di schiume poliuretaniche per packaging tecnico, acustica ambientale, nautica, sicurezza sul lavoro e arredo contract.
+    </p>
+    <div class="hero-actions">
+      <a href="tel:{{ .Site.Params.phone_clean }}" class="btn btn-primary">
+        📞 Chiama Stabilimento ({{ .Site.Params.phone }})
+      </a>
+      <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text=Salve%20Polform,%20vorrei%20richiedere%20informazioni%20su%20una%20fornitura%20di%20poliuretano" class="btn btn-whatsapp" target="_blank" rel="noopener">
+        💬 WhatsApp Diretto con i Soci
+      </a>
+      <a href="/preventivo/" class="btn btn-outline">
+        📐 Invia Disegno / Capitolato
+      </a>
+    </div>
+  </div>
+</section>
+
+<section style="padding: 3.5rem 0;">
+  <div class="wrap">
+    <div style="text-align: center; max-width: 46rem; margin: 0 auto 2.5rem;">
+      <h2 style="font-size: 2rem; margin: 0 0 0.5rem; letter-spacing: -0.02em;">Settori Industriali Serviti</h2>
+      <p style="color: var(--muted); margin: 0;">Soluzioni sagomate su misura per i mercati tecnici più esigenti in tutta Italia ed Europa.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-icon">📦</div>
+        <h3 class="card-title">Packaging Tecnico & Dunnage</h3>
+        <p class="card-text">Alloggiamenti fresati e sagomati CNC per valigie tecniche ermetiche (Explorer, GT Line), ottiche di precisione, droni e packaging luxury antiurto.</p>
+        <a href="/settori/packaging-tecnico/" style="font-weight: 600;">Scopri il packaging &rarr;</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🔊</div>
+        <h3 class="card-title">Acustica & Fonoassorbimento</h3>
+        <p class="card-text">Pannelli piramidali, bugnati e lastre fonoassorbenti per sale prove, uffici, ristoranti rumorosi e carterature insonorizzate per macchinari industriali.</p>
+        <a href="/settori/acustica-fonoassorbimento/" style="font-weight: 600;">Scopri le soluzioni acustiche &rarr;</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">⚓</div>
+        <h3 class="card-title">Nautica & Yachting</h3>
+        <p class="card-text">Schiume reticolate drenanti (tipo Dryfeel) a cellula aperta per cuscinerie esterne e prendisole che non assorbono acqua e asciugano al sole in minuti.</p>
+        <a href="/settori/nautica-drenante/" style="font-weight: 600;">Scopri il drenante nautico &rarr;</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🦺</div>
+        <h3 class="card-title">Sicurezza Industriale & DPI</h3>
+        <p class="card-text">Paracolpi antitrauma bicolore per pilastri di magazzino e baie di carico; imbottiture per ginocchiere da lavoro e filtri reticolati per cabine.</p>
+        <a href="/settori/sicurezza-dpi/" style="font-weight: 600;">Scopri i paracolpi industriali &rarr;</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🏥</div>
+        <h3 class="card-title">Sanità & Silver Economy</h3>
+        <p class="card-text">Cuscini e lastre antidecubito sagomate in HR e viscoelastico memory foam per carrozzine, degenze RSA e posizionatori posturali ergonomici.</p>
+        <a href="/materiali/memory-viscoelastico/" style="font-weight: 600;">Scopri gli ausili antidecubito &rarr;</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🛋️</div>
+        <h3 class="card-title">Arredo Contract & Ospitalità</h3>
+        <p class="card-text">Imbottiture ignifughe omologate Classe 1IM (UNI 9175) e British Standard Crib 5 per hotel, teatri, cinema e forniture per navi da crociera.</p>
+        <a href="/materiali/ignifugo-1im/" style="font-weight: 600;">Scopri gli espansi ignifughi &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Il Trivio del Contatto Diretto Ingegnerizzato -->
+<section style="background: var(--surface-2); padding: 4rem 0;">
+  <div class="wrap">
+    <div class="contact-hub">
+      <div style="text-align: center; max-width: 42rem; margin: 0 auto 1.5rem;">
+        <span class="brand-badge">Nessun Modulo Complesso · Risposta Rapida</span>
+        <h2 style="font-size: 1.85rem; margin: 0.5rem 0 0.5rem; letter-spacing: -0.02em;">Come Preferisci Contattare Polform?</h2>
+        <p style="color: var(--muted); margin: 0;">Scegli la modalità più comoda per la tua esigenza: telefonata immediata con i titolari, chat WhatsApp diretta o trasmissione file tecnico via email.</p>
+      </div>
+
+      <div class="hub-grid">
+        <div class="hub-box">
+          <div>
+            <h3>📞 Chiamata Telefonica</h3>
+            <p>Parla subito con Luciano, Francesco o Emanuele per verificare disponibilità, densità e fattibilità immediata.</p>
+          </div>
+          <a href="tel:{{ .Site.Params.phone_clean }}" class="btn btn-primary" style="justify-content: center;">
+            Chiama: {{ .Site.Params.phone }}
+          </a>
+        </div>
+
+        <div class="hub-box">
+          <div>
+            <h3>💬 WhatsApp Diretto</h3>
+            <p>Invia messaggi vocali, foto di campioni da replicare o richieste rapide direttamente al responsabile di produzione.</p>
+          </div>
+          <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text=Salve%20Polform,%20vi%20scrivo%20per%20un%20preventivo" class="btn btn-whatsapp" target="_blank" rel="noopener" style="justify-content: center;">
+            Apri Chat WhatsApp
+          </a>
+        </div>
+
+        <div class="hub-box">
+          <div>
+            <h3>📐 Invia Disegno Tecnico</h3>
+            <p>Hai già un file CAD (.dxf, .dwg, .step, .pdf)? Mandalo con un clic dalla tua posta aziendale con oggetto guidato.</p>
+          </div>
+          <a href="mailto:{{ .Site.Params.email }}?subject=[Richiesta%20Preventivo%20Polform]%20Sagomatura%20Poliuretano&body=Azienda:%0ASettore:%0AQuantità%20stimata:%0A%0A[Allegare%20file%20tecnico%20CAD%20o%20specifiche]" class="btn btn-outline" style="justify-content: center;">
+            Invia Email con File CAD
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sezione Storia & Credibilità -->
+<section style="padding: 4rem 0;">
+  <div class="wrap">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); gap: 3rem; align-items: center;">
+      <div>
+        <div class="hero-tag">La Nostra Storia</div>
+        <h2 style="font-size: 2rem; margin: 0 0 1rem; letter-spacing: -0.02em;">Radici Murgiane, Rigore Manifatturiero</h2>
+        <p style="color: var(--muted); line-height: 1.7;">
+          La Polform S.r.l. nasce nel <strong>gennaio 1999</strong> a Matera dall'iniziativa di <strong>Luciano Cirillo, Francesco Tataranni ed Emanuele Cifarelli</strong>, dopo oltre un decennio di esperienza operativa nella trasformazione del poliuretano e del dacron nel distretto industriale di Matera e Bari.
+        </p>
+        <p style="color: var(--muted); line-height: 1.7;">
+          La profonda conoscenza chimico-fisica delle schiume e la precisione nel taglio a pantografo hanno reso l'azienda un punto di riferimento duraturo, capace oggi di evolvere verso i più avanzati mercati tecnici e industriali italiani.
+        </p>
+        <div class="badge-list">
+          <span class="badge">✓ Attività dal 1999</span>
+          <span class="badge">✓ Taglio CNC millimetrico</span>
+          <span class="badge">✓ Campionature rapide</span>
+          <span class="badge">✓ Forniture in tutta Italia</span>
+        </div>
+      </div>
+      <div style="background: var(--surface); border: 1px solid var(--border); padding: 2rem; border-radius: var(--radius-lg); text-align: center;">
+        <img src="/img/logo.gif" alt="Logo Storico Polform" style="margin: 0 auto 1.5rem; max-width: 180px;">
+        <h3 style="margin: 0 0 0.5rem;">POLFORM S.r.l.</h3>
+        <p style="color: var(--muted); font-size: 0.95rem; margin: 0 0 1.25rem;">Stabilimento: Z.I. La Martella, Via Giovanni Agnelli s.n.c., 75100 Matera (MT)</p>
+        <a href="/chi-siamo/" class="btn btn-outline" style="width: 100%; justify-content: center;">Leggi la storia completa &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="wrap" style="padding: 3.5rem 1.25rem 5rem;">
+  <header style="margin-bottom: 2.5rem; text-align: center; max-width: 44rem; margin-inline: auto;">
+    <h1 style="font-size: 2.5rem; margin: 0 0 0.5rem; letter-spacing: -0.02em;">{{ .Title }}</h1>
+    {{ with .Description }}
+      <p style="font-size: 1.15rem; color: var(--muted); margin: 0;">{{ . }}</p>
+    {{ end }}
+  </header>
+
+  <div class="grid-3">
+    {{ range .Pages }}
+      <div class="card">
+        {{ with .Params.icon }}
+          <div class="card-icon">{{ . }}</div>
+        {{ end }}
+        <h2 class="card-title" style="font-size: 1.3rem;">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+        <p class="card-text">{{ .Description }}</p>
+        <a href="{{ .RelPermalink }}" style="font-weight: 600;">Visualizza scheda &rarr;</a>
+      </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
