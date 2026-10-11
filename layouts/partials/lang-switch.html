@@ -1,0 +1,15 @@
+<div class="lang-switch-wrap" aria-label="Cambia lingua">
+  {{ if .IsTranslated }}
+    {{ range .AllTranslations }}
+      <a href="{{ .RelPermalink }}" class="lang-btn {{ if eq .Lang $.Lang }}is-active{{ end }}" hreflang="{{ .Lang }}" title="{{ .Language.LanguageName }}">
+        {{ .Lang | upper }}
+      </a>
+    {{ end }}
+  {{ else }}
+    {{ range .Site.Home.AllTranslations }}
+      <a href="{{ .RelPermalink }}" class="lang-btn {{ if eq .Lang $.Lang }}is-active{{ end }}" hreflang="{{ .Lang }}" title="{{ .Language.LanguageName }}">
+        {{ .Lang | upper }}
+      </a>
+    {{ end }}
+  {{ end }}
+</div>

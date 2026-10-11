@@ -193,6 +193,25 @@
         <a href="{{ "settori/arredo-contract/" | relURL }}" class="card-link">Espansi ignifughi &rarr;</a>
       </div>
     </div>
+
+    <!-- Banner Invito Telefonata Immediata (Massima Conversione) -->
+    <div class="call-invite-banner">
+      <div class="call-invite-text">
+        <span class="badge" style="background: rgba(255,255,255,0.15); color: #ffffff; border: 0; margin-bottom: 0.5rem;">NESSUN CENTRALINO · RISPOSTA IMMEDIATA</span>
+        <h3>Hai un disegno tecnico o un capitolato urgente?</h3>
+        <p>Chiama direttamente lo stabilimento di Matera. Un tecnico di produzione esamina la fattibilità del taglio CNC e ti risponde in tempo reale.</p>
+      </div>
+      <div class="call-invite-actions">
+        <a href="tel:{{ .Site.Params.phone_clean }}" class="btn" style="background: #ffffff; color: var(--brand-blue-ink) !important; font-weight: 700;">
+          {{ partial "icon.html" (dict "name" "phone" "size" "18") }}
+          Chiama Ora: {{ .Site.Params.phone }}
+        </a>
+        <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text=Salve%20Polform,%20ho%20un%20disegno%20urgente%20da%20valutare" class="btn btn-whatsapp" target="_blank" rel="noopener">
+          {{ partial "icon.html" (dict "name" "whatsapp" "size" "18") }}
+          WhatsApp Tecnico
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 

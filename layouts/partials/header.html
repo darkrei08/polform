@@ -5,37 +5,45 @@
         <img src="{{ "img/logo.gif" | relURL }}" alt="Polform Logo" width="38" height="28" class="brand-logo-img">
         <span class="brand-name">POLFORM</span>
       </a>
-      <div class="brand-status-chip" title="Impianti di taglio e sagomatura attivi a Matera">
+      <div class="brand-status-chip" title="Stabilimento produttivo attivo a Matera dal 1999">
         <span class="status-dot"></span>
         <span class="status-label">Matera · 1999</span>
       </div>
     </div>
     
     <div class="header-actions-group">
-      <nav class="nav-menu" aria-label="Navigazione principale">
+      <nav class="nav-menu" id="nav-menu" aria-label="Navigazione principale">
         {{ range .Site.Menus.main }}
           {{ if eq .Identifier "preventivo" }}
-            <!-- Preventivo button moved to right action group for prominence -->
+            <!-- Preventivo CTA button placed beside actions -->
           {{ else }}
             <a href="{{ .URL | relURL }}" class="nav-link">{{ .Name }}</a>
           {{ end }}
         {{ end }}
       </nav>
 
-      <!-- Pulsante Ricerca Istantanea Stile Le Alternative -->
+      <!-- Ricerca Istantanea Stile Le Alternative -->
       <button type="button" class="search-trigger-btn" data-search-trigger aria-label="Cerca nel catalogo (Ctrl+K)">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
         <span class="search-shortcut">Ctrl K</span>
       </button>
 
-      <!-- Switch Tema Chiaro / Scuro -->
+      <!-- Switch a 3 vie Tema: Chiaro / Auto / Scuro -->
       {{ partial "theme-toggle.html" . }}
 
-      <!-- Call to Action Primaria -->
+      <!-- Selettore Multilingua IT / EN / DE -->
+      {{ partial "lang-switch.html" . }}
+
+      <!-- Pulsante CTA Invia Disegno CAD -->
       <a href="{{ "preventivo/" | relURL }}" class="nav-btn">
         {{ partial "icon.html" (dict "name" "email" "size" "15") }}
-        <span>Invia CAD</span>
+        <span>{{ if eq .Site.Language.Lang "en" }}Send CAD{{ else if eq .Site.Language.Lang "de" }}CAD senden{{ else }}Invia CAD{{ end }}</span>
       </a>
+
+      <!-- Hamburger Menu Toggle per Mobile -->
+      <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Apri menu di navigazione" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
     </div>
   </div>
 </header>

@@ -4,7 +4,8 @@
 - Preserve unrelated user changes, untracked files, hooks, and local configuration.
 - Prefer standard-library APIs and existing dependencies; avoid unnecessary additions.
 - Code, configuration, comments, tests, and commit messages are in English.
-- Website user-facing content (`content/`) and stakeholder business/market intelligence dossiers (`reference/`) are in Italian to serve the local Italian enterprise stakeholders and partners.
+- Website user-facing content (under `content/`) is in Italian (default) with English (`.en.md`) and German (`.de.md`) translations for international B2B buyers.
+- Stakeholder business/market intelligence dossiers (`reference/`) are in Italian to serve the local enterprise stakeholders and partners.
 - Run the documented checks relevant to each change and report blocked checks honestly.
 - Do not commit, push, merge, or publish without explicit authorization.
 

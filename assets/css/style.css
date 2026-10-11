@@ -1,5 +1,5 @@
 /* Polform S.r.l. — Design System Industriale B2B
-   Architettura JAMstack anti-slop, tipografia di sistema, dark/light mode con switch manuale e automatico.
+   Architettura JAMstack anti-slop, tipografia di sistema, dark/light/auto mode, multilingua e responsive.
    Ispirato al modello ultra-leggero e funzionale di Le Alternative. */
 
 /* ---------- 1. Token e Variabili Globali ---------- */
@@ -136,7 +136,7 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
 /* ---------- 3. Header "La Testata" Stile Le Alternative ---------- */
 .site-header {
   position: sticky; top: 0; z-index: 50;
-  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
   backdrop-filter: saturate(1.4) blur(10px);
   border-bottom: 1px solid var(--border);
 }
@@ -176,7 +176,7 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
 }
 
 .header-actions-group { display: flex; align-items: center; gap: 0.65rem; flex-wrap: wrap; }
-.nav-menu { display: flex; gap: 0.25rem; align-items: center; flex-wrap: wrap; }
+.nav-menu { display: flex; gap: 0.25rem; align-items: center; }
 .nav-link {
   font-weight: 600; font-size: 0.9rem; color: var(--muted);
   padding: 0.35rem 0.65rem; border-radius: var(--radius);
@@ -192,6 +192,39 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
 }
 .nav-btn:hover { opacity: 0.92; transform: translateY(-1px); }
 
+/* Switch Tema a 3 vie (Chiaro / Sistema / Scuro) */
+.theme-switch-wrap {
+  display: inline-flex; align-items: center; background: var(--surface-2);
+  border: 1px solid var(--border); border-radius: 20px; padding: 2px; gap: 2px;
+}
+.theme-btn {
+  background: transparent; border: 0; color: var(--muted);
+  width: 28px; height: 28px; border-radius: 50%; display: flex;
+  align-items: center; justify-content: center; cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.theme-btn:hover { color: var(--text); }
+.theme-btn.is-active {
+  background: var(--surface); color: var(--brand-blue);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+/* Selettore Multilingua */
+.lang-switch-wrap {
+  display: inline-flex; align-items: center; background: var(--surface-2);
+  border: 1px solid var(--border); border-radius: 6px; padding: 2px; gap: 2px;
+  font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700;
+}
+.lang-btn {
+  padding: 0.2rem 0.45rem; border-radius: 4px; color: var(--muted); text-decoration: none !important;
+  transition: background 0.15s, color 0.15s;
+}
+.lang-btn:hover { color: var(--text); }
+.lang-btn.is-active {
+  background: var(--surface); color: var(--brand-blue);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+
 /* Pulsante Ricerca Istantanea */
 .search-trigger-btn {
   background: var(--surface-2); border: 1px solid var(--border);
@@ -205,21 +238,24 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
   padding: 0.1rem 0.35rem; border-radius: 4px; border: 1px solid var(--border);
 }
 
-/* Switch Tema Chiaro/Scuro */
-.theme-toggle-btn {
-  background: var(--surface-2); border: 1px solid var(--border);
-  color: var(--text); width: 34px; height: 34px; border-radius: var(--radius);
-  display: inline-flex; align-items: center; justify-content: center;
-  cursor: pointer; transition: background 0.15s, border-color 0.15s;
+/* Hamburger Menu per Mobile */
+.mobile-menu-toggle {
+  display: none; background: var(--surface-2); border: 1px solid var(--border);
+  color: var(--text); padding: 0.35rem 0.5rem; border-radius: var(--radius);
+  cursor: pointer;
 }
-.theme-toggle-btn:hover { background: var(--surface-3); border-color: var(--muted); }
-.theme-icon-light { display: none; }
-.theme-icon-dark { display: flex; }
-[data-theme="dark"] .theme-icon-light { display: flex; }
-[data-theme="dark"] .theme-icon-dark { display: none; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .theme-icon-light { display: flex; }
-  :root:not([data-theme="light"]) .theme-icon-dark { display: none; }
+
+@media (max-width: 860px) {
+  .mobile-menu-toggle { display: inline-flex; align-items: center; }
+  .nav-menu {
+    display: none; position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--surface); border-bottom: 1px solid var(--border);
+    flex-direction: column; padding: 1rem 1.25rem; gap: 0.5rem;
+    box-shadow: var(--shadow);
+  }
+  .nav-menu.is-open { display: flex; }
+  .nav-link { width: 100%; padding: 0.6rem 0.75rem; }
+  .search-shortcut { display: none; }
 }
 
 /* Breadcrumbs */
@@ -265,7 +301,17 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
 }
 .metric-label { font-size: 0.85rem; color: var(--muted); margin-top: 0.35rem; line-height: 1.4; }
 
-/* ---------- 5. Bento Grid Industriale (Anti-Slop) ---------- */
+/* Banner Invito Chiamata Immediata */
+.call-invite-banner {
+  background: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-blue-ink) 100%);
+  color: #ffffff; padding: 2.25rem; border-radius: var(--radius-lg); margin: 3rem 0;
+  display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap;
+}
+.call-invite-text h3 { margin: 0 0 0.5rem; font-size: 1.4rem; color: #ffffff; }
+.call-invite-text p { margin: 0; color: rgba(255,255,255,0.85); font-size: 0.95rem; max-width: 36rem; }
+.call-invite-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+
+/* ---------- 5. Bento Grid Industriale ---------- */
 .bento-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

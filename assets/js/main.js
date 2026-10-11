@@ -1,35 +1,76 @@
 /**
  * Polform S.r.l. — Client-Side Micro-Interactions & Static Search
  * Zero external frameworks. Zero remote dependencies.
- * Inspired by Le Alternative's lightweight JAMstack architecture.
+ * Clean vanilla JavaScript for high reliability and performance.
  */
 
 (function () {
   'use strict';
 
   /* ==========================================================================
-     1. Light / Dark Theme Management (Manual Toggle & System Fallback)
+     1. Three-Way Theme Management (Light / System-Auto / Dark)
      ========================================================================== */
-  var themeBtn = document.getElementById('theme-toggle');
-  if (themeBtn) {
-    themeBtn.addEventListener('click', function () {
-      var current = document.documentElement.getAttribute('data-theme');
-      var isDarkPref = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      var target = 'light';
-      if (current === 'light') {
-        target = 'dark';
-      } else if (current === 'dark') {
-        target = 'light';
+  var themeButtons = document.querySelectorAll('[data-theme-val]');
+  
+  function applyTheme(theme) {
+    if (theme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else if (theme === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+
+    themeButtons.forEach(function (btn) {
+      var val = btn.getAttribute('data-theme-val');
+      if (val === theme) {
+        btn.classList.add('is-active');
       } else {
-        target = isDarkPref ? 'light' : 'dark';
+        btn.classList.remove('is-active');
       }
-      document.documentElement.setAttribute('data-theme', target);
-      try { localStorage.setItem('polform-theme', target); } catch (e) {}
+    });
+  }
+
+  // Initial active button highlight based on current setting
+  var initialSetting = 'auto';
+  try {
+    initialSetting = localStorage.getItem('polform-theme') || 'auto';
+  } catch (e) {}
+  applyTheme(initialSetting);
+
+  themeButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var selected = btn.getAttribute('data-theme-val') || 'auto';
+      try {
+        localStorage.setItem('polform-theme', selected);
+      } catch (e) {}
+      applyTheme(selected);
+    });
+  });
+
+  /* ==========================================================================
+     2. Mobile Responsive Hamburger Navigation Toggle
+     ========================================================================== */
+  var mobileToggle = document.getElementById('mobile-menu-toggle');
+  var navMenu = document.getElementById('nav-menu');
+
+  if (mobileToggle && navMenu) {
+    mobileToggle.addEventListener('click', function () {
+      var isOpen = navMenu.classList.toggle('is-open');
+      mobileToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function (e) {
+      if (!navMenu.contains(e.target) && !mobileToggle.contains(e.target) && navMenu.classList.contains('is-open')) {
+        navMenu.classList.remove('is-open');
+        mobileToggle.setAttribute('aria-expanded', 'false');
+      }
     });
   }
 
   /* ==========================================================================
-     2. Instant Client-Side Static Search (Modal Dialog + Shortcuts)
+     3. Instant Client-Side Static Search (Modal Dialog + Shortcuts)
      ========================================================================== */
   var searchModal = document.getElementById('search-modal');
   var searchTrigger = document.querySelector('[data-search-trigger]');
@@ -168,7 +209,7 @@
   }
 
   /* ==========================================================================
-     3. Native Zero-Dependency Image Lightbox
+     4. Native Zero-Dependency Image Lightbox
      ========================================================================== */
   var contentArea = document.querySelector('.content') || document.querySelector('main');
   if (contentArea) {
