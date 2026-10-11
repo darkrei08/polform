@@ -1,0 +1,241 @@
+<template>
+  <style>
+    #root {
+      position: relative;
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+      container-type: size;
+      color: #17151a;
+      font-family: sans-serif;
+    }
+
+    #root .f05-contact-background {
+      position: absolute;
+      inset: 0;
+      background: #ffffff;
+    }
+
+    #root .f05-contact-title-card {
+      position: absolute;
+      left: 120px;
+      top: 138px;
+      width: 760px;
+      height: 170px;
+      display: flex;
+      align-items: center;
+    }
+
+    #root .f05-contact-title {
+      margin: 0;
+      color: #17151a;
+      font-size: 86px;
+      font-weight: 400;
+      line-height: 1.05;
+      letter-spacing: -0.045em;
+      white-space: nowrap;
+    }
+
+    #root .f05-contact-cursor {
+      display: inline-block;
+      width: 0.28em;
+      margin-left: 0.1em;
+      color: #0b2545;
+      font-weight: 400;
+    }
+
+    #root .f05-contact-plate {
+      position: absolute;
+      left: 980px;
+      top: 174px;
+      width: 820px;
+      height: 510px;
+      overflow: hidden;
+      border: 1.5px solid rgba(11, 37, 69, 0.2);
+      border-radius: 14px;
+      background: rgba(11, 37, 69, 0.04);
+    }
+
+    #root .f05-contact-plate::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.58);
+    }
+
+    #root .f05-contact-plate-image {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      opacity: 0.3;
+    }
+
+    #root .f05-contact-paths {
+      position: absolute;
+      left: 120px;
+      top: 390px;
+      width: 760px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    #root .f05-contact-path {
+      display: flex;
+      align-items: center;
+      width: 620px;
+      min-height: 84px;
+      padding: 0 28px;
+      border: 1.5px solid rgba(11, 37, 69, 0.2);
+      border-radius: 14px;
+      background: rgba(11, 37, 69, 0.04);
+      color: #0b2545;
+      font-size: 34px;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+    }
+
+    #root .f05-contact-path::before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      margin-right: 20px;
+      border-radius: 50%;
+      background: #0b2545;
+    }
+
+    #root .f05-contact-call::before {
+      content: "↗";
+      width: 26px;
+      height: auto;
+      margin-right: 14px;
+      border-radius: 0;
+      background: transparent;
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    #root .f05-contact-whatsapp::before {
+      background: #25d366;
+    }
+
+    #root .f05-contact-send::before {
+      content: "✦";
+      width: 22px;
+      height: auto;
+      margin-right: 16px;
+      border-radius: 0;
+      background: transparent;
+      color: #0b2545;
+      font-size: 22px;
+      line-height: 1;
+    }
+
+    #root .f05-contact-close {
+      position: absolute;
+      left: 120px;
+      top: 790px;
+      margin: 0;
+      color: #17151a;
+      font-size: 54px;
+      font-weight: 400;
+      line-height: 1.12;
+      letter-spacing: -0.035em;
+    }
+
+    #root .f05-contact-close-key {
+      color: #0b2545;
+      text-shadow: 0 0 18px rgba(11, 37, 69, 0.28);
+    }
+  </style>
+
+  <div data-hf-id="hf-4512" id="root" data-composition-id="05-contact" data-start="0" data-duration="7.4" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-52cm" class="clip f05-contact-background" data-start="0" data-duration="7.4" data-track-index="0"></div>
+
+    <div data-hf-id="hf-i62e" class="clip f05-contact-title-card" data-start="0" data-duration="7.4" data-track-index="1">
+      <h1 data-hf-id="hf-au6a" id="f05-contact-title" class="f05-contact-title"><span data-hf-id="hf-bdop" id="f05-contact-title-text"></span><span data-hf-id="hf-n379" id="f05-contact-cursor" class="f05-contact-cursor">▌</span></h1>
+    </div>
+
+    <div data-hf-id="hf-x1hj" id="f05-contact-plate" class="clip f05-contact-plate" data-start="2" data-duration="5.4" data-track-index="2">
+      <img data-hf-id="hf-uhlb" class="f05-contact-plate-image" src="assets/site-materials.png" alt="">
+    </div>
+
+    <div data-hf-id="hf-f7or" class="clip f05-contact-paths" data-start="2" data-duration="5.4" data-track-index="3">
+      <div data-hf-id="hf-wbxy" id="f05-contact-call" class="f05-contact-path f05-contact-call">CALL</div>
+      <div data-hf-id="hf-6gfs" id="f05-contact-whatsapp" class="f05-contact-path f05-contact-whatsapp">WHATSAPP</div>
+      <div data-hf-id="hf-znfg" id="f05-contact-send" class="f05-contact-path f05-contact-send">SEND CAD</div>
+    </div>
+
+    <div data-hf-id="hf-02mr" id="f05-contact-close" class="clip f05-contact-close" data-start="4.8" data-duration="2.6" data-track-index="4">
+      Talk directly to <span data-hf-id="hf-ivta" id="f05-contact-close-key" class="f05-contact-close-key">production</span>
+    </div>
+  </div>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    var tl = gsap.timeline({ paused: true });
+    var titleText = document.getElementById("f05-contact-title-text");
+    var cursor = document.getElementById("f05-contact-cursor");
+    var titleSequence = [
+      { t: 0.0, text: "" },
+      { t: 0.24, text: "NO" },
+      { t: 0.52, text: "NO C" },
+      { t: 0.82, text: "NO COM" },
+      { t: 1.12, text: "NO COMPLEX" },
+      { t: 1.48, text: "NO COMPLEX F" },
+      { t: 1.72, text: "NO COMPLEX FORMS" },
+    ];
+
+    function titleAt(time) {
+      for (var i = titleSequence.length - 1; i >= 0; i -= 1) {
+        if (time >= titleSequence[i].t) return titleSequence[i].text;
+      }
+      return "";
+    }
+
+    var titleDriver = { t: 0 };
+    tl.to(titleDriver, {
+      t: 2,
+      duration: 2,
+      ease: "none",
+      onUpdate: function () {
+        titleText.textContent = titleAt(titleDriver.t);
+      },
+    }, 0);
+
+    var blinkDriver = { p: 0 };
+    tl.to(blinkDriver, {
+      p: Math.PI * 2 * 3,
+      duration: 2,
+      ease: "none",
+      onUpdate: function () {
+        cursor.style.opacity = Math.sin(blinkDriver.p) > 0 ? "1" : "0";
+      },
+    }, 0);
+
+    tl.fromTo("#f05-contact-plate", { opacity: 0, scale: 1.025 }, { opacity: 1, scale: 1, duration: 0.55, ease: "power2.out" }, 2.0);
+
+    var paths = [
+      { id: "#f05-contact-call", label: "CALL", hold: 0.45 },
+      { id: "#f05-contact-whatsapp", label: "WHATSAPP", hold: 0.55 },
+      { id: "#f05-contact-send", label: "SEND CAD", hold: 0.65 },
+    ];
+    var cumulative = 0;
+    var pathTimeline = paths.map(function (entry) {
+      var start = 2.15 + cumulative;
+      cumulative += 0.28 + entry.label.length * 0.045 + entry.hold;
+      return { id: entry.id, start: start };
+    });
+
+    pathTimeline.forEach(function (entry) {
+      tl.fromTo(entry.id, { opacity: 0, x: -34 }, { opacity: 1, x: 0, duration: 0.42, ease: "power2.out" }, entry.start);
+    });
+
+    tl.fromTo("#f05-contact-close", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.65, ease: "power2.out" }, 4.8);
+    tl.fromTo("#f05-contact-close-key", { textShadow: "0 0 0 rgba(11, 37, 69, 0)" }, { textShadow: "0 0 18px rgba(11, 37, 69, 0.28)", duration: 0.8, ease: "power1.out" }, 5.35);
+
+    window.__timelines["05-contact"] = tl;
+  </script>
+</template>

@@ -1,0 +1,399 @@
+{
+  "typography": [
+    {
+      "role": "display",
+      "fontFamily": "ui-sans-serif",
+      "fontSize": "59.5px",
+      "fontWeight": "800",
+      "lineHeight": "68.425px",
+      "letterSpacing": "-1.785px",
+      "color": "#17151A",
+      "sampleText": "Sagomatura e Trasformazione di Poliuretano Espanso ad Alta P"
+    },
+    {
+      "role": "heading",
+      "fontFamily": "ui-sans-serif",
+      "fontSize": "37.4px",
+      "fontWeight": "700",
+      "lineHeight": "61.71px",
+      "letterSpacing": "-0.935px",
+      "color": "#17151A",
+      "sampleText": "Settori Industriali Serviti"
+    },
+    {
+      "role": "heading-2",
+      "fontFamily": "ui-sans-serif",
+      "fontSize": "35.7px",
+      "fontWeight": "700",
+      "lineHeight": "58.905px",
+      "letterSpacing": "-0.8925px",
+      "color": "#17151A",
+      "sampleText": "Oltre 27 Anni di Maestria nel Poliuretano"
+    },
+    {
+      "role": "heading-2",
+      "fontFamily": "ui-sans-serif",
+      "fontSize": "34px",
+      "fontWeight": "700",
+      "lineHeight": "56.1px",
+      "letterSpacing": "-0.85px",
+      "color": "#17151A",
+      "sampleText": "Canali di Contatto con lo Stabilimento"
+    },
+    {
+      "role": "heading-3",
+      "fontFamily": "ui-sans-serif",
+      "fontSize": "24.65px",
+      "fontWeight": "700",
+      "lineHeight": "33.2775px",
+      "letterSpacing": "-0.2465px",
+      "color": "#17151A",
+      "sampleText": "Inserti Sagomati per Valigie Ermetiche & Dunnage Industriale"
+    },
+    {
+      "role": "link",
+      "fontFamily": "ui-sans-serif",
+      "fontSize": "21.25px",
+      "fontWeight": "800",
+      "lineHeight": "35.0625px",
+      "letterSpacing": "-0.425px",
+      "color": "#17151A",
+      "sampleText": "POLFORM"
+    },
+    {
+      "role": "heading-3",
+      "fontFamily": "ui-sans-serif",
+      "fontSize": "20.4px",
+      "fontWeight": "700",
+      "lineHeight": "27.54px",
+      "letterSpacing": "-0.204px",
+      "color": "#17151A",
+      "sampleText": "Fonoassorbimento & Acustica Ambientale"
+    },
+    {
+      "role": "body",
+      "fontFamily": "ui-sans-serif",
+      "fontSize": "20.06px",
+      "fontWeight": "400",
+      "lineHeight": "32.096px",
+      "letterSpacing": "normal",
+      "color": "#6B6570",
+      "sampleText": "Oltre 27 anni di perizia industriale nel taglio CNC, pantogr"
+    },
+    {
+      "role": "heading-4",
+      "fontFamily": "ui-sans-serif",
+      "fontSize": "18.7px",
+      "fontWeight": "700",
+      "lineHeight": "30.855px",
+      "letterSpacing": "normal",
+      "color": "#17151A",
+      "sampleText": "POLFORM S.r.l."
+    },
+    {
+      "role": "heading-4",
+      "fontFamily": "ui-sans-serif",
+      "fontSize": "17px",
+      "fontWeight": "700",
+      "lineHeight": "28.05px",
+      "letterSpacing": "normal",
+      "color": "#17151A",
+      "sampleText": "Stabilimento & Sede"
+    },
+    {
+      "role": "label",
+      "fontFamily": "ui-sans-serif",
+      "fontSize": "14.45px",
+      "fontWeight": "400",
+      "lineHeight": "20.23px",
+      "letterSpacing": "normal",
+      "color": "#6B6570",
+      "sampleText": "Anno di fondazione a Matera"
+    }
+  ],
+  "spacing": {
+    "observed": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15,
+      17,
+      21
+    ],
+    "baseUnit": 4
+  },
+  "radius": [
+    "4px",
+    "10px",
+    "14px",
+    "20px",
+    "50%"
+  ],
+  "shadows": [
+    {
+      "value": "rgba(20, 10, 30, 0.04) 0px 2px 4px 0px, rgba(20, 10, 30, 0.05) 0px 8px 24px 0px",
+      "count": 9
+    },
+    {
+      "value": "rgba(0, 0, 0, 0.12) 0px 1px 3px 0px",
+      "count": 1
+    },
+    {
+      "value": "rgba(0, 0, 0, 0.08) 0px 1px 2px 0px",
+      "count": 1
+    }
+  ],
+  "buttons": [
+    {
+      "label": "Ctrl K",
+      "background": "#F4F6F8",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#6B6570",
+      "padding": "5.95px 11.05px",
+      "borderRadius": "10px",
+      "border": "1px solid rgb(236, 234, 240)",
+      "boxShadow": "none",
+      "fontSize": "13.6px",
+      "fontWeight": "400",
+      "height": "33.25px"
+    },
+    {
+      "label": "button",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#6B6570",
+      "padding": "1px 6px",
+      "borderRadius": "50%",
+      "border": "0px none rgb(107, 101, 112)",
+      "boxShadow": "none",
+      "fontSize": "13.3333px",
+      "fontWeight": "400",
+      "height": "28px"
+    },
+    {
+      "label": "button",
+      "background": "#FFFFFF",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#0B2545",
+      "padding": "1px 6px",
+      "borderRadius": "50%",
+      "border": "0px none rgb(11, 37, 69)",
+      "boxShadow": "rgba(0, 0, 0, 0.12) 0px 1px 3px 0px",
+      "fontSize": "13.3333px",
+      "fontWeight": "400",
+      "height": "28px"
+    },
+    {
+      "label": "IT",
+      "background": "#FFFFFF",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#0B2545",
+      "padding": "3.4px 7.65px",
+      "borderRadius": "4px",
+      "border": "0px none rgb(11, 37, 69)",
+      "boxShadow": "rgba(0, 0, 0, 0.08) 0px 1px 2px 0px",
+      "fontSize": "12.75px",
+      "fontWeight": "700",
+      "height": "27.8125px"
+    },
+    {
+      "label": "EN",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#6B6570",
+      "padding": "3.4px 7.65px",
+      "borderRadius": "4px",
+      "border": "0px none rgb(107, 101, 112)",
+      "boxShadow": "none",
+      "fontSize": "12.75px",
+      "fontWeight": "700",
+      "height": "27.8125px"
+    },
+    {
+      "label": "Invia CAD",
+      "background": "#0B2545",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#FFFFFF",
+      "padding": "7.65px 15.3px",
+      "borderRadius": "10px",
+      "border": "0px none rgb(255, 255, 255)",
+      "boxShadow": "none",
+      "fontSize": "14.96px",
+      "fontWeight": "600",
+      "height": "39.9531px"
+    }
+  ],
+  "cards": [
+    {
+      "label": "card",
+      "background": "transparent",
+      "backgroundImage": "linear-gradient(135deg, rgb(255, 255, 255) 60%, color(srgb 0.997412 0.978118 0.962824) 100%)",
+      "backdropFilter": "",
+      "color": "#17151A",
+      "padding": "29.75px",
+      "borderRadius": "14px",
+      "border": "1px solid color(srgb 0.938039 0.804706 0.716863)",
+      "boxShadow": "rgba(20, 10, 30, 0.04) 0px 2px 4px 0px, rgba(20, 10, 30, 0.05) 0px 8px 24px 0px",
+      "fontSize": "17px",
+      "fontWeight": "400",
+      "height": "454.188px"
+    },
+    {
+      "label": "card",
+      "background": "#F8F6F9",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#2D3139",
+      "padding": "21.25px",
+      "borderRadius": "10px",
+      "border": "1px solid rgb(236, 234, 240)",
+      "boxShadow": "none",
+      "fontSize": "13.6px",
+      "fontWeight": "400",
+      "height": "162.531px"
+    },
+    {
+      "label": "card",
+      "background": "#FFFFFF",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#17151A",
+      "padding": "29.75px",
+      "borderRadius": "14px",
+      "border": "1px solid rgb(236, 234, 240)",
+      "boxShadow": "rgba(20, 10, 30, 0.04) 0px 2px 4px 0px, rgba(20, 10, 30, 0.05) 0px 8px 24px 0px",
+      "fontSize": "17px",
+      "fontWeight": "400",
+      "height": "454.188px"
+    },
+    {
+      "label": "card",
+      "background": "#FDFBFF",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#17151A",
+      "padding": "29.75px",
+      "borderRadius": "10px",
+      "border": "1px solid rgb(236, 234, 240)",
+      "boxShadow": "none",
+      "fontSize": "17px",
+      "fontWeight": "400",
+      "height": "278.844px"
+    }
+  ],
+  "nav": {
+    "label": "navigation",
+    "background": "color(srgb 0.992157 0.984314 1 / 0.9)",
+    "backgroundImage": "",
+    "backdropFilter": "saturate(1.4) blur(10px)",
+    "color": "#17151A",
+    "padding": "0px",
+    "borderRadius": "0px",
+    "border": "",
+    "boxShadow": "none",
+    "fontSize": "17px",
+    "fontWeight": "400",
+    "height": "69.4531px"
+  },
+  "chips": [
+    {
+      "label": "Matera · 1999",
+      "background": "#F4F6F8",
+      "color": "#6B6570",
+      "padding": "3.4px 9.35px",
+      "borderRadius": "20px",
+      "border": "1px solid rgb(236, 234, 240)",
+      "boxShadow": "none",
+      "fontSize": "12.24px",
+      "fontWeight": "600",
+      "height": "28.9531px"
+    },
+    {
+      "label": "Diversificazione Manifat",
+      "background": "transparent",
+      "color": "#17151A",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(23, 21, 26)",
+      "boxShadow": "none",
+      "fontSize": "17px",
+      "fontWeight": "400",
+      "height": "auto"
+    },
+    {
+      "label": "100% RETICOLATO",
+      "background": "#F4F6F8",
+      "color": "#17151A",
+      "padding": "4.25px 11.05px",
+      "borderRadius": "4px",
+      "border": "1px solid rgb(236, 234, 240)",
+      "boxShadow": "none",
+      "fontSize": "13.6px",
+      "fontWeight": "700",
+      "height": "32.9219px"
+    },
+    {
+      "label": "NESSUN CENTRALINO · RISP",
+      "background": "#FFFFFF",
+      "color": "#FFFFFF",
+      "padding": "4.25px 11.05px",
+      "borderRadius": "4px",
+      "border": "0px none rgb(255, 255, 255)",
+      "boxShadow": "none",
+      "fontSize": "13.6px",
+      "fontWeight": "700",
+      "height": "30.9219px"
+    }
+  ],
+  "statCells": [
+    {
+      "background": "transparent",
+      "borderRadius": "0px",
+      "border": "0px none rgb(23, 21, 26)",
+      "boxShadow": "none",
+      "numberFontSize": "31.45px",
+      "numberFontWeight": "800",
+      "numberColor": "#17151A"
+    }
+  ],
+  "tabs": [],
+  "backgrounds": [
+    {
+      "value": "radial-gradient(circle at 10% 20%, color(srgb 0.956863 0.635294 0.380392 / 0.08) 0%, rgba(0, 0, 0, 0) 60%)",
+      "area": 1302660
+    },
+    {
+      "value": "linear-gradient(135deg, rgb(11, 37, 69) 0%, rgb(7, 25, 47) 100%)",
+      "area": 381273
+    },
+    {
+      "value": "linear-gradient(135deg, rgb(255, 255, 255) 60%, color(srgb 0.997412 0.978118 0.962824) 100%)",
+      "area": 375116
+    }
+  ],
+  "glass": [
+    {
+      "backdropFilter": "saturate(1.4) blur(10px)",
+      "background": "color(srgb 0.992157 0.984314 1 / 0.9)",
+      "border": "",
+      "borderRadius": "0px",
+      "boxShadow": "",
+      "area": 133350
+    }
+  ]
+}

@@ -32,22 +32,22 @@
   </div>
 
   <div style="margin-top: 3.5rem; padding: 2.25rem; background: var(--surface-2); border-radius: var(--radius-lg); border: 1px solid var(--border); box-shadow: var(--shadow-sm);">
-    <h3 style="margin: 0 0 0.5rem; font-size: 1.25rem;">Richiedi Informazioni o Campioni su Questa Scheda</h3>
+    <h3 style="margin: 0 0 0.5rem; font-size: 1.25rem;">{{ i18n "single_cta_heading" }}</h3>
     <p style="color: var(--muted); margin: 0 0 1.5rem; font-size: 0.95rem;">
-      I responsabili di produzione formulano quotazioni dimensionali da disegno CAD (.DXF, .DWG, .STEP) e inviano campionature fisiche su richiesta.
+      {{ i18n "single_cta_description" }}
     </p>
     <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
       <a href="tel:{{ .Site.Params.phone_clean }}" class="btn btn-primary">
         {{ partial "icon.html" (dict "name" "phone" "size" "16") }}
-        Chiama: {{ .Site.Params.phone }}
+        {{ i18n "single_cta_phone_label" }} {{ .Site.Params.phone }}
       </a>
-      <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text=Salve%20Polform,%20vorrei%20informazioni%20su:%20{{ .Title | urlquery }}" class="btn btn-whatsapp" target="_blank" rel="noopener">
+      <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text={{ printf (i18n "single_cta_whatsapp_prefill") .Title | urlquery }}" class="btn btn-whatsapp" target="_blank" rel="noopener">
         {{ partial "icon.html" (dict "name" "whatsapp" "size" "16") }}
-        WhatsApp Tecnico
+        {{ i18n "single_cta_whatsapp_label" }}
       </a>
-      <a href="mailto:{{ .Site.Params.email }}?subject=Richiesta%20Info:%20{{ .Title }}&body=Salve,%20vorrei%20maggiori%20dettagli%20su%20{{ .Title }}" class="btn btn-outline">
+      <a href="mailto:{{ .Site.Params.email }}?subject={{ printf (i18n "single_cta_mailto_subject") .Title | urlquery }}&body={{ printf (i18n "single_cta_mailto_body") .Title | urlquery }}" class="btn btn-outline">
         {{ partial "icon.html" (dict "name" "email" "size" "16") }}
-        Invia Email con Disegno
+        {{ i18n "single_cta_email_label" }}
       </a>
     </div>
   </div>

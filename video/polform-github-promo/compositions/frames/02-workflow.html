@@ -1,0 +1,373 @@
+<template>
+  <style>
+    #root {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      container-type: size;
+      background: #ffffff;
+      color: #17151a;
+      font-family: sans-serif;
+    }
+
+    .clip {
+      position: absolute;
+      box-sizing: border-box;
+    }
+
+    #wf-ground {
+      inset: 0;
+      overflow: hidden;
+      background:
+        linear-gradient(rgba(11, 37, 69, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(11, 37, 69, 0.045) 1px, transparent 1px),
+        #ffffff;
+      background-size: 96px 96px;
+    }
+
+    #wf-ground::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 18% 40%, rgba(11, 37, 69, 0.08), transparent 32%),
+        radial-gradient(circle at 86% 24%, rgba(11, 37, 69, 0.055), transparent 26%);
+    }
+
+    #wf-world {
+      position: absolute;
+      inset: 0;
+      overflow: visible;
+      transform-origin: 50% 50%;
+      will-change: transform;
+    }
+
+    #wf-kicker {
+      top: 116px;
+      left: 96px;
+      color: #0b2545;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    #wf-title {
+      top: 156px;
+      left: 96px;
+      width: 810px;
+      font-size: 74px;
+      line-height: 0.98;
+      letter-spacing: -0.045em;
+      font-weight: 700;
+    }
+
+    #wf-title span {
+      display: block;
+    }
+
+    #wf-subtitle {
+      top: 340px;
+      left: 100px;
+      width: 650px;
+      color: #4e5360;
+      font-size: 28px;
+      line-height: 1.35;
+    }
+
+    #wf-rule {
+      top: 126px;
+      left: 96px;
+      width: 72px;
+      height: 6px;
+      border-radius: 3px;
+      background: #0b2545;
+      transform-origin: left center;
+    }
+
+    #wf-plate {
+      top: 130px;
+      left: 1242px;
+      width: 570px;
+      height: 555px;
+      overflow: hidden;
+      border: 2px solid rgba(11, 37, 69, 0.18);
+      border-radius: 18px;
+      background: #f7f7fa;
+      opacity: 0;
+    }
+
+    #wf-plate img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 9%;
+      filter: grayscale(1) saturate(0.45) contrast(0.9);
+      opacity: 0.64;
+    }
+
+    #wf-plate::after {
+      content: "CAPTURED SITE EVIDENCE";
+      position: absolute;
+      right: 22px;
+      bottom: 18px;
+      color: rgba(11, 37, 69, 0.62);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+    }
+
+    #wf-track {
+      position: absolute;
+      top: 630px;
+      left: 168px;
+      width: 1640px;
+      height: 4px;
+      border-radius: 3px;
+      background: rgba(11, 37, 69, 0.16);
+      transform-origin: left center;
+    }
+
+    #wf-track-fill {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 3px;
+      background: #0b2545;
+      transform-origin: left center;
+    }
+
+    .wf-node {
+      position: absolute;
+      top: 630px;
+      width: 30px;
+      height: 30px;
+      margin-top: -13px;
+      border: 5px solid #ffffff;
+      border-radius: 50%;
+      background: #0b2545;
+      box-shadow: 0 0 0 2px #0b2545;
+      opacity: 0;
+    }
+
+    #wf-node-1 { left: 153px; }
+    #wf-node-2 { left: 945px; }
+    #wf-node-3 { left: 1737px; }
+
+    #wf-burst {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+
+    .wf-station {
+      position: absolute;
+      top: 630px;
+      left: 50%;
+      width: 440px;
+      min-height: 176px;
+      padding: 28px 30px 26px;
+      border: 2px solid rgba(11, 37, 69, 0.2);
+      border-radius: 14px;
+      background: rgba(11, 37, 69, 0.04);
+      transform-origin: center center;
+      will-change: transform, opacity;
+    }
+
+    .wf-station::before {
+      content: "";
+      display: block;
+      width: 18px;
+      height: 18px;
+      margin-bottom: 22px;
+      border: 3px solid #0b2545;
+      border-radius: 5px;
+    }
+
+    .wf-station-number {
+      position: absolute;
+      top: 24px;
+      right: 28px;
+      color: #4e5360;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+    }
+
+    .wf-station-label {
+      display: block;
+      color: #17151a;
+      font-size: 31px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .wf-station-meta {
+      display: block;
+      margin-top: 8px;
+      color: #4e5360;
+      font-size: 20px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    #wf-station-1 { --target-x: -792px; --target-y: 0px; }
+    #wf-station-2 { --target-x: 0px; --target-y: 0px; }
+    #wf-station-3 { --target-x: 792px; --target-y: 0px; }
+
+    #wf-connector-1,
+    #wf-connector-2 {
+      position: absolute;
+      top: 625px;
+      width: 86px;
+      height: 14px;
+      border-top: 3px solid rgba(11, 37, 69, 0.45);
+      border-right: 3px solid rgba(11, 37, 69, 0.45);
+      transform-origin: left center;
+      opacity: 0;
+    }
+
+    #wf-connector-1 { left: 605px; }
+    #wf-connector-2 { left: 1397px; }
+
+    #wf-final-line {
+      top: 850px;
+      left: 96px;
+      color: #17151a;
+      font-size: 48px;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      opacity: 0;
+    }
+
+    #wf-final-line .wf-keyword {
+      color: #9a6100;
+      text-shadow: 0 0 20px rgba(245, 158, 11, 0.28);
+    }
+
+    #wf-lock {
+      top: 842px;
+      right: 112px;
+      padding: 12px 22px;
+      border: 2px solid rgba(245, 158, 11, 0.75);
+      border-radius: 100px;
+      color: #6e4600;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0;
+    }
+  </style>
+
+  <div data-hf-id="hf-rpuf" id="root" data-composition-id="02-workflow" data-duration="7.5" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-j2ax" id="wf-ground" class="clip" data-start="0" data-duration="7.5" data-track-index="0"></div>
+
+    <div data-hf-id="hf-5bil" id="wf-world" class="clip" data-start="0" data-duration="7.5" data-track-index="1">
+      <div data-hf-id="hf-uzo0" id="wf-rule" class="clip" data-start="0" data-duration="7.5" data-track-index="2"></div>
+      <div data-hf-id="hf-z3et" id="wf-kicker" class="clip" data-start="0" data-duration="7.5" data-track-index="3">TECHNICAL INTENT</div>
+      <div data-hf-id="hf-ywke" id="wf-title" class="clip" data-start="0" data-duration="7.5" data-track-index="4"><span data-hf-id="hf-a5av">From drawing</span><span data-hf-id="hf-t9w8">to form.</span></div>
+      <div data-hf-id="hf-q5w9" id="wf-subtitle" class="clip" data-start="0" data-duration="7.5" data-track-index="5">A compact path from technical geometry to a production-ready result.</div>
+
+      <div data-hf-id="hf-zooe" id="wf-plate" class="clip" data-start="2" data-duration="5.5" data-track-index="6">
+        <img data-hf-id="hf-pgnf" src="assets/site-hero.png" alt="Captured Polform homepage evidence">
+      </div>
+
+      <div data-hf-id="hf-7uke" id="wf-track" class="clip" data-start="0" data-duration="7.5" data-track-index="7">
+        <div data-hf-id="hf-9rty" id="wf-track-fill"></div>
+      </div>
+      <div data-hf-id="hf-8z3e" id="wf-node-1" class="wf-node clip" data-start="0" data-duration="7.5" data-track-index="8"></div>
+      <div data-hf-id="hf-qk7a" id="wf-node-2" class="wf-node clip" data-start="0" data-duration="7.5" data-track-index="9"></div>
+      <div data-hf-id="hf-5ehp" id="wf-node-3" class="wf-node clip" data-start="0" data-duration="7.5" data-track-index="10"></div>
+
+      <div data-hf-id="hf-go18" id="wf-burst" class="clip" data-start="0" data-duration="7.5" data-track-index="11">
+        <div data-hf-id="hf-ook8" id="wf-station-1" class="wf-station" data-target-x="-792" data-target-y="0">
+          <span data-hf-id="hf-qva2" class="wf-station-number">01</span>
+          <span data-hf-id="hf-gopv" class="wf-station-label">CAD / DXF</span>
+          <span data-hf-id="hf-n95a" class="wf-station-meta">technical drawing</span>
+        </div>
+        <div data-hf-id="hf-e0si" id="wf-station-2" class="wf-station" data-target-x="0" data-target-y="0">
+          <span data-hf-id="hf-r9l3" class="wf-station-number">02</span>
+          <span data-hf-id="hf-izj0" class="wf-station-label">CNC SHAPING</span>
+          <span data-hf-id="hf-8sbt" class="wf-station-meta">controlled geometry</span>
+        </div>
+        <div data-hf-id="hf-tfj5" id="wf-station-3" class="wf-station" data-target-x="792" data-target-y="0">
+          <span data-hf-id="hf-rnw4" class="wf-station-number">03</span>
+          <span data-hf-id="hf-m4zr" class="wf-station-label">READY TO SPEC</span>
+          <span data-hf-id="hf-jdf1" class="wf-station-meta">production-ready result</span>
+        </div>
+      </div>
+
+      <div data-hf-id="hf-sxea" id="wf-connector-1" class="clip" data-start="0" data-duration="7.5" data-track-index="12"></div>
+      <div data-hf-id="hf-9wco" id="wf-connector-2" class="clip" data-start="0" data-duration="7.5" data-track-index="13"></div>
+      <div data-hf-id="hf-e8dc" id="wf-final-line" class="clip" data-start="4.8" data-duration="2.7" data-track-index="15">Built around your <span data-hf-id="hf-pg36" class="wf-keyword">drawing</span></div>
+      <div data-hf-id="hf-7brx" id="wf-lock" class="clip" data-start="4.8" data-duration="2.7" data-track-index="14">CONTROLLED HANDOFF</div>
+    </div>
+  </div>
+
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const world = document.getElementById("wf-world");
+    const cam = { scale: 1, x: 0, y: 0 };
+    const applyCamera = () => {
+      world.style.transform = `translate(${cam.x}px, ${cam.y}px) scale(${cam.scale})`;
+    };
+    applyCamera();
+
+    const stations = document.querySelectorAll("#wf-burst .wf-station");
+    stations.forEach((station, index) => {
+      tl.fromTo(
+        station,
+        { xPercent: -50, yPercent: -50, x: 0, y: 0, scale: 0.62, opacity: 0 },
+        {
+          x: Number(station.dataset.targetX),
+          y: Number(station.dataset.targetY),
+          scale: 1,
+          opacity: 1,
+          duration: 1.45,
+          ease: "power3.out",
+        },
+        0.34 + index * 0.08,
+      );
+    });
+
+    tl.fromTo("#wf-rule", { scaleX: 0 }, { scaleX: 1, duration: 0.55, ease: "power2.out" }, 0.05);
+    tl.fromTo("#wf-kicker", { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.18);
+    tl.fromTo("#wf-title", { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.65, ease: "power3.out" }, 0.42);
+    tl.fromTo("#wf-subtitle", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.62, ease: "power2.out" }, 1.18);
+
+    tl.fromTo("#wf-track-fill", { scaleX: 0 }, { scaleX: 1, duration: 1.55, ease: "power2.inOut" }, 1.25);
+    tl.fromTo("#wf-node-1", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.35, ease: "back.out(1.6)" }, 1.15);
+    tl.fromTo("#wf-node-2", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.35, ease: "back.out(1.6)" }, 2.05);
+    tl.fromTo("#wf-node-3", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.35, ease: "back.out(1.6)" }, 3.0);
+    tl.fromTo("#wf-connector-1", { scaleX: 0, rotation: 45, opacity: 0 }, { scaleX: 1, rotation: 45, opacity: 1, duration: 0.5, ease: "power2.out" }, 1.82);
+    tl.fromTo("#wf-connector-2", { scaleX: 0, rotation: 45, opacity: 0 }, { scaleX: 1, rotation: 45, opacity: 1, duration: 0.5, ease: "power2.out" }, 2.72);
+
+    tl.fromTo("#wf-plate", { opacity: 0, x: 32, scale: 0.98 }, { opacity: 0.76, x: 0, scale: 1, duration: 0.85, ease: "power2.out" }, 2.0);
+
+    tl.to(cam, {
+      x: -270,
+      scale: 1.045,
+      duration: 1.65,
+      ease: "power2.inOut",
+      onUpdate: applyCamera,
+    }, 2.05);
+    tl.to(cam, {
+      x: -500,
+      scale: 1.08,
+      duration: 1.55,
+      ease: "power2.inOut",
+      onUpdate: applyCamera,
+    }, 3.7);
+
+    tl.fromTo("#wf-final-line", { y: 22, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: "power3.out" }, 4.82);
+    tl.fromTo("#wf-lock", { y: 18, opacity: 0, scale: 0.94 }, { y: 0, opacity: 1, scale: 1, duration: 0.58, ease: "back.out(1.45)" }, 5.12);
+    tl.to("#wf-keyword", { color: "#f59e0b", duration: 0.34, ease: "power1.out" }, 5.34);
+
+    window.__timelines["02-workflow"] = tl;
+    tl.seek(0);
+  </script>
+</template>

@@ -2,23 +2,23 @@
 <!-- 1. Hero Section con Metriche di Affidabilità -->
 <section class="hero">
   <div class="wrap">
-    <div class="hero-tag">Manifattura del Poliuretano dal 1999 · Matera</div>
-    <h1 class="hero-title">Sagomatura e Trasformazione di Poliuretano Espanso ad Alta Precisione</h1>
+    <div class="hero-tag">{{ i18n "hero_tag" }}</div>
+    <h1 class="hero-title">{{ i18n "hero_title" }}</h1>
     <p class="hero-subtitle">
-      Oltre 27 anni di perizia industriale nel taglio CNC, pantografatura a filo e accoppiamento di schiume tecniche per packaging protettivo, acustica ambientale, nautica, sicurezza sul lavoro e arredo contract.
+      {{ i18n "hero_subtitle" }}
     </p>
     <div class="hero-actions">
       <a href="tel:{{ .Site.Params.phone_clean }}" class="btn btn-primary">
         {{ partial "icon.html" (dict "name" "phone" "size" "18") }}
-        Chiama Stabilimento ({{ .Site.Params.phone }})
+        {{ i18n "hero_btn_call" }} ({{ .Site.Params.phone }})
       </a>
-      <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text=Salve%20Polform,%20vorrei%20richiedere%20informazioni%20su%20una%20fornitura%20di%20poliuretano" class="btn btn-whatsapp" target="_blank" rel="noopener">
+      <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text={{ i18n "whatsapp_prefill" | urlquery }}" class="btn btn-whatsapp" target="_blank" rel="noopener">
         {{ partial "icon.html" (dict "name" "whatsapp" "size" "18") }}
-        WhatsApp con i Tecnici
+        {{ i18n "hero_btn_whatsapp" }}
       </a>
       <a href="{{ "preventivo/" | relURL }}" class="btn btn-outline">
         {{ partial "icon.html" (dict "name" "email" "size" "18") }}
-        Invia Disegno CAD / Richiedi RFQ
+        {{ i18n "hero_btn_cad" }}
       </a>
     </div>
 
@@ -26,19 +26,19 @@
     <div class="metrics-strip">
       <div class="metric-item">
         <span class="metric-val">1999</span>
-        <span class="metric-label">Anno di fondazione a Matera</span>
+        <span class="metric-label">{{ i18n "metric_founded" }}</span>
       </div>
       <div class="metric-item">
         <span class="metric-val">27+</span>
-        <span class="metric-label">Anni di attività ininterrotta</span>
+        <span class="metric-label">{{ i18n "metric_years" }}</span>
       </div>
       <div class="metric-item">
         <span class="metric-val">±0.5 mm</span>
-        <span class="metric-label">Tolleranza di taglio CNC</span>
+        <span class="metric-label">{{ i18n "metric_tolerance" }}</span>
       </div>
       <div class="metric-item">
         <span class="metric-val">100%</span>
-        <span class="metric-label">Espansi certificati CertiPUR</span>
+        <span class="metric-label">{{ i18n "metric_certipur" }}</span>
       </div>
     </div>
   </div>
@@ -49,10 +49,10 @@
   <div class="wrap">
     <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2.5rem; flex-wrap: wrap; gap: 1rem;">
       <div>
-        <span class="brand-badge">Diversificazione Manifatturiera</span>
-        <h2 style="font-size: 2.2rem; margin: 0.5rem 0 0; letter-spacing: -0.025em;">Settori Industriali Serviti</h2>
+        <span class="brand-badge">{{ i18n "sectors_badge" }}</span>
+        <h2 style="font-size: 2.2rem; margin: 0.5rem 0 0; letter-spacing: -0.025em;">{{ i18n "sectors_title" }}</h2>
       </div>
-      <a href="{{ "settori/" | relURL }}" style="font-weight: 600; font-size: 0.95rem;">Tutti gli 8 settori di fornitura &rarr;</a>
+      <a href="{{ "settori/" | relURL }}" style="font-weight: 600; font-size: 0.95rem;">{{ i18n "sectors_all_link" }} &rarr;</a>
     </div>
 
     <div class="bento-grid">
@@ -64,31 +64,31 @@
             <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "box" "size" "20") }}</div>
           </div>
           <h3 class="card-title" style="font-size: 1.45rem;">
-            <a href="{{ "settori/packaging-tecnico/" | relURL }}">Inserti Sagomati per Valigie Ermetiche & Dunnage Industriale</a>
+            <a href="{{ "settori/packaging-tecnico/" | relURL }}">{{ i18n "sec01_title" }}</a>
           </h3>
           <p class="card-text">
-            Alloggiamenti fresati e sagomati su disegno CAD/DXF per valigie di sicurezza (Explorer Cases, GT Line, Peli Cases), elettronica di misura, droni, ottiche e packaging luxury per bottiglie di pregio.
+            {{ i18n "sec01_text" }}
           </p>
           
           <div class="schematic-box">
             <div class="schematic-grid">
               <div class="schematic-col">
-                <strong>SPECIFICHE LAVORAZIONE</strong>
-                Pantografo CNC a filo oscillante / fresatura 3D
+                <strong>{{ i18n "sec01_spec_label" }}</strong>
+                {{ i18n "sec01_spec_value" }}
               </div>
               <div class="schematic-col">
-                <strong>TOLLERANZA</strong>
-                ±0.5 mm su geometrie complesse
+                <strong>{{ i18n "sec01_tol_label" }}</strong>
+                {{ i18n "sec01_tol_value" }}
               </div>
               <div class="schematic-col">
-                <strong>FORMATI COMPATIBILI</strong>
-                .DXF · .DWG · .STEP · .PDF
+                <strong>{{ i18n "sec01_fmt_label" }}</strong>
+                {{ i18n "sec01_fmt_value" }}
               </div>
             </div>
           </div>
         </div>
         <a href="{{ "settori/packaging-tecnico/" | relURL }}" class="card-link" style="font-size: 0.95rem;">
-          Specifiche tecniche packaging protettivo &rarr;
+          {{ i18n "sec01_link" }} &rarr;
         </a>
       </div>
 
@@ -100,16 +100,16 @@
             <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "sound" "size" "20") }}</div>
           </div>
           <h3 class="card-title">
-            <a href="{{ "settori/acustica-fonoassorbimento/" | relURL }}">Fonoassorbimento & Acustica Ambientale</a>
+            <a href="{{ "settori/acustica-fonoassorbimento/" | relURL }}">{{ i18n "sec02_title" }}</a>
           </h3>
           <p class="card-text">
-            Pannelli bugnati e piramidali per correzione del riverbero in uffici, studi musicali e insonorizzazione carter macchinari.
+            {{ i18n "sec02_text" }}
           </p>
           <div style="font-family: var(--font-mono); font-size: 0.8rem; background: var(--bg-subtle); padding: 0.6rem; border-radius: 4px; margin-bottom: 1rem;">
             COEFF. ASSORBIMENTO: NRC 0.65 – 0.85
           </div>
         </div>
-        <a href="{{ "settori/acustica-fonoassorbimento/" | relURL }}" class="card-link">Pannelli acustici &rarr;</a>
+        <a href="{{ "settori/acustica-fonoassorbimento/" | relURL }}" class="card-link">{{ i18n "sec02_link" }} &rarr;</a>
       </div>
 
       <!-- Card Nautica (Spanning 6 cols) -->
@@ -120,10 +120,10 @@
             <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "anchor" "size" "20") }}</div>
           </div>
           <h3 class="card-title">
-            <a href="{{ "settori/nautica-drenante/" | relURL }}">Nautica, Yachting & Drenante Dryfeel</a>
+            <a href="{{ "settori/nautica-drenante/" | relURL }}">{{ i18n "sec03_title" }}</a>
           </h3>
           <p class="card-text">
-            Poliuretano reticolato a celle aperte per cuscinerie esterne e prendisole: l'acqua defluisce per gravità, asciugatura ultra-rapida al sole, totale immunità a muffe e funghi.
+            {{ i18n "sec03_text" }}
           </p>
           <div class="badge-list">
             <span class="badge">100% RETICOLATO</span>
@@ -131,7 +131,7 @@
             <span class="badge">NORMA IMO FTP PART 8</span>
           </div>
         </div>
-        <a href="{{ "settori/nautica-drenante/" | relURL }}" class="card-link">Drenante nautico Dryfeel &rarr;</a>
+        <a href="{{ "settori/nautica-drenante/" | relURL }}" class="card-link">{{ i18n "sec03_link" }} &rarr;</a>
       </div>
 
       <!-- Card Sanità (Spanning 6 cols) -->
@@ -142,10 +142,10 @@
             <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "health" "size" "20") }}</div>
           </div>
           <h3 class="card-title">
-            <a href="{{ "settori/sanita-silver-economy/" | relURL }}">Sanità, Ortopedia & Silver Economy</a>
+            <a href="{{ "settori/sanita-silver-economy/" | relURL }}">{{ i18n "sec05_title" }}</a>
           </h3>
           <p class="card-text">
-            Cuscini compositi antidecubito in HR e Memory Foam per carrozzine e degenza RSA, cunei di posizionamento per fisioterapia e lastre ergonomiche ospedaliere.
+            {{ i18n "sec05_text" }}
           </p>
           <div class="badge-list">
             <span class="badge">CE MDR CLASSE I</span>
@@ -153,7 +153,7 @@
             <span class="badge">DETRAIBILE 19%</span>
           </div>
         </div>
-        <a href="{{ "settori/sanita-silver-economy/" | relURL }}" class="card-link">Presidi antidecubito &rarr;</a>
+        <a href="{{ "settori/sanita-silver-economy/" | relURL }}" class="card-link">{{ i18n "sec05_link" }} &rarr;</a>
       </div>
 
       <!-- 4 Card Compatte per gli altri settori (4 cols ciascuna) -->
@@ -163,10 +163,10 @@
             <span class="card-code">SEC-04 // SICUREZZA</span>
             <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "safety" "size" "20") }}</div>
           </div>
-          <h3 class="card-title"><a href="{{ "settori/sicurezza-dpi/" | relURL }}">Sicurezza & DPI</a></h3>
-          <p class="card-text">Paracolpi industriali bicolore per scaffali e banchine carico; imbottiture per ginocchiere professionali e filtri reticolati.</p>
+          <h3 class="card-title"><a href="{{ "settori/sicurezza-dpi/" | relURL }}">{{ i18n "sec04_title" }}</a></h3>
+          <p class="card-text">{{ i18n "sec04_text" }}</p>
         </div>
-        <a href="{{ "settori/sicurezza-dpi/" | relURL }}" class="card-link">Paracolpi & DPI &rarr;</a>
+        <a href="{{ "settori/sicurezza-dpi/" | relURL }}" class="card-link">{{ i18n "sec04_link" }} &rarr;</a>
       </div>
 
       <div class="bento-card bento-col-4">
@@ -175,10 +175,10 @@
             <span class="card-code">SEC-06 // AGRITECH</span>
             <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "truck" "size" "20") }}</div>
           </div>
-          <h3 class="card-title"><a href="{{ "settori/automotive-agritech/" | relURL }}">Agritech & Camper</a></h3>
-          <p class="card-text">Sedili antivibranti ad alta densità per trattori e macchine movimento terra; materassi snodati su misura per van conversion.</p>
+          <h3 class="card-title"><a href="{{ "settori/automotive-agritech/" | relURL }}">{{ i18n "sec06_title" }}</a></h3>
+          <p class="card-text">{{ i18n "sec06_text" }}</p>
         </div>
-        <a href="{{ "settori/automotive-agritech/" | relURL }}" class="card-link">Agritech & camper &rarr;</a>
+        <a href="{{ "settori/automotive-agritech/" | relURL }}" class="card-link">{{ i18n "sec06_link" }} &rarr;</a>
       </div>
 
       <div class="bento-card bento-col-4">
@@ -187,28 +187,28 @@
             <span class="card-code">SEC-08 // CONTRACT</span>
             <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "flame" "size" "20") }}</div>
           </div>
-          <h3 class="card-title"><a href="{{ "settori/arredo-contract/" | relURL }}">Contract 1IM & Teatri</a></h3>
-          <p class="card-text">Imbottiture ignifughe omologate Classe 1IM (UNI 9175) e British Standard Crib 5 per hotel, cinema, sale conferenze e navi.</p>
+          <h3 class="card-title"><a href="{{ "settori/arredo-contract/" | relURL }}">{{ i18n "sec08_title" }}</a></h3>
+          <p class="card-text">{{ i18n "sec08_text" }}</p>
         </div>
-        <a href="{{ "settori/arredo-contract/" | relURL }}" class="card-link">Espansi ignifughi &rarr;</a>
+        <a href="{{ "settori/arredo-contract/" | relURL }}" class="card-link">{{ i18n "sec08_link" }} &rarr;</a>
       </div>
     </div>
 
-    <!-- Banner Invito Telefonata Immediata (Massima Conversione) -->
+    <!-- Banner Invito Telefonata Immediata -->
     <div class="call-invite-banner">
       <div class="call-invite-text">
-        <span class="badge" style="background: rgba(255,255,255,0.15); color: #ffffff; border: 0; margin-bottom: 0.5rem;">NESSUN CENTRALINO · RISPOSTA IMMEDIATA</span>
-        <h3>Hai un disegno tecnico o un capitolato urgente?</h3>
-        <p>Chiama direttamente lo stabilimento di Matera. Un tecnico di produzione esamina la fattibilità del taglio CNC e ti risponde in tempo reale.</p>
+        <span class="badge" style="background: rgba(255,255,255,0.15); color: #ffffff; border: 0; margin-bottom: 0.5rem;">{{ i18n "call_banner_badge" }}</span>
+        <h3>{{ i18n "call_banner_title" }}</h3>
+        <p>{{ i18n "call_banner_text" }}</p>
       </div>
       <div class="call-invite-actions">
         <a href="tel:{{ .Site.Params.phone_clean }}" class="btn" style="background: #ffffff; color: var(--brand-blue-ink) !important; font-weight: 700;">
           {{ partial "icon.html" (dict "name" "phone" "size" "18") }}
-          Chiama Ora: {{ .Site.Params.phone }}
+          {{ i18n "call_banner_btn" }} {{ .Site.Params.phone }}
         </a>
-        <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text=Salve%20Polform,%20ho%20un%20disegno%20urgente%20da%20valutare" class="btn btn-whatsapp" target="_blank" rel="noopener">
+        <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text={{ i18n "whatsapp_prefill_urgent" | urlquery }}" class="btn btn-whatsapp" target="_blank" rel="noopener">
           {{ partial "icon.html" (dict "name" "whatsapp" "size" "18") }}
-          WhatsApp Tecnico
+          {{ i18n "call_banner_wa" }}
         </a>
       </div>
     </div>
@@ -220,79 +220,79 @@
   <div class="wrap">
     <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
       <div>
-        <span class="brand-badge">Dati Fisico-Meccanici</span>
-        <h2 style="font-size: 2.2rem; margin: 0.5rem 0 0; letter-spacing: -0.025em;">Matrice Comparativa delle Schiume</h2>
+        <span class="brand-badge">{{ i18n "materials_badge" }}</span>
+        <h2 style="font-size: 2.2rem; margin: 0.5rem 0 0; letter-spacing: -0.025em;">{{ i18n "materials_title" }}</h2>
       </div>
-      <a href="{{ "materiali/" | relURL }}" style="font-weight: 600; font-size: 0.95rem;">Tutte le 6 schede tecniche &rarr;</a>
+      <a href="{{ "materiali/" | relURL }}" style="font-weight: 600; font-size: 0.95rem;">{{ i18n "materials_all_link" }} &rarr;</a>
     </div>
 
     <div class="spec-table-wrap">
       <table class="spec-table">
         <thead>
           <tr>
-            <th>Tipologia Schiuma</th>
-            <th>Codice</th>
-            <th>Densità (ISO 845)</th>
-            <th>Portanza 40% (ISO 2439)</th>
-            <th>Caratteristica Chiave</th>
-            <th>Reazione al Fuoco</th>
-            <th>Scheda</th>
+            <th>{{ i18n "th_foam_type" }}</th>
+            <th>{{ i18n "th_code" }}</th>
+            <th>{{ i18n "th_density" }}</th>
+            <th>{{ i18n "th_hardness" }}</th>
+            <th>{{ i18n "th_key_feature" }}</th>
+            <th>{{ i18n "th_fire" }}</th>
+            <th>{{ i18n "th_sheet" }}</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><strong>Alta Resilienza (HR)</strong></td>
+            <td><strong>{{ i18n "mat01_name" }}</strong></td>
             <td><span class="spec-val">MAT-01</span></td>
             <td><span class="spec-val">35 – 45 kg/m³</span></td>
             <td><span class="spec-val">3.2 – 4.5 kPa</span></td>
-            <td>Ritorno elastico istantaneo (>55% rebound)</td>
+            <td>{{ i18n "mat01_feature" }}</td>
             <td>CertiPUR / Standard</td>
-            <td><a href="{{ "materiali/alta-resilienza-hr/" | relURL }}">Dettagli &rarr;</a></td>
+            <td><a href="{{ "materiali/alta-resilienza-hr/" | relURL }}">{{ i18n "details_link" }} &rarr;</a></td>
           </tr>
           <tr>
-            <td><strong>Viscoelastico (Memory)</strong></td>
+            <td><strong>{{ i18n "mat02_name" }}</strong></td>
             <td><span class="spec-val">MAT-02</span></td>
             <td><span class="spec-val">45 – 55 kg/m³</span></td>
             <td><span class="spec-val">1.2 – 1.8 kPa</span></td>
-            <td>Termosensibile, zero compressione vascolare</td>
+            <td>{{ i18n "mat02_feature" }}</td>
             <td>OEKO-TEX Cl. I / MDR</td>
-            <td><a href="{{ "materiali/memory-viscoelastico/" | relURL }}">Dettagli &rarr;</a></td>
+            <td><a href="{{ "materiali/memory-viscoelastico/" | relURL }}">{{ i18n "details_link" }} &rarr;</a></td>
           </tr>
           <tr>
-            <td><strong>Reticolato Drenante (Dryfeel)</strong></td>
+            <td><strong>{{ i18n "mat03_name" }}</strong></td>
             <td><span class="spec-val">MAT-03</span></td>
             <td><span class="spec-val">30 – 35 kg/m³</span></td>
             <td><span class="spec-val">2.8 – 3.4 kPa</span></td>
-            <td>Celle 100% aperte, deflusso acqua immediato</td>
+            <td>{{ i18n "mat03_feature" }}</td>
             <td>IMO FTP Part 8 opt.</td>
-            <td><a href="{{ "materiali/drenante-nautico/" | relURL }}">Dettagli &rarr;</a></td>
+            <td><a href="{{ "materiali/drenante-nautico/" | relURL }}">{{ i18n "details_link" }} &rarr;</a></td>
           </tr>
           <tr>
-            <td><strong>Fonoassorbente Bugnato</strong></td>
+            <td><strong>{{ i18n "mat04_name" }}</strong></td>
             <td><span class="spec-val">MAT-04</span></td>
             <td><span class="spec-val">28 – 35 kg/m³</span></td>
             <td><span class="spec-val">2.5 – 3.2 kPa</span></td>
-            <td>Profilatura alveolare, NRC 0.65 – 0.85</td>
+            <td>{{ i18n "mat04_feature" }}</td>
             <td>UL 94 HF-1 Autoest.</td>
-            <td><a href="{{ "materiali/fonoassorbente-bugnato/" | relURL }}">Dettagli &rarr;</a></td>
+            <td><a href="{{ "materiali/fonoassorbente-bugnato/" | relURL }}">{{ i18n "details_link" }} &rarr;</a></td>
           </tr>
           <tr>
-            <td><strong>Ignifugo Omologato 1IM</strong></td>
+            <td><strong>{{ i18n "mat05_name" }}</strong></td>
             <td><span class="spec-val">MAT-05</span></td>
             <td><span class="spec-val">30 – 50 kg/m³</span></td>
             <td><span class="spec-val">3.0 – 5.0 kPa</span></td>
-            <td>Additivi intumescenti per luoghi pubblici</td>
+            <td>{{ i18n "mat05_feature" }}</td>
             <td><strong>Classe 1IM / Crib 5</strong></td>
-            <td><a href="{{ "materiali/ignifugo-1im/" | relURL }}">Dettagli &rarr;</a></td>
+            <td><a href="{{ "materiali/ignifugo-1im/" | relURL }}">{{ i18n "details_link" }} &rarr;</a></td>
           </tr>
           <tr>
-            <td><strong>Agglomerato (Bonded Foam)</strong></td>
+            <td><strong>{{ i18n "mat06_name" }}</strong></td>
             <td><span class="spec-val">MAT-06</span></td>
             <td><span class="spec-val">80 – 220 kg/m³</span></td>
-            <td><span class="spec-val">> 8.0 kPa</span></td>
-            <td>Riciclo circolare >85%, anticalpestio sottomassetto</td>
+            <td><span class="spec-val">&gt; 8.0 kPa</span></td>
+            <td>{{ i18n "mat06_feature" }}</td>
             <td>EN 13501-1 Cl. E</td>
-            <td><a href="{{ "materiali/agglomerato-bonded-foam/" | relURL }}">Dettagli &rarr;</a></td>
+            <td><a href="{{ "materiali/agglomerato-bonded-foam/" | relURL }}">{{ i18n "details_link" }} &rarr;</a></td>
           </tr>
         </tbody>
       </table>
@@ -305,9 +305,9 @@
   <div class="wrap">
     <div class="contact-hub">
       <div style="text-align: center; max-width: 44rem; margin: 0 auto 1.5rem;">
-        <span class="brand-badge">Nessun Modulo Complesso · Risposta Diretta</span>
-        <h2 style="font-size: 2rem; margin: 0.5rem 0 0.5rem; letter-spacing: -0.025em;">Canali di Contatto con lo Stabilimento</h2>
-        <p style="color: var(--muted); margin: 0;">Scegli la modalità più comoda: consulenza vocale immediata, chat tecnica WhatsApp o invio disegno CAD per quotazione.</p>
+        <span class="brand-badge">{{ i18n "contact_badge" }}</span>
+        <h2 style="font-size: 2rem; margin: 0.5rem 0 0.5rem; letter-spacing: -0.025em;">{{ i18n "contact_title" }}</h2>
+        <p style="color: var(--muted); margin: 0;">{{ i18n "contact_subtitle" }}</p>
       </div>
 
       <div class="hub-grid">
@@ -315,12 +315,12 @@
           <div>
             <h3>
               {{ partial "icon.html" (dict "name" "phone" "size" "20") }}
-              Chiamata Telefonica
+              {{ i18n "contact_phone_title" }}
             </h3>
-            <p>Parla direttamente con la Direzione di Stabilimento per verificare densità, disponibilità e fattibilità immediata.</p>
+            <p>{{ i18n "contact_phone_text" }}</p>
           </div>
           <a href="tel:{{ .Site.Params.phone_clean }}" class="btn btn-primary" style="justify-content: center;">
-            Chiama: {{ .Site.Params.phone }}
+            {{ i18n "contact_phone_btn" }} {{ .Site.Params.phone }}
           </a>
         </div>
 
@@ -328,12 +328,12 @@
           <div>
             <h3>
               {{ partial "icon.html" (dict "name" "whatsapp" "size" "20") }}
-              WhatsApp Diretto
+              {{ i18n "contact_wa_title" }}
             </h3>
-            <p>Invia fotografie di campioni da replicare, note vocali o richieste veloci direttamente al responsabile di produzione.</p>
+            <p>{{ i18n "contact_wa_text" }}</p>
           </div>
-          <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text=Salve%20Polform,%20vi%20scrivo%20per%20un%20preventivo" class="btn btn-whatsapp" target="_blank" rel="noopener" style="justify-content: center;">
-            Apri Chat WhatsApp
+          <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text={{ i18n "whatsapp_prefill_quote" | urlquery }}" class="btn btn-whatsapp" target="_blank" rel="noopener" style="justify-content: center;">
+            {{ i18n "contact_wa_btn" }}
           </a>
         </div>
 
@@ -341,12 +341,12 @@
           <div>
             <h3>
               {{ partial "icon.html" (dict "name" "email" "size" "20") }}
-              Invio Disegno CAD (.DXF)
+              {{ i18n "contact_cad_title" }}
             </h3>
-            <p>Hai già un file tecnico o una dima vettoriale? Mandalo con un clic dalla tua posta aziendale con oggetto preimpostato.</p>
+            <p>{{ i18n "contact_cad_text" }}</p>
           </div>
-          <a href="mailto:{{ .Site.Params.email }}?subject=[Richiesta%20Preventivo%20Polform]%20Sagomatura%20Poliuretano&body=Azienda:%0ASettore:%0AQuantità%20stimata:%0A%0A[Allegare%20file%20tecnico%20CAD%20o%20specifiche]" class="btn btn-outline" style="justify-content: center;">
-            Invia Email con File CAD
+          <a href="mailto:{{ .Site.Params.email }}?subject={{ i18n "mailto_subject" | urlquery }}&body={{ i18n "mailto_body" | urlquery }}" class="btn btn-outline" style="justify-content: center;">
+            {{ i18n "contact_cad_btn" }}
           </a>
         </div>
       </div>
@@ -359,26 +359,26 @@
   <div class="wrap">
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); gap: 3rem; align-items: center;">
       <div>
-        <div class="hero-tag">Radici Manifatturiere</div>
-        <h2 style="font-size: 2.1rem; margin: 0 0 1rem; letter-spacing: -0.025em;">Oltre 27 Anni di Maestria nel Poliuretano</h2>
+        <div class="hero-tag">{{ i18n "history_tag" }}</div>
+        <h2 style="font-size: 2.1rem; margin: 0 0 1rem; letter-spacing: -0.025em;">{{ i18n "history_title" }}</h2>
         <p style="color: var(--muted); line-height: 1.7;">
-          La Polform S.r.l. nasce nel <strong>gennaio 1999</strong> a Matera dall'iniziativa dei <strong>Soci Fondatori</strong>, dopo oltre un decennio di esperienza operativa diretta nella trasformazione del poliuretano espanso e del dacron nel polo industriale di Matera e Bari.
+          {{ i18n "history_p1" | safeHTML }}
         </p>
         <p style="color: var(--muted); line-height: 1.7;">
-          La profonda conoscenza chimico-fisica delle schiume e la precisione nel taglio a pantografo hanno reso l'azienda un punto di riferimento duraturo, capace oggi di evolvere verso i più avanzati mercati tecnici e industriali italiani.
+          {{ i18n "history_p2" }}
         </p>
         <div class="badge-list">
-          <span class="badge">✓ Attività dal 1999</span>
-          <span class="badge">✓ Taglio CNC millimetrico</span>
-          <span class="badge">✓ Campionature rapide</span>
-          <span class="badge">✓ Forniture in tutta Italia</span>
+          <span class="badge">{{ i18n "history_badge1" }}</span>
+          <span class="badge">{{ i18n "history_badge2" }}</span>
+          <span class="badge">{{ i18n "history_badge3" }}</span>
+          <span class="badge">{{ i18n "history_badge4" }}</span>
         </div>
       </div>
       <div style="background: var(--surface); border: 1px solid var(--border); padding: 2.25rem; border-radius: var(--radius-lg); text-align: center; box-shadow: var(--shadow);">
         <img src="{{ "img/logo.gif" | relURL }}" alt="Logo Storico Polform" style="margin: 0 auto 1.5rem; max-width: 180px;">
         <h3 style="margin: 0 0 0.5rem; font-size: 1.25rem;">POLFORM S.r.l.</h3>
-        <p style="color: var(--muted); font-size: 0.92rem; margin: 0 0 1.5rem;">Stabilimento: Z.I. La Martella, Via Giovanni Agnelli s.n.c., 75100 Matera (MT)</p>
-        <a href="{{ "chi-siamo/" | relURL }}" class="btn btn-outline" style="width: 100%; justify-content: center;">Leggi la storia aziendale &rarr;</a>
+        <p style="color: var(--muted); font-size: 0.92rem; margin: 0 0 1.5rem;">{{ i18n "history_facility" }}</p>
+        <a href="{{ "chi-siamo/" | relURL }}" class="btn btn-outline" style="width: 100%; justify-content: center;">{{ i18n "history_link" }} &rarr;</a>
       </div>
     </div>
   </div>

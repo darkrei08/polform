@@ -1,18 +1,18 @@
-<header class="site-header">
+<header class="site-header" role="banner">
   <div class="wrap site-header-inner">
     <div class="header-brand-group">
       <a href="{{ site.Home.RelPermalink }}" class="brand-logo">
         <img src="{{ "img/logo.gif" | relURL }}" alt="Polform Logo" width="38" height="28" class="brand-logo-img">
         <span class="brand-name">POLFORM</span>
       </a>
-      <div class="brand-status-chip" title="Stabilimento produttivo attivo a Matera dal 1999">
+      <div class="brand-status-chip" title="{{ i18n "metric_founded" }} 1999">
         <span class="status-dot"></span>
         <span class="status-label">Matera · 1999</span>
       </div>
     </div>
     
     <div class="header-actions-group">
-      <nav class="nav-menu" id="nav-menu" aria-label="Navigazione principale">
+      <nav class="nav-menu" id="nav-menu" aria-label="{{ i18n "nav_label" }}">
         {{ range .Site.Menus.main }}
           {{ if eq .Identifier "preventivo" }}
             <!-- Preventivo CTA button placed beside actions -->
@@ -22,27 +22,27 @@
         {{ end }}
       </nav>
 
-      <!-- Ricerca Istantanea Stile Le Alternative -->
-      <button type="button" class="search-trigger-btn" data-search-trigger aria-label="Cerca nel catalogo (Ctrl+K)">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <!-- Ricerca Istantanea -->
+      <button type="button" class="search-trigger-btn" data-search-trigger aria-label="{{ i18n "search_label" }}">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
         <span class="search-shortcut">Ctrl K</span>
       </button>
 
-      <!-- Switch a 3 vie Tema: Chiaro / Auto / Scuro -->
+      <!-- Switch Tema -->
       {{ partial "theme-toggle.html" . }}
 
-      <!-- Selettore Multilingua IT / EN / DE -->
+      <!-- Selettore Multilingua -->
       {{ partial "lang-switch.html" . }}
 
       <!-- Pulsante CTA Invia Disegno CAD -->
       <a href="{{ "preventivo/" | relURL }}" class="nav-btn">
         {{ partial "icon.html" (dict "name" "email" "size" "15") }}
-        <span>{{ if eq .Site.Language.Lang "en" }}Send CAD{{ else if eq .Site.Language.Lang "de" }}CAD senden{{ else }}Invia CAD{{ end }}</span>
+        <span>{{ i18n "nav_cad_btn" }}</span>
       </a>
 
       <!-- Hamburger Menu Toggle per Mobile -->
-      <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Apri menu di navigazione" aria-expanded="false">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="{{ i18n "mobile_menu_label" }}" aria-expanded="false" aria-controls="nav-menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
       </button>
     </div>
   </div>

@@ -1,0 +1,238 @@
+<template>
+  <style>
+    #root {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      container-type: size;
+      color: #fffaf2;
+      font-family: sans-serif;
+    }
+
+    .clip {
+      position: absolute;
+      box-sizing: border-box;
+    }
+
+    .six-cta-ground {
+      inset: 0;
+      z-index: 0;
+      background:
+        radial-gradient(circle at 50% 27%, rgba(255, 250, 242, 0.09), transparent 24%),
+        #0b2545;
+    }
+
+    .six-cta-rule {
+      left: 50%;
+      width: 80cqw;
+      height: 2px;
+      margin-left: -40cqw;
+      background: rgba(255, 250, 242, 0.22);
+      transform-origin: center;
+    }
+
+    .six-cta-rule-top {
+      top: 10cqh;
+    }
+
+    .six-cta-rule-bottom {
+      top: 78cqh;
+    }
+
+    .six-cta-logo-wrap {
+      top: 14cqh;
+      left: 50%;
+      width: 38cqw;
+      height: 31cqh;
+      margin-left: -19cqw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 250, 242, 0.2);
+      border-radius: 14px;
+      background: rgba(255, 250, 242, 0.98);
+      overflow: hidden;
+      transform-origin: center;
+    }
+
+    .six-cta-logo-image {
+      display: block;
+      width: 82%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .six-cta-registration {
+      top: 25cqh;
+      left: 50%;
+      width: 9cqw;
+      height: 9cqw;
+      margin-left: -4.5cqw;
+      overflow: visible;
+    }
+
+    .six-cta-registration path {
+      fill: none;
+      stroke: #f4b942;
+      stroke-width: 5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .six-cta-title {
+      top: 51cqh;
+      left: 50%;
+      width: 74cqw;
+      margin-left: -37cqw;
+      margin-top: 0;
+      color: #fffaf2;
+      font-size: 5.1cqw;
+      font-weight: 700;
+      line-height: 0.98;
+      letter-spacing: -0.045em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .six-cta-title-line {
+      display: block;
+      white-space: nowrap;
+    }
+
+    .six-cta-word {
+      display: inline-block;
+      margin: 0 0.16em;
+      transform-origin: center bottom;
+    }
+
+    .six-cta-contact {
+      top: 82cqh;
+      left: 50%;
+      width: 82cqw;
+      margin-left: -41cqw;
+      color: rgba(255, 250, 242, 0.76);
+      font-size: 1.45cqw;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      text-align: center;
+      white-space: nowrap;
+      transform-origin: center;
+    }
+
+    .six-cta-contact strong {
+      color: #f4b942;
+      font-weight: 700;
+    }
+  </style>
+
+  <div data-hf-id="hf-73fi" id="root" data-composition-id="06-cta" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-aupx" class="clip six-cta-ground" data-start="0" data-duration="8" data-track-index="0"></div>
+    <div data-hf-id="hf-r1y5" class="clip six-cta-rule six-cta-rule-top" data-start="0" data-duration="8" data-track-index="1"></div>
+    <div data-hf-id="hf-oftw" class="clip six-cta-rule six-cta-rule-bottom" data-start="0" data-duration="8" data-track-index="6"></div>
+
+    <div data-hf-id="hf-t7m0" class="clip six-cta-logo-wrap" data-start="0" data-duration="8" data-track-index="2">
+      <img data-hf-id="hf-p7ey" class="six-cta-logo-image" src="assets/polform-logo.gif" alt="Polform">
+    </div>
+
+    <svg data-hf-id="hf-uar2" class="clip six-cta-registration" viewBox="0 0 100 100" aria-hidden="true" data-start="0" data-duration="2.5" data-track-index="3">
+      <path data-hf-id="hf-yxl3" id="six-cta-mark-left" d="M18 50 H42 M30 38 V62" />
+      <path data-hf-id="hf-p1jq" id="six-cta-mark-right" d="M58 50 H82 M70 38 V62" />
+      <path data-hf-id="hf-x5a6" id="six-cta-mark-bridge" d="M42 50 H58" />
+    </svg>
+
+    <div data-hf-id="hf-igmj" class="clip six-cta-title" data-start="2.5" data-duration="5.5" data-track-index="4" aria-label="Send your CAD drawing">
+      <span data-hf-id="hf-kvf6" class="six-cta-title-line">
+        <span data-hf-id="hf-vebj" class="six-cta-word" data-word="SEND">SEND</span>
+        <span data-hf-id="hf-0rht" class="six-cta-word" data-word="YOUR">YOUR</span>
+      </span>
+      <span data-hf-id="hf-ziom" class="six-cta-title-line">
+        <span data-hf-id="hf-hdzb" class="six-cta-word" data-word="CAD">CAD</span>
+        <span data-hf-id="hf-dmu3" class="six-cta-word" data-word="DRAWING">DRAWING</span>
+      </span>
+    </div>
+
+    <div data-hf-id="hf-y1up" class="clip six-cta-contact" data-start="5.5" data-duration="2.5" data-track-index="5">
+      Matera, Italy <strong data-hf-id="hf-yy6f">·</strong> +39 0835 309182 <strong data-hf-id="hf-uso7">·</strong> github.com/darkrei08/polform
+    </div>
+  </div>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    window.__timelines["06-cta"] = tl;
+
+    const registrationPaths = document.querySelectorAll("#six-cta-registration path");
+    registrationPaths.forEach((path) => {
+      const length = path.getTotalLength();
+      path.style.strokeDasharray = `${length}`;
+      path.style.strokeDashoffset = `${length}`;
+    });
+
+    tl.to("#six-cta-mark-left", {
+      strokeDashoffset: 0,
+      duration: 0.62,
+      ease: "power2.out",
+    }, 0.18);
+    tl.to("#six-cta-mark-right", {
+      strokeDashoffset: 0,
+      duration: 0.62,
+      ease: "power2.out",
+    }, 0.62);
+    tl.to("#six-cta-mark-bridge", {
+      strokeDashoffset: 0,
+      duration: 0.42,
+      ease: "power2.out",
+    }, 1.08);
+    tl.fromTo(".six-cta-logo-wrap", {
+      opacity: 0,
+      scale: 0.96,
+    }, {
+      opacity: 1,
+      scale: 1,
+      duration: 0.48,
+      ease: "power3.out",
+    }, 1.45);
+    tl.fromTo(".six-cta-logo-image", {
+      opacity: 0,
+    }, {
+      opacity: 1,
+      duration: 0.55,
+      ease: "power1.out",
+    }, 1.68);
+
+    const words = Array.from(document.querySelectorAll(".six-cta-word"));
+    const sequence = words.map((word) => ({
+      element: word,
+      duration: 0.28 + word.dataset.word.length * 0.035,
+    }));
+    const sequenceTotal = sequence.reduce((sum, item) => sum + item.duration, 0);
+    const sequenceScale = 2.35 / sequenceTotal;
+    let sequenceTime = 2.5;
+    sequence.forEach((item) => {
+      const duration = item.duration * sequenceScale;
+      tl.fromTo(item.element, {
+        opacity: 0,
+        y: 28,
+        scale: 0.96,
+      }, {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration,
+        ease: "power3.out",
+      }, sequenceTime);
+      sequenceTime += duration * 0.78;
+    });
+
+    tl.fromTo(".six-cta-contact", {
+      opacity: 0,
+      y: 22,
+    }, {
+      opacity: 1,
+      y: 0,
+      duration: 0.72,
+      ease: "power3.out",
+    }, 5.5);
+  </script>
+</template>

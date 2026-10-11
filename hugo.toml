@@ -102,5 +102,21 @@ defaultContentLanguageInSubdir = false
         url = 'preventivo/'
         weight = 50
 
+# GDPR: disable all Hugo built-in privacy-sensitive services
+# Even though Polform uses none, this prevents accidental activation
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youTube]
+    disable = true
+  [privacy.x]
+    disable = true
+
 [outputs]
   home = ['HTML', 'RSS', 'JSON']

@@ -1,15 +1,15 @@
-<div class="lang-switch-wrap" aria-label="Cambia lingua">
+<nav class="lang-switch-wrap" aria-label="{{ i18n "lang_switch_label" }}">
   {{ if .IsTranslated }}
     {{ range .AllTranslations }}
-      <a href="{{ .RelPermalink }}" class="lang-btn {{ if eq .Lang $.Lang }}is-active{{ end }}" hreflang="{{ .Lang }}" title="{{ .Language.LanguageName }}">
+      <a href="{{ .RelPermalink }}" class="lang-btn {{ if eq .Lang $.Lang }}is-active{{ end }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}" title="{{ .Language.LanguageName }}"{{ if eq .Lang $.Lang }} aria-current="true"{{ end }}>
         {{ .Lang | upper }}
       </a>
     {{ end }}
   {{ else }}
     {{ range .Site.Home.AllTranslations }}
-      <a href="{{ .RelPermalink }}" class="lang-btn {{ if eq .Lang $.Lang }}is-active{{ end }}" hreflang="{{ .Lang }}" title="{{ .Language.LanguageName }}">
+      <a href="{{ .RelPermalink }}" class="lang-btn {{ if eq .Lang $.Lang }}is-active{{ end }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}" title="{{ .Language.LanguageName }}"{{ if eq .Lang $.Lang }} aria-current="true"{{ end }}>
         {{ .Lang | upper }}
       </a>
     {{ end }}
   {{ end }}
-</div>
+</nav>

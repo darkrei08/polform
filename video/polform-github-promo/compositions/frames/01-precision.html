@@ -1,0 +1,237 @@
+<template>
+  <style>
+    #root {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      container-type: size;
+      color: #ffffff;
+    }
+
+    #root .clip {
+      position: absolute;
+      box-sizing: border-box;
+    }
+
+    .p01-background {
+      inset: 0;
+      z-index: 0;
+      background:
+        radial-gradient(circle at 82% 28%, rgba(255, 255, 255, 0.08), transparent 28%),
+        linear-gradient(112deg, #071b33 0%, #0b2545 54%, #12385c 100%);
+    }
+
+    .p01-grid {
+      inset: 0;
+      z-index: 1;
+      opacity: 0.18;
+      background-image: linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+      background-size: 5cqw 5cqw;
+      mask-image: linear-gradient(90deg, transparent 0%, #000 52%, transparent 100%);
+    }
+
+    .p01-image-shell {
+      top: 13%;
+      right: -3%;
+      width: 57%;
+      height: 57%;
+      z-index: 2;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 14px;
+      opacity: 0;
+      transform-origin: 80% 50%;
+    }
+
+    .p01-image-shell::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(7, 27, 51, 0.5), transparent 38%, rgba(7, 27, 51, 0.1));
+      pointer-events: none;
+    }
+
+    .p01-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 45% 10%;
+      display: block;
+      filter: saturate(0.78) contrast(1.04) brightness(0.76);
+      transform-origin: 52% 12%;
+    }
+
+    .p01-label {
+      top: 12.5%;
+      left: 7.5%;
+      z-index: 4;
+      color: #f5a623;
+      font-size: 1.05cqw;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      opacity: 0;
+    }
+
+    .p01-label-rule {
+      top: 15.4%;
+      left: 7.5%;
+      width: 3.2cqw;
+      height: 3px;
+      z-index: 4;
+      background: #f5a623;
+      border-radius: 2px;
+      opacity: 0;
+    }
+
+    .p01-headline {
+      top: 28%;
+      left: 7.5%;
+      width: 48%;
+      z-index: 4;
+      margin: 0;
+      font-size: 5.4cqw;
+      line-height: 0.98;
+      letter-spacing: -0.045em;
+      font-weight: 700;
+    }
+
+    .p01-headline-line {
+      display: block;
+      white-space: nowrap;
+    }
+
+    .p01-word {
+      display: inline-block;
+      opacity: 0;
+      transform-origin: 0 100%;
+    }
+
+    .p01-headline-line + .p01-headline-line {
+      margin-top: 0.08em;
+    }
+
+    .p01-subline {
+      left: 7.6%;
+      bottom: 21%;
+      z-index: 4;
+      color: rgba(255, 255, 255, 0.67);
+      font-size: 1.05cqw;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      opacity: 0;
+    }
+
+    .p01-underline {
+      left: 7.5%;
+      top: 59.7%;
+      width: 40%;
+      height: 0.45cqw;
+      z-index: 4;
+      overflow: visible;
+    }
+
+    .p01-underline path {
+      fill: none;
+      stroke: #f5a623;
+      stroke-width: 8;
+      stroke-linecap: round;
+    }
+
+    .p01-corner {
+      right: 7.5%;
+      bottom: 12%;
+      z-index: 4;
+      color: rgba(255, 255, 255, 0.48);
+      font-size: 0.78cqw;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      opacity: 0;
+    }
+  </style>
+
+  <div data-hf-id="hf-uo43" id="root" data-composition-id="01-precision" data-width="1920" data-height="1080" data-duration="6.4">
+    <div data-hf-id="hf-0ua4" class="clip p01-background" data-start="0" data-duration="6.4" data-track-index="0"></div>
+    <div data-hf-id="hf-jko1" class="clip p01-grid" data-start="0" data-duration="6.4" data-track-index="1"></div>
+
+    <div data-hf-id="hf-zjmg" class="clip p01-image-shell" data-start="0" data-duration="6.4" data-track-index="2">
+      <img data-hf-id="hf-1yl4" class="p01-image" src="assets/site-hero.png" alt="Captured Polform homepage hero">
+    </div>
+
+    <div data-hf-id="hf-ai30" class="clip p01-label" data-start="0.45" data-duration="5.95" data-track-index="3">POLFORM // MATERA</div>
+    <div data-hf-id="hf-zfkh" class="clip p01-label-rule" data-start="0.55" data-duration="5.85" data-track-index="4"></div>
+
+    <h1 data-hf-id="hf-m7xp" class="clip p01-headline" data-start="1.8" data-duration="4.6" data-track-index="5" aria-label="Precision foam transformation">
+      <span data-hf-id="hf-tstu" class="p01-headline-line">
+        <span data-hf-id="hf-gu2h" class="p01-word">PRECISION</span>
+        <span data-hf-id="hf-o4ee" class="p01-word">FOAM</span>
+      </span>
+      <span data-hf-id="hf-ssty" class="p01-headline-line">
+        <span data-hf-id="hf-32tu" class="p01-word">TRANSFORMATION</span>
+      </span>
+    </h1>
+
+    <svg data-hf-id="hf-oqk5" class="clip p01-underline" data-start="4.5" data-duration="1.9" data-track-index="6" viewBox="0 0 800 12" preserveAspectRatio="none" aria-hidden="true">
+      <path data-hf-id="hf-9j9w" id="p01-underline-path" d="M 5 6 C 175 4, 340 8, 505 5 C 620 3, 710 6, 795 5" />
+    </svg>
+
+    <div data-hf-id="hf-5gma" class="clip p01-subline" data-start="4.8" data-duration="1.6" data-track-index="7">ENGINEERED FOR THE DEMANDING WORK</div>
+    <div data-hf-id="hf-wtnh" class="clip p01-corner" data-start="5.05" data-duration="1.35" data-track-index="8">FOAM / FORM / FUNCTION</div>
+  </div>
+
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines = window.__timelines || {};
+      window.__timelines["01-precision"] = tl;
+
+      const imageShell = document.querySelector(".p01-image-shell");
+      const image = document.querySelector(".p01-image");
+      const label = document.querySelector(".p01-label");
+      const labelRule = document.querySelector(".p01-label-rule");
+      const headline = document.querySelector(".p01-headline");
+      const words = [...document.querySelectorAll(".p01-word")];
+      const underlinePath = document.querySelector("#p01-underline-path");
+      const subline = document.querySelector(".p01-subline");
+      const corner = document.querySelector(".p01-corner");
+
+      const pathLength = underlinePath.getTotalLength();
+      underlinePath.style.strokeDasharray = `${pathLength}`;
+      underlinePath.style.strokeDashoffset = `${pathLength}`;
+
+      const CONTENT = [
+        { title: "PRECISION FOAM", body: "precision foam", hold: 0.42 },
+        { title: "TRANSFORMATION", body: "transformation", hold: 0.56 },
+      ];
+      const BASE_DURATION = 0.66;
+      const SEC_PER_CHAR = 0.035;
+      let cumulative = 0;
+      const SEQUENCE = CONTENT.map((entry) => {
+        const duration = BASE_DURATION + entry.body.length * SEC_PER_CHAR + entry.hold;
+        const start = cumulative;
+        cumulative += duration;
+        return { ...entry, start, end: cumulative };
+      });
+      const sequenceStart = 1.82;
+      const sequenceRun = 2.38;
+      const sequenceScale = sequenceRun / cumulative;
+
+      tl.fromTo(imageShell, { x: 170, scale: 1.08, opacity: 0 }, { x: 0, scale: 1, opacity: 1, duration: 0.82, ease: "power2.out" }, 0)
+        .fromTo(image, { scale: 1.16 }, { scale: 1, duration: 2.9, ease: "power1.out" }, 0.1)
+        .fromTo(label, { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.42, ease: "power2.out" }, 0.62)
+        .fromTo(labelRule, { scaleX: 0, transformOrigin: "left center", opacity: 0 }, { scaleX: 1, opacity: 1, duration: 0.38, ease: "power2.out" }, 0.76)
+        .fromTo(headline, { x: -18 }, { x: 0, duration: 0.52, ease: "power2.out" }, 1.8);
+
+      words.forEach((word, index) => {
+        const entry = SEQUENCE[Math.min(index, SEQUENCE.length - 1)];
+        const start = sequenceStart + entry.start * sequenceScale;
+        tl.fromTo(word, { y: 30, opacity: 0, rotationX: -18 }, { y: 0, opacity: 1, rotationX: 0, duration: 0.42, ease: "power2.out" }, start);
+      });
+
+      tl.to(underlinePath, { strokeDashoffset: 0, duration: 0.72, ease: "power2.out" }, 4.5)
+        .fromTo(subline, { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.42, ease: "power1.out" }, 4.98)
+        .fromTo(corner, { y: 10, opacity: 0 }, { y: 0, opacity: 1, duration: 0.36, ease: "power1.out" }, 5.26);
+    })();
+  </script>
+</template>

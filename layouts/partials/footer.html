@@ -1,4 +1,4 @@
-<footer class="site-footer">
+<footer class="site-footer" role="contentinfo">
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-col">
@@ -6,40 +6,45 @@
           <img src="{{ "img/logo.gif" | relURL }}" alt="Polform" width="32" height="24" style="border-radius: 3px;">
           <h4 style="margin: 0; font-size: 1.1rem; color: var(--text);">POLFORM S.r.l.</h4>
         </div>
-        <p>Centro di trasformazione, sagomatura CNC e accoppiamento di poliuretano espanso flessibile per l'industria italiana ed europea.</p>
-        <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted);">REG. IMPRESE MATERA · DAL GENNAIO 1999</p>
+        <p>{{ i18n "footer_desc" }}</p>
+        <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted);">{{ i18n "footer_registry" }}</p>
       </div>
 
       <div class="footer-col">
-        <h4>Stabilimento & Sede</h4>
+        <h4>{{ i18n "footer_facility_title" }}</h4>
         <p>{{ .Site.Params.address }}</p>
-        <p style="font-size: 0.85rem; color: var(--muted);">Sede Legale Storica: Via Rosselli 26 / Via Delle Arti 1</p>
+        <p style="font-size: 0.85rem; color: var(--muted);">{{ i18n "footer_hist_office" }}</p>
         <p><strong>P.IVA:</strong> <span style="font-family: var(--font-mono);">{{ .Site.Params.piva }}</span></p>
       </div>
 
       <div class="footer-col">
-        <h4>Contatti Diretti di Fabbrica</h4>
-        <p>Centralino: <a href="tel:{{ .Site.Params.phone_clean }}"><strong>{{ .Site.Params.phone }}</strong></a></p>
-        <p>WhatsApp: <a href="https://wa.me/{{ .Site.Params.phone_clean }}">Chat Tecnica di Produzione</a></p>
-        <p>Email Ufficiale: <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
+        <h4>{{ i18n "footer_contact_title" }}</h4>
+        <p>{{ i18n "footer_switchboard" }} <a href="tel:{{ .Site.Params.phone_clean }}"><strong>{{ .Site.Params.phone }}</strong></a></p>
+        <p>WhatsApp: <a href="https://wa.me/{{ .Site.Params.phone_clean }}">{{ i18n "footer_wa_label" }}</a></p>
+        <p>{{ i18n "footer_email_label" }} <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
       </div>
 
       <div class="footer-col">
-        <h4>Navigazione Veloce</h4>
+        <h4>{{ i18n "footer_nav_title" }}</h4>
         <ul>
-          <li><a href="{{ "settori/" | relURL }}">Tutti gli 8 Settori Industriali</a></li>
-          <li><a href="{{ "materiali/" | relURL }}">Catalogo Schede Tecniche Schiume</a></li>
-          <li><a href="{{ "certificazioni/" | relURL }}">CertiPUR, 1IM, Crib 5, ISO</a></li>
-          <li><a href="{{ "chi-siamo/" | relURL }}">Storia & Impianti dal 1999</a></li>
-          <li><a href="{{ "preventivo/" | relURL }}">Richiedi Preventivo / Invia Disegno</a></li>
+          <li><a href="{{ "settori/" | relURL }}">{{ i18n "footer_nav_sectors" }}</a></li>
+          <li><a href="{{ "materiali/" | relURL }}">{{ i18n "footer_nav_materials" }}</a></li>
+          <li><a href="{{ "certificazioni/" | relURL }}">{{ i18n "footer_nav_certs" }}</a></li>
+          <li><a href="{{ "chi-siamo/" | relURL }}">{{ i18n "footer_nav_about" }}</a></li>
+          <li><a href="{{ "preventivo/" | relURL }}">{{ i18n "footer_nav_rfq" }}</a></li>
         </ul>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <div>&copy; {{ now.Format "2006" }} POLFORM S.r.l. — Tutti i diritti riservati. Manifattura e lavorazione poliuretano espanso.</div>
-      <div style="font-size: 0.8rem; color: var(--muted); margin-top: 0.35rem;">
-        Architettura statica JAMstack Hugo ad alte prestazioni. Zero tracciamento invasivo, zero cookie di terze parti.
+      <div>&copy; {{ now.Format "2006" }} {{ i18n "footer_copyright" }}</div>
+      <div style="margin-top: 0.5rem; display: flex; justify-content: center; gap: 1.25rem; font-size: 0.82rem; flex-wrap: wrap;">
+        <a href="{{ "privacy-policy/" | relURL }}">{{ i18n "footer_privacy" }}</a>
+        <span style="opacity: 0.4;">·</span>
+        <a href="{{ "note-legali/" | relURL }}">{{ i18n "footer_legal" }}</a>
+      </div>
+      <div style="font-size: 0.8rem; color: var(--muted); margin-top: 0.5rem;">
+        {{ i18n "footer_tech" }}
       </div>
     </div>
   </div>

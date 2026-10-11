@@ -1,0 +1,460 @@
+# -- Hero Section --
+[hero_tag]
+other = "Polyurethane processing since 1999 · Matera, Italy"
+
+[hero_title]
+other = "Custom polyurethane foam components"
+
+[hero_subtitle]
+other = "For over 27 years, we have made polyurethane foam components for protective packaging, acoustics, marine use, safety, and commercial interiors."
+
+[hero_btn_call]
+other = "Call Factory"
+
+[hero_btn_whatsapp]
+other = "WhatsApp Engineers"
+
+[hero_btn_cad]
+other = "Send CAD Drawing / Request RFQ"
+
+[whatsapp_prefill]
+other = "Hello Polform, I would like to request information about a polyurethane foam supply"
+
+[whatsapp_prefill_urgent]
+other = "Hello Polform, I have an urgent drawing to evaluate"
+
+[whatsapp_prefill_quote]
+other = "Hello Polform, I am writing to request a quotation"
+
+[whatsapp_prefill_short]
+other = "Hello Polform, I would like information about a supply"
+
+# -- Metrics Strip --
+[metric_founded]
+other = "Founded in Matera"
+
+[metric_years]
+other = "Years of uninterrupted activity"
+
+[metric_tolerance]
+other = "CNC cutting tolerance"
+
+[metric_certipur]
+other = "CertiPUR-certified foams"
+
+# -- Sectors Section --
+[sectors_badge]
+other = "Industrial Diversification"
+
+[sectors_title]
+other = "Industrial Sectors Served"
+
+[sectors_all_link]
+other = "All 8 supply sectors"
+
+# -- Sector Cards --
+[sec01_title]
+other = "Custom inserts for cases and packaging"
+
+[sec01_text]
+other = "We make foam inserts from CAD/DXF drawings to protect measuring equipment, drones, optics, and bottles. We also work with Explorer Cases, GT Line, and Peli Cases."
+
+[sec01_spec_label]
+other = "MACHINING SPECS"
+
+[sec01_spec_value]
+other = "CNC oscillating wire contour cutter / 3D milling"
+
+[sec01_tol_label]
+other = "TOLERANCE"
+
+[sec01_tol_value]
+other = "±0.5 mm on complex geometries"
+
+[sec01_fmt_label]
+other = "COMPATIBLE FORMATS"
+
+[sec01_fmt_value]
+other = ".DXF · .DWG · .STEP · .PDF"
+
+[sec01_link]
+other = "Protective packaging technical specs"
+
+[sec02_title]
+other = "Acoustic panels"
+
+[sec02_text]
+other = "Foam panels to reduce echo in offices and music studios, and to line machinery enclosures."
+
+[sec02_link]
+other = "Acoustic panels"
+
+[sec03_title]
+other = "Dryfeel foam for boats"
+
+[sec03_text]
+other = "Open-cell Dryfeel foam for outdoor cushions and sun pads. Water drains through the foam, which dries quickly in the sun."
+
+[sec03_link]
+other = "Dryfeel marine foam"
+
+[sec04_title]
+other = "Safety and protection"
+
+[sec04_text]
+other = "Protection for warehouse racks and loading docks, knee pad inserts, and foam for filters."
+
+[sec04_link]
+other = "Bumpers & PPE"
+
+[sec05_title]
+other = "Healthcare and orthopaedics"
+
+[sec05_text]
+other = "Pressure-relief cushions for wheelchairs and care facilities, supports for physiotherapy, and mattresses for hospital use. Available in HR and Memory foam."
+
+[sec05_link]
+other = "Anti-decubitus devices"
+
+[sec06_title]
+other = "Agriculture and camper vans"
+
+[sec06_text]
+other = "Seats for tractors and earth-moving machinery, designed to help reduce vibration, and custom mattresses for camper vans."
+
+[sec06_link]
+other = "Agritech & camper"
+
+[sec08_title]
+other = "Upholstery and fire-rated foam"
+
+[sec08_text]
+other = "Upholstery for hotels, cinemas, conference halls, and ships, available with Class 1IM (UNI 9175) and British Standard Crib 5 ratings."
+
+[sec08_link]
+other = "Fire-retardant foams"
+
+# -- Call Invite Banner --
+[call_banner_badge]
+other = "NO SWITCHBOARD · IMMEDIATE ANSWER"
+
+[call_banner_title]
+other = "Have a technical drawing or an urgent specification?"
+
+[call_banner_text]
+other = "Call the Matera factory directly. A production engineer assesses CNC cutting feasibility and answers in real time."
+
+[call_banner_btn]
+other = "Call Now:"
+
+[call_banner_wa]
+other = "WhatsApp Engineer"
+
+# -- Materials Table --
+[materials_badge]
+other = "Physical & Mechanical Data"
+
+[materials_title]
+other = "Foam Comparison Matrix"
+
+[materials_all_link]
+other = "All 6 technical data sheets"
+
+[th_foam_type]
+other = "Foam Type"
+
+[th_code]
+other = "Code"
+
+[th_density]
+other = "Density (ISO 845)"
+
+[th_hardness]
+other = "Hardness 40% (ISO 2439)"
+
+[th_key_feature]
+other = "Key Feature"
+
+[th_fire]
+other = "Fire Reaction"
+
+[th_sheet]
+other = "Sheet"
+
+[details_link]
+other = "Details"
+
+# -- Materials Data --
+[mat01_name]
+other = "High Resilience (HR)"
+
+[mat01_feature]
+other = "Instant elastic recovery (>55% rebound)"
+
+[mat02_name]
+other = "Viscoelastic (Memory)"
+
+[mat02_feature]
+other = "Thermosensitive, zero vascular compression"
+
+[mat03_name]
+other = "Reticulated Draining (Dryfeel)"
+
+[mat03_feature]
+other = "100% open cells, instant water drainage"
+
+[mat04_name]
+other = "Convoluted Sound-Absorbing"
+
+[mat04_feature]
+other = "Convoluted profiling, NRC 0.65 – 0.85"
+
+[mat05_name]
+other = "Fire-Rated 1IM"
+
+[mat05_feature]
+other = "Intumescent additives for public venues"
+
+[mat06_name]
+other = "Bonded Foam (Agglomerate)"
+
+# -- Search --
+[search_dialog_label]
+other = "Search the catalog"
+
+[search_input_label]
+other = "Search the catalog"
+
+[search_input_placeholder]
+other = "Search materials, sectors, densities, fire ratings..."
+
+[search_close_label]
+other = "Close search"
+
+[search_empty_prompt]
+other = "Start typing to search Polform materials and sectors."
+
+[search_no_results_prompt]
+other = "No matching materials or sectors for"
+
+[search_empty_state]
+other = "Start typing to search all industrial sectors and Polform material data sheets."
+
+[mat06_feature]
+other = "Circular recycling >85%, underfloor impact sound insulation"
+
+# -- Contact Hub --
+[contact_badge]
+other = "Direct contact"
+
+[contact_title]
+other = "Let's talk"
+
+[contact_subtitle]
+other = "Contact us with a question or to request a quote. Call, message us on WhatsApp, or email us a technical drawing."
+
+[contact_phone_title]
+other = "Phone"
+
+[contact_phone_text]
+other = "Speak with our team about materials, availability, and the work you need."
+
+[contact_phone_btn]
+other = "Call:"
+
+[contact_wa_title]
+other = "WhatsApp"
+
+[contact_wa_text]
+other = "Send a sample photo, a voice message, or your question."
+
+[contact_wa_btn]
+other = "Open WhatsApp Chat"
+
+[contact_cad_title]
+other = "Send a CAD drawing (.DXF)"
+
+[contact_cad_text]
+other = "Have a drawing or DXF file? Attach it to your email and include the quantity and details of your request."
+
+[contact_cad_btn]
+other = "Write an email"
+
+[mailto_subject]
+other = "[Polform quote request] Polyurethane processing"
+
+[mailto_body]
+other = "Company:\nSector:\nEstimated Quantity:\n\n[Please attach CAD file or specifications]"
+
+# -- History Section --
+[history_tag]
+other = "Manufacturing Roots"
+
+[history_title]
+other = "Over 27 Years of Polyurethane Mastery"
+
+[history_p1]
+other = "Polform S.r.l. was founded in <strong>January 1999</strong> in Matera by its <strong>Founding Partners</strong>, after over a decade of hands-on operational experience in polyurethane foam and dacron conversion across the Matera–Bari industrial cluster."
+
+[history_p2]
+other = "Deep knowledge of foam physical chemistry and precision in contour cutting has made the company a lasting reference point, now evolving towards the most advanced Italian technical and industrial markets."
+
+[history_badge1]
+other = "✓ Active since 1999"
+
+[history_badge2]
+other = "✓ Millimetre-precision CNC cutting"
+
+[history_badge3]
+other = "✓ Rapid sample production"
+
+[history_badge4]
+other = "✓ Deliveries across Italy & Europe"
+
+[history_facility]
+other = "Factory: Z.I. La Martella, Via Giovanni Agnelli s.n.c., 75100 Matera (MT), Italy"
+
+[history_link]
+other = "Read the company story"
+
+# -- Footer --
+[footer_desc]
+other = "CNC conversion centre for contouring, splitting, and bonding of flexible polyurethane foam for Italian and European industry."
+
+[footer_registry]
+other = "MATERA CHAMBER OF COMMERCE · SINCE JANUARY 1999"
+
+[footer_facility_title]
+other = "Factory & Offices"
+
+[footer_hist_office]
+other = "Historical Registered Office: Via Rosselli 26 / Via Delle Arti 1"
+
+[footer_contact_title]
+other = "Direct Factory Contacts"
+
+[footer_switchboard]
+other = "Switchboard:"
+
+[footer_wa_label]
+other = "Production Technical Chat"
+
+[footer_email_label]
+other = "Official Email:"
+
+[footer_nav_title]
+other = "Quick Navigation"
+
+[footer_nav_sectors]
+other = "All 8 Industrial Sectors"
+
+[footer_nav_materials]
+other = "Foam Technical Data Sheets"
+
+[footer_nav_certs]
+other = "CertiPUR, 1IM, Crib 5, ISO"
+
+[footer_nav_about]
+other = "History & Facilities since 1999"
+
+[footer_nav_rfq]
+other = "Request Quote / Send Drawing"
+
+[footer_copyright]
+other = "POLFORM S.r.l. — All rights reserved. Polyurethane foam manufacturing and conversion."
+
+[footer_privacy]
+other = "Privacy Policy (GDPR)"
+
+[footer_legal]
+other = "Legal Notice (Art. 2250 C.C.)"
+
+[footer_tech]
+other = "High-performance JAMstack Hugo static architecture. Zero invasive tracking, zero third-party cookies."
+
+# -- Mobile Dock --
+[dock_call]
+other = "Call"
+
+[dock_wa]
+other = "WhatsApp"
+
+[dock_cad]
+other = "Send CAD"
+
+# -- Header --
+[nav_cad_btn]
+other = "Send CAD"
+
+# -- Accessibility --
+[skip_to_content]
+other = "Skip to main content"
+
+[nav_label]
+other = "Main navigation"
+
+[search_label]
+other = "Search catalogue (Ctrl+K)"
+
+[mobile_menu_label]
+other = "Open navigation menu"
+
+[lang_switch_label]
+other = "Change language"
+
+[mobile_dock_label]
+other = "Quick mobile contact"
+
+[theme_label]
+other = "Light, dark, or system theme selector"
+
+[theme_light]
+other = "Light theme"
+
+[theme_auto_title]
+other = "Follow system preferences"
+
+[theme_auto]
+other = "System theme"
+
+[theme_dark]
+other = "Dark theme"
+
+[lightbox_label]
+other = "Enlarged image"
+
+[lightbox_open]
+other = "Open enlarged image"
+
+[lightbox_close]
+other = "Close enlarged image"
+
+[lightbox_previous]
+other = "Previous image"
+
+[lightbox_next]
+other = "Next image"
+
+[single_cta_heading]
+other = "Request information or samples for this product"
+
+[single_cta_description]
+other = "Our production team prepares custom quotes from CAD drawings (.DXF, .DWG, .STEP) and sends physical samples on request."
+
+[single_cta_phone_label]
+other = "Call:"
+
+[single_cta_whatsapp_label]
+other = "Message our technical team on WhatsApp"
+
+[single_cta_email_label]
+other = "Email us a drawing"
+
+[single_cta_whatsapp_prefill]
+other = "Hello Polform, I would like information about: %s"
+
+[single_cta_mailto_subject]
+other = "Information request: %s"
+
+[single_cta_mailto_body]
+other = "Hello, I would like more details about %s"

@@ -1,0 +1,265 @@
+<template>
+  <style>
+    #root {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      container-type: size;
+      color: #17151a;
+      font-family: sans-serif;
+      background: #ffffff;
+    }
+
+    #root *,
+    #root *::before,
+    #root *::after {
+      box-sizing: border-box;
+    }
+
+    .clip {
+      position: absolute;
+    }
+
+    [class~="03-sectors-bg"] {
+      inset: 0;
+      z-index: 0;
+      background: #0b2545 url("assets/site-sectors.png") center center / cover no-repeat;
+      opacity: 0.34;
+    }
+
+    [class~="03-sectors-wash"] {
+      inset: 0;
+      z-index: 1;
+      background:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.72) 37%, rgba(11, 37, 69, 0.12) 100%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.52) 100%);
+      pointer-events: none;
+    }
+
+    [class~="03-sectors-vignette"] {
+      inset: 0;
+      z-index: 2;
+      background: radial-gradient(circle at 52% 47%, transparent 0%, rgba(11, 37, 69, 0.08) 62%, rgba(11, 37, 69, 0.28) 100%);
+      pointer-events: none;
+    }
+
+    [class~="03-sectors-hero"] {
+      inset: 0;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      padding: 0 5cqw;
+      pointer-events: none;
+    }
+
+    [class~="03-sectors-hero-label"] {
+      display: block;
+      color: #17151a;
+      font-size: 8.8cqw;
+      font-weight: 700;
+      letter-spacing: -0.055em;
+      line-height: 0.9;
+      white-space: nowrap;
+    }
+
+    [class~="03-sectors-hero-word"] {
+      display: inline-block;
+      margin-right: 0.16em;
+      will-change: transform, opacity;
+    }
+
+    [class~="03-sectors-burst"] {
+      inset: 0;
+      z-index: 4;
+      pointer-events: none;
+    }
+
+    [class~="03-sectors-burst-item"] {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 24cqw;
+      min-height: 8.6cqw;
+      padding: 1.45cqw 1.65cqw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1.5px solid rgba(11, 37, 69, 0.2);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.9);
+      color: #0b2545;
+      font-size: 2.1cqw;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      line-height: 1.05;
+      text-align: center;
+      transform-origin: 50% 50%;
+      will-change: transform, opacity;
+    }
+
+    [class~="03-sectors-burst-core"] {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 17cqw;
+      height: 17cqw;
+      border: 1px solid rgba(11, 37, 69, 0.2);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.76);
+      transform: translate(-50%, -50%);
+    }
+
+    [class~="03-sectors-swap"] {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 76cqw;
+      height: 18cqw;
+      transform: translate(-50%, -50%);
+      z-index: 5;
+      pointer-events: none;
+    }
+
+    [class~="03-sectors-swap-card"] {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      transform-origin: 50% 50%;
+    }
+
+    [class~="03-sectors-swap-old"] {
+      color: #0b2545;
+      font-size: 3.2cqw;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-align: center;
+    }
+
+    [class~="03-sectors-swap-new"] {
+      z-index: 2;
+      padding: 2cqw 3cqw;
+      border: 1.5px solid rgba(11, 37, 69, 0.2);
+      background: rgba(255, 255, 255, 0.94);
+      color: #17151a;
+      font-size: 3.05cqw;
+      font-weight: 400;
+      letter-spacing: -0.025em;
+      line-height: 1.12;
+      text-align: center;
+    }
+
+    [class~="03-sectors-progress"] {
+      left: 5cqw;
+      right: 5cqw;
+      bottom: 5.2cqw;
+      height: 4px;
+      z-index: 8;
+      overflow: hidden;
+      border-radius: 6px;
+      background: rgba(11, 37, 69, 0.12);
+    }
+
+    [class~="03-sectors-progress-fill"] {
+      width: 38%;
+      height: 100%;
+      border-radius: 6px;
+      background: #0b2545;
+      transform-origin: left center;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+
+  <div data-hf-id="hf-kakn" id="root" data-composition-id="03-sectors" data-start="0" data-duration="8.5" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-ecwu" class="clip 03-sectors-bg" data-start="0" data-duration="8.5" data-track-index="0"></div>
+    <div data-hf-id="hf-k0hf" class="clip 03-sectors-wash" data-start="0" data-duration="8.5" data-track-index="1"></div>
+    <div data-hf-id="hf-69zb" class="clip 03-sectors-vignette" data-start="0" data-duration="8.5" data-track-index="2"></div>
+
+    <div data-hf-id="hf-ftgc" class="clip 03-sectors-hero" data-start="0" data-duration="8.5" data-track-index="3" data-layout-allow-overlap="">
+      <div data-hf-id="hf-7y9b" class="03-sectors-hero-label" aria-label="Packaging">
+        <span data-hf-id="hf-xafz" class="03-sectors-hero-word">PACK</span><span data-hf-id="hf-4dyi" class="03-sectors-hero-word">AGING</span>
+      </div>
+    </div>
+
+    <div data-hf-id="hf-imlx" class="clip 03-sectors-burst" data-start="0" data-duration="8.5" data-track-index="4">
+      <div data-hf-id="hf-3fy0" class="03-sectors-burst-core"></div>
+      <div data-hf-id="hf-h4z7" class="03-sectors-burst-item" data-target-x="-430" data-target-y="-125">ACOUSTIC</div>
+      <div data-hf-id="hf-amwj" class="03-sectors-burst-item" data-target-x="-135" data-target-y="-260">NAUTICAL</div>
+      <div data-hf-id="hf-jfmz" class="03-sectors-burst-item" data-target-x="250" data-target-y="-205">MEDICAL</div>
+      <div data-hf-id="hf-pq48" class="03-sectors-burst-item" data-target-x="-260" data-target-y="185">SAFETY</div>
+      <div data-hf-id="hf-3wqg" class="03-sectors-burst-item" data-target-x="285" data-target-y="170">CONTRACT</div>
+    </div>
+
+    <div data-hf-id="hf-qoch" class="clip 03-sectors-swap" data-start="0" data-duration="8.5" data-track-index="5" data-layout-allow-overlap="">
+      <div data-hf-id="hf-7i6w" class="03-sectors-swap-card 03-sectors-swap-old" data-layout-allow-overlap="">ACOUSTIC · NAUTICAL · MEDICAL · SAFETY · CONTRACT</div>
+      <div data-hf-id="hf-pxjw" class="03-sectors-swap-card 03-sectors-swap-new" data-layout-allow-overlap="">One production partner. Multiple technical contexts.</div>
+    </div>
+
+    <div data-hf-id="hf-xnls" class="clip 03-sectors-progress" data-start="0" data-duration="8.5" data-track-index="6">
+      <div data-hf-id="hf-k653" class="03-sectors-progress-fill"></div>
+    </div>
+  </div>
+
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo(
+      '[class~="03-sectors-hero-word"]',
+      { x: -90, opacity: 0 },
+      { x: 0, opacity: 1, duration: 0.72, ease: "power3.out", stagger: 0.12 },
+      0.18,
+    );
+
+    tl.to('[class~="03-sectors-hero"]', { opacity: 0.2, duration: 0.55, ease: "power2.out" }, 1.86);
+
+    const burstItems = document.querySelectorAll('[class~="03-sectors-burst-item"]');
+    burstItems.forEach((el, index) => {
+      tl.fromTo(
+        el,
+        { xPercent: -50, yPercent: -50, x: 0, y: 0, scale: 0.6, opacity: 0 },
+        {
+          x: Number(el.dataset.targetX),
+          y: Number(el.dataset.targetY),
+          scale: 1,
+          opacity: 1,
+          duration: 1.25,
+          ease: "power3.out",
+        },
+        2.12 + index * 0.13,
+      );
+    });
+
+    tl.fromTo(
+      '[class~="03-sectors-burst-core"]',
+      { opacity: 0 },
+      { opacity: 1, duration: 0.9, ease: "power3.out" },
+      2.08,
+    );
+
+    tl.to(
+      '[class~="03-sectors-burst"]',
+      { opacity: 0, duration: 0.38, ease: "power2.in" },
+      5.82,
+    );
+    tl.to(
+      '[class~="03-sectors-swap-old"]',
+      { scale: 0.7, opacity: 0, duration: 0.42, ease: "power2.in" },
+      5.82,
+    );
+    tl.fromTo(
+      '[class~="03-sectors-swap-new"]',
+      { scale: 0.7, opacity: 0 },
+      { scale: 1, opacity: 1, duration: 0.62, ease: "back.out(1.8)" },
+      6.12,
+    );
+
+    tl.to('[class~="03-sectors-progress-fill"]', { width: "100%", duration: 7.8, ease: "none" }, 0);
+
+    window.__timelines["03-sectors"] = tl;
+    tl.seek(0);
+  </script>
+</template>

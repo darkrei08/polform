@@ -1,0 +1,399 @@
+<template>
+  <style>
+    #root {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      container-type: size;
+      color: #ffffff;
+      font-family: sans-serif;
+      background: #071a33;
+    }
+
+    [class~="04-proof-bg"] {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(118deg, rgba(7, 26, 51, 0.98) 0%, rgba(7, 26, 51, 0.96) 48%, rgba(11, 37, 69, 0.92) 100%),
+        repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 96px),
+        repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.028) 0 1px, transparent 1px 96px);
+    }
+
+    [class~="04-proof-plate-wrap"] {
+      position: absolute;
+      right: 4.5cqw;
+      top: 11cqh;
+      width: 47cqw;
+      height: 67cqh;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    [class~="04-proof-plate"] {
+      position: absolute;
+      width: 118%;
+      height: 118%;
+      left: -9%;
+      top: -9%;
+      object-fit: cover;
+      opacity: 0.22;
+      filter: saturate(0.7) contrast(1.08);
+    }
+
+    [class~="04-proof-plate-scrim"] {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(7, 26, 51, 0.82), rgba(7, 26, 51, 0.28));
+    }
+
+    [class~="04-proof-grid"] {
+      position: absolute;
+      left: 6cqw;
+      top: 10cqh;
+      width: 44cqw;
+    }
+
+    [class~="04-proof-eyebrow"] {
+      margin: 0 0 2.4cqh;
+      color: #7d9bbb;
+      font-size: 1.15cqw;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    [class~="04-proof-kicker"] {
+      position: absolute;
+      left: 6cqw;
+      bottom: 11cqh;
+      color: rgba(255, 255, 255, 0.52);
+      font-size: 1cqw;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    [class~="04-proof-stat-stage"] {
+      position: relative;
+      width: 41cqw;
+      height: 34cqh;
+    }
+
+    [class~="04-proof-stat-card"] {
+      position: absolute;
+      inset: 0;
+      padding: 2.2cqw 2.5cqw;
+      border: 1px solid rgba(125, 155, 187, 0.35);
+      border-radius: 14px;
+      background: rgba(11, 37, 69, 0.56);
+      transform-origin: 50% 50%;
+    }
+
+    [class~="04-proof-stat-card--incoming"] {
+      z-index: 2;
+      opacity: 0;
+      transform: scale(0.7);
+    }
+
+    [class~="04-proof-prefix"] {
+      color: #a8bcd1;
+      font-size: 1.35cqw;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    [class~="04-proof-counter-wrap"] {
+      display: flex;
+      align-items: baseline;
+      width: 29cqw;
+      margin-top: 2cqh;
+      white-space: nowrap;
+    }
+
+    [class~="04-proof-counter-prefix"] {
+      margin-right: 0.9cqw;
+      color: #7d9bbb;
+      font-size: 1.7cqw;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+    }
+
+    [class~="04-proof-counter"] {
+      display: inline-block;
+      color: #ffffff;
+      font-size: 7.5cqw;
+      font-weight: 700;
+      line-height: 0.95;
+      font-variant-numeric: tabular-nums;
+      transform-origin: center center;
+    }
+
+    [class~="04-proof-subline"] {
+      margin-top: 2.8cqh;
+      color: rgba(255, 255, 255, 0.62);
+      font-size: 1.25cqw;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    [class~="04-proof-years"] {
+      margin-top: 2cqh;
+      color: #ffffff;
+      font-size: 6.7cqw;
+      font-weight: 700;
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+    }
+
+    [class~="04-proof-years-plus"] {
+      color: #25d366;
+    }
+
+    [class~="04-proof-years-label"] {
+      margin-top: 2.8cqh;
+      color: rgba(255, 255, 255, 0.68);
+      font-size: 1.45cqw;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    [class~="04-proof-tolerance"] {
+      color: #ffffff;
+      font-size: 4.25cqw;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    [class~="04-proof-tolerance-accent"] {
+      color: #ffc300;
+    }
+
+    [class~="04-proof-tolerance-detail"] {
+      margin-top: 1.7cqh;
+      color: rgba(255, 255, 255, 0.62);
+      font-size: 1.22cqw;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    [class~="04-proof-bar-track"] {
+      width: 34cqw;
+      height: 1.2cqh;
+      margin-top: 3.1cqh;
+      overflow: hidden;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.16);
+    }
+
+    [class~="04-proof-bar-fill"] {
+      width: 100%;
+      height: 100%;
+      transform: scaleX(0);
+      transform-origin: left center;
+      border-radius: 6px;
+      background: #ffc300;
+    }
+
+    [class~="04-proof-scale"] {
+      display: flex;
+      justify-content: space-between;
+      width: 34cqw;
+      margin-top: 1cqh;
+      color: rgba(255, 255, 255, 0.42);
+      font-size: 0.9cqw;
+      letter-spacing: 0.08em;
+    }
+
+    [class~="04-proof-seal-card"] {
+      position: absolute;
+      left: 6cqw;
+      top: 27cqh;
+      width: 41cqw;
+      height: 31cqh;
+      padding: 2cqw 2.3cqw;
+      border: 1px solid rgba(125, 155, 187, 0.35);
+      border-radius: 14px;
+      background: rgba(11, 37, 69, 0.64);
+      opacity: 0;
+    }
+
+    [class~="04-proof-seal"] {
+      display: flex;
+      align-items: center;
+      gap: 2cqw;
+      height: 100%;
+    }
+
+    [class~="04-proof-seal-mark"] {
+      display: grid;
+      place-items: center;
+      width: 12cqw;
+      height: 12cqw;
+      flex: 0 0 auto;
+      border: 2px solid #7d9bbb;
+      border-radius: 50%;
+      color: #ffffff;
+      font-size: 1.9cqw;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-align: center;
+    }
+
+    [class~="04-proof-seal-mark"]::before {
+      content: "✓";
+      display: block;
+      color: #ffc300;
+      font-size: 2.8cqw;
+      line-height: 1;
+    }
+
+    [class~="04-proof-seal-copy"] {
+      color: #ffffff;
+      font-size: 2.55cqw;
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+    }
+
+    [class~="04-proof-seal-copy"] small {
+      display: block;
+      margin-top: 1.4cqh;
+      color: #a8bcd1;
+      font-size: 1.12cqw;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+    }
+  </style>
+
+  <div data-hf-id="hf-zb2x" id="root" data-composition-id="04-proof" data-width="1920" data-height="1080" data-duration="9.6">
+    <div data-hf-id="hf-dne8" class="clip 04-proof-bg" data-start="0" data-duration="9.6" data-track-index="0"></div>
+
+  <div data-hf-id="hf-gy1l" class="clip 04-proof-plate-wrap" data-start="0" data-duration="9.6" data-track-index="1">
+    <img data-hf-id="hf-jdya" class="04-proof-plate" id="04-proof-plate" src="assets/site-materials.png" alt="">
+    <div data-hf-id="hf-6h9f" class="04-proof-plate-scrim"></div>
+  </div>
+
+  <div data-hf-id="hf-mug6" class="04-proof-grid">
+    <p data-hf-id="hf-51r2" class="04-proof-eyebrow">Published proof / technical scorecard</p>
+    <div data-hf-id="hf-tlf8" class="04-proof-stat-stage clip" data-start="0" data-duration="7.6" data-track-index="2">
+      <div data-hf-id="hf-qk68" class="04-proof-stat-card" id="04-proof-since-card">
+        <div data-hf-id="hf-uxbg" class="04-proof-prefix">Published proof point</div>
+        <div data-hf-id="hf-fqfz" class="04-proof-counter-wrap">
+          <span data-hf-id="hf-5yxa" class="04-proof-counter-prefix">SINCE</span>
+          <span data-hf-id="hf-zypd" class="04-proof-counter" id="04-proof-counter">0</span>
+        </div>
+      </div>
+
+      <div data-hf-id="hf-kzgh" class="04-proof-stat-card 04-proof-stat-card--incoming" id="04-proof-years-card">
+        <div data-hf-id="hf-h202" class="04-proof-prefix">Experience</div>
+        <div data-hf-id="hf-vr7g" class="04-proof-years"><span data-hf-id="hf-kbju">27</span><span data-hf-id="hf-kms7" class="04-proof-years-plus">+</span></div>
+        <div data-hf-id="hf-gu0p" class="04-proof-years-label">YEARS</div>
+      </div>
+
+      <div data-hf-id="hf-bhho" class="04-proof-stat-card 04-proof-stat-card--incoming" id="04-proof-tolerance-card">
+        <div data-hf-id="hf-dk7w" class="04-proof-prefix">Manufacturing precision</div>
+        <div data-hf-id="hf-qfbl" class="04-proof-tolerance"><span data-hf-id="hf-5d4h" class="04-proof-tolerance-accent">±0.5</span> MM</div>
+        <div data-hf-id="hf-cazg" class="04-proof-tolerance-detail">CNC tolerance</div>
+        <div data-hf-id="hf-pfp7" class="04-proof-bar-track"><div data-hf-id="hf-660w" class="04-proof-bar-fill" id="04-proof-bar-fill"></div></div>
+        <div data-hf-id="hf-k5s8" class="04-proof-scale"><span data-hf-id="hf-eqlf">CONTROLLED</span><span data-hf-id="hf-a888">EXACT</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-y5e4" class="clip 04-proof-seal-card" id="04-proof-seal-card" data-start="7.6" data-duration="2" data-track-index="3">
+    <div data-hf-id="hf-mvzx" class="04-proof-seal">
+      <div data-hf-id="hf-08er" class="04-proof-seal-mark">100%</div>
+      <div data-hf-id="hf-4cxf" class="04-proof-seal-copy">CertiPUR-certified foams<small data-hf-id="hf-1rr1">Published material certification</small></div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-o504" class="04-proof-kicker">Materials / evidence / 04</div>
+
+    <script>
+    const proofTimeline = gsap.timeline({ paused: true });
+    const proofCounter = document.getElementById("04-proof-counter");
+    const proofCounterState = { value: 0 };
+
+    proofTimeline.to(proofCounterState, {
+      value: 1999,
+      duration: 1.8,
+      ease: "power3.out",
+      onUpdate: () => {
+        proofCounter.textContent = Math.round(proofCounterState.value).toLocaleString();
+      },
+    }, 0.15);
+
+    proofTimeline.fromTo(proofCounter, {
+      scale: 0.52,
+    }, {
+      scale: 1,
+      duration: 1.8,
+      ease: "power3.out",
+    }, 0.15);
+
+    proofTimeline.to(document.getElementById("04-proof-since-card"), {
+      scale: 0.7,
+      opacity: 0,
+      duration: 0.4,
+      ease: "power2.in",
+    }, 2.4);
+
+    proofTimeline.fromTo(document.getElementById("04-proof-years-card"), {
+      scale: 0.7,
+      opacity: 0,
+    }, {
+      scale: 1,
+      opacity: 1,
+      duration: 0.58,
+      ease: "back.out(1.8)",
+    }, 2.68);
+
+    proofTimeline.to(document.getElementById("04-proof-plate"), {
+      x: -18,
+      y: -16,
+      scale: 1.16,
+      duration: 1.4,
+      ease: "power2.out",
+    }, 2.4);
+
+    proofTimeline.to(document.getElementById("04-proof-years-card"), {
+      scale: 0.7,
+      opacity: 0,
+      duration: 0.38,
+      ease: "power2.in",
+    }, 5.7);
+
+    proofTimeline.fromTo(document.getElementById("04-proof-tolerance-card"), {
+      scale: 0.7,
+      opacity: 0,
+    }, {
+      scale: 1,
+      opacity: 1,
+      duration: 0.58,
+      ease: "back.out(1.8)",
+    }, 5.98);
+
+    proofTimeline.to(document.getElementById("04-proof-bar-fill"), {
+      scaleX: 0.94,
+      duration: 1.05,
+      ease: "power2.out",
+    }, 6.32);
+
+    proofTimeline.fromTo(document.getElementById("04-proof-seal-card"), {
+      opacity: 0,
+      y: 24,
+    }, {
+      opacity: 1,
+      y: 0,
+      duration: 0.62,
+      ease: "power3.out",
+    }, 7.6);
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines["04-proof"] = proofTimeline;
+    </script>
+  </div>
+</template>

@@ -27,10 +27,18 @@
   {{ $js := resources.Get "js/main.js" | minify }}
   <script src="{{ $js.RelPermalink }}" defer></script>
 </head>
-<body data-search-url="{{ "index.json" | relURL }}">
+<body data-search-url="{{ "index.json" | relURL }}"
+      data-lightbox-label="{{ i18n "lightbox_label" }}"
+      data-lightbox-open="{{ i18n "lightbox_open" }}"
+      data-lightbox-close="{{ i18n "lightbox_close" }}"
+      data-lightbox-previous="{{ i18n "lightbox_previous" }}"
+      data-lightbox-next="{{ i18n "lightbox_next" }}">
+  <!-- Skip to content link for keyboard/screen reader users -->
+  <a href="#main" class="skip-link">{{ i18n "skip_to_content" }}</a>
+
   {{ partial "header.html" . }}
 
-  <main id="main">
+  <main id="main" tabindex="-1">
     {{ block "main" . }}{{ end }}
   </main>
 
@@ -38,18 +46,18 @@
   {{ partial "search-modal.html" . }}
 
   <!-- Mobile Quick Dock Bar -->
-  <aside class="mobile-dock" aria-label="Contatto rapido mobile">
+  <aside class="mobile-dock" role="toolbar" aria-label="{{ i18n "mobile_dock_label" }}">
     <a href="tel:{{ .Site.Params.phone_clean }}" class="dock-btn dock-btn-call">
       {{ partial "icon.html" (dict "name" "phone" "size" "18") }}
-      <span>Chiama</span>
+      <span>{{ i18n "dock_call" }}</span>
     </a>
-    <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text=Salve%20Polform,%20vorrei%20informazioni%20su%20una%20fornitura" class="dock-btn dock-btn-wa" target="_blank" rel="noopener">
+    <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text={{ i18n "whatsapp_prefill_short" | urlquery }}" class="dock-btn dock-btn-wa" target="_blank" rel="noopener">
       {{ partial "icon.html" (dict "name" "whatsapp" "size" "18") }}
-      <span>WhatsApp</span>
+      <span>{{ i18n "dock_wa" }}</span>
     </a>
     <a href="{{ "preventivo/" | relURL }}" class="dock-btn dock-btn-rfq">
       {{ partial "icon.html" (dict "name" "email" "size" "18") }}
-      <span>Invia CAD</span>
+      <span>{{ i18n "dock_cad" }}</span>
     </a>
   </aside>
 </body>

@@ -1,0 +1,460 @@
+# -- Hero Section --
+[hero_tag]
+other = "Lavorazione del poliuretano dal 1999 · Matera"
+
+[hero_title]
+other = "Poliuretano espanso lavorato su misura"
+
+[hero_subtitle]
+other = "Da oltre 27 anni realizziamo componenti in poliuretano espanso per imballaggi protettivi, acustica, nautica, sicurezza e arredo professionale."
+
+[hero_btn_call]
+other = "Chiama Stabilimento"
+
+[hero_btn_whatsapp]
+other = "WhatsApp con i Tecnici"
+
+[hero_btn_cad]
+other = "Invia Disegno CAD / Richiedi RFQ"
+
+[whatsapp_prefill]
+other = "Salve Polform, vorrei richiedere informazioni su una fornitura di poliuretano"
+
+[whatsapp_prefill_urgent]
+other = "Salve Polform, ho un disegno urgente da valutare"
+
+[whatsapp_prefill_quote]
+other = "Salve Polform, vi scrivo per un preventivo"
+
+[whatsapp_prefill_short]
+other = "Salve Polform, vorrei informazioni su una fornitura"
+
+# -- Metrics Strip --
+[metric_founded]
+other = "Anno di fondazione a Matera"
+
+[metric_years]
+other = "Anni di attività ininterrotta"
+
+[metric_tolerance]
+other = "Tolleranza di taglio CNC"
+
+[metric_certipur]
+other = "Espansi certificati CertiPUR"
+
+# -- Sectors Section --
+[sectors_badge]
+other = "Diversificazione Manifatturiera"
+
+[sectors_title]
+other = "Settori Industriali Serviti"
+
+[sectors_all_link]
+other = "Tutti gli 8 settori di fornitura"
+
+# -- Sector Cards --
+[sec01_title]
+other = "Inserti su misura per valigie e imballaggi"
+
+[sec01_text]
+other = "Realizziamo inserti in schiuma da disegni CAD/DXF per proteggere strumenti di misura, droni, ottiche e bottiglie. Lavoriamo anche con valigie Explorer Cases, GT Line e Peli Cases."
+
+[sec01_spec_label]
+other = "SPECIFICHE LAVORAZIONE"
+
+[sec01_spec_value]
+other = "Pantografo CNC a filo oscillante / fresatura 3D"
+
+[sec01_tol_label]
+other = "TOLLERANZA"
+
+[sec01_tol_value]
+other = "±0.5 mm su geometrie complesse"
+
+[sec01_fmt_label]
+other = "FORMATI COMPATIBILI"
+
+[sec01_fmt_value]
+other = ".DXF · .DWG · .STEP · .PDF"
+
+[sec01_link]
+other = "Specifiche tecniche packaging protettivo"
+
+[sec02_title]
+other = "Pannelli acustici"
+
+[sec02_text]
+other = "Pannelli in schiuma per ridurre il riverbero in uffici e studi musicali e per rivestire i carter dei macchinari."
+
+[sec02_link]
+other = "Pannelli acustici"
+
+[sec03_title]
+other = "Cuscini nautici in schiuma Dryfeel"
+
+[sec03_text]
+other = "Schiuma Dryfeel a celle aperte per cuscini da esterno e prendisole. L'acqua defluisce e la schiuma asciuga rapidamente al sole."
+
+[sec03_link]
+other = "Drenante nautico Dryfeel"
+
+[sec04_title]
+other = "Protezione e sicurezza"
+
+[sec04_text]
+other = "Protezione per scaffali e banchine di carico, imbottiture per ginocchiere e schiume per filtri."
+
+[sec04_link]
+other = "Paracolpi & DPI"
+
+[sec05_title]
+other = "Sanità e ortopedia"
+
+[sec05_text]
+other = "Cuscini antidecubito per carrozzine e strutture assistenziali, supporti per fisioterapia e materassi per uso ospedaliero. Disponibili in schiuma HR e Memory."
+
+[sec05_link]
+other = "Presidi antidecubito"
+
+[sec06_title]
+other = "Agricoltura e camper"
+
+[sec06_text]
+other = "Sedili per trattori e macchine da movimento terra per aiutare a ridurre le vibrazioni; materassi su misura per camper e van."
+
+[sec06_link]
+other = "Agritech & camper"
+
+[sec08_title]
+other = "Arredo e imbottiture ignifughe"
+
+[sec08_text]
+other = "Imbottiture per hotel, cinema, sale conferenze e navi, disponibili con classificazione Classe 1IM (UNI 9175) e British Standard Crib 5."
+
+[sec08_link]
+other = "Espansi ignifughi"
+
+# -- Call Invite Banner --
+[call_banner_badge]
+other = "NESSUN CENTRALINO · RISPOSTA IMMEDIATA"
+
+[call_banner_title]
+other = "Hai un disegno tecnico o un capitolato urgente?"
+
+[call_banner_text]
+other = "Chiama direttamente lo stabilimento di Matera. Un tecnico di produzione esamina la fattibilità del taglio CNC e ti risponde in tempo reale."
+
+[call_banner_btn]
+other = "Chiama Ora:"
+
+[call_banner_wa]
+other = "WhatsApp Tecnico"
+
+# -- Materials Table --
+[materials_badge]
+other = "Dati Fisico-Meccanici"
+
+[materials_title]
+other = "Matrice Comparativa delle Schiume"
+
+[materials_all_link]
+other = "Tutte le 6 schede tecniche"
+
+[th_foam_type]
+other = "Tipologia Schiuma"
+
+[th_code]
+other = "Codice"
+
+[th_density]
+other = "Densità (ISO 845)"
+
+[th_hardness]
+other = "Portanza 40% (ISO 2439)"
+
+[th_key_feature]
+other = "Caratteristica Chiave"
+
+[th_fire]
+other = "Reazione al Fuoco"
+
+[th_sheet]
+other = "Scheda"
+
+[details_link]
+other = "Dettagli"
+
+# -- Materials Data --
+[mat01_name]
+other = "Alta Resilienza (HR)"
+
+[mat01_feature]
+other = "Ritorno elastico istantaneo (>55% rebound)"
+
+[mat02_name]
+other = "Viscoelastico (Memory)"
+
+[mat02_feature]
+other = "Termosensibile, zero compressione vascolare"
+
+[mat03_name]
+other = "Reticolato Drenante (Dryfeel)"
+
+[mat03_feature]
+other = "Celle 100% aperte, deflusso acqua immediato"
+
+[mat04_name]
+other = "Fonoassorbente Bugnato"
+
+[mat04_feature]
+other = "Profilatura alveolare, NRC 0.65 – 0.85"
+
+[mat05_name]
+other = "Ignifugo Omologato 1IM"
+
+[mat05_feature]
+other = "Additivi intumescenti per luoghi pubblici"
+
+[mat06_name]
+other = "Agglomerato (Bonded Foam)"
+
+
+# -- Search --
+[search_dialog_label]
+other = "Ricerca interna nel catalogo"
+
+[search_input_label]
+other = "Cerca nel catalogo"
+
+[search_input_placeholder]
+other = "Cerca materiali, settori, densità, normative 1IM..."
+
+[search_close_label]
+other = "Chiudi ricerca"
+
+[search_empty_prompt]
+other = "Inizia a digitare per cercare tra i materiali e i settori Polform."
+
+[search_no_results_prompt]
+other = "Nessun materiale o settore corrispondente a"
+
+[search_empty_state]
+other = "Inizia a digitare per cercare tra tutti i settori industriali e le schede tecniche dei materiali Polform."
+
+[mat06_feature]
+other = "Riciclo circolare >85%, anticalpestio sottomassetto"
+
+# -- Contact Hub --
+[contact_badge]
+other = "Contatto diretto"
+
+[contact_title]
+other = "Parliamone"
+
+[contact_subtitle]
+other = "Contattaci per informazioni o per un preventivo. Puoi chiamare, scriverci su WhatsApp o inviare un disegno tecnico via email."
+
+[contact_phone_title]
+other = "Telefono"
+
+[contact_phone_text]
+other = "Parla con il nostro team per informazioni sui materiali, sulla disponibilità e sulle lavorazioni."
+
+[contact_phone_btn]
+other = "Chiama:"
+
+[contact_wa_title]
+other = "WhatsApp"
+
+[contact_wa_text]
+other = "Invia una foto del campione, un messaggio vocale o la tua domanda."
+
+[contact_wa_btn]
+other = "Apri Chat WhatsApp"
+
+[contact_cad_title]
+other = "Invia un disegno CAD (.DXF)"
+
+[contact_cad_text]
+other = "Hai un disegno o un file DXF? Allega il file alla tua email e aggiungi quantità e dettagli della richiesta."
+
+[contact_cad_btn]
+other = "Scrivi un'email"
+
+[mailto_subject]
+other = "[Richiesta preventivo Polform] Lavorazione poliuretano"
+
+[mailto_body]
+other = "Azienda:\nSettore:\nQuantità stimata:\n\n[Allega file CAD o specifiche]"
+
+# -- History Section --
+[history_tag]
+other = "Radici Manifatturiere"
+
+[history_title]
+other = "Oltre 27 Anni di Maestria nel Poliuretano"
+
+[history_p1]
+other = "La Polform S.r.l. nasce nel <strong>gennaio 1999</strong> a Matera dall'iniziativa dei <strong>Soci Fondatori</strong>, dopo oltre un decennio di esperienza operativa diretta nella trasformazione del poliuretano espanso e del dacron nel polo industriale di Matera e Bari."
+
+[history_p2]
+other = "La profonda conoscenza chimico-fisica delle schiume e la precisione nel taglio a pantografo hanno reso l'azienda un punto di riferimento duraturo, capace oggi di evolvere verso i più avanzati mercati tecnici e industriali italiani."
+
+[history_badge1]
+other = "✓ Attività dal 1999"
+
+[history_badge2]
+other = "✓ Taglio CNC millimetrico"
+
+[history_badge3]
+other = "✓ Campionature rapide"
+
+[history_badge4]
+other = "✓ Forniture in tutta Italia"
+
+[history_facility]
+other = "Stabilimento: Z.I. La Martella, Via Giovanni Agnelli s.n.c., 75100 Matera (MT)"
+
+[history_link]
+other = "Leggi la storia aziendale"
+
+[footer_desc]
+other = "Centro di trasformazione, sagomatura CNC e accoppiamento di poliuretano espanso flessibile per l'industria italiana ed europea."
+
+[footer_registry]
+other = "REG. IMPRESE MATERA · DAL GENNAIO 1999"
+
+[footer_facility_title]
+other = "Stabilimento & Sede"
+
+[footer_hist_office]
+other = "Sede Legale Storica: Via Rosselli 26 / Via Delle Arti 1"
+
+[footer_contact_title]
+other = "Contatti Diretti di Fabbrica"
+
+[footer_switchboard]
+other = "Centralino:"
+
+[footer_wa_label]
+other = "Chat Tecnica di Produzione"
+
+[footer_email_label]
+other = "Email Ufficiale:"
+
+[footer_nav_title]
+other = "Navigazione Veloce"
+
+[footer_nav_sectors]
+other = "Tutti gli 8 Settori Industriali"
+
+[footer_nav_materials]
+other = "Catalogo Schede Tecniche Schiume"
+
+[footer_nav_certs]
+other = "CertiPUR, 1IM, Crib 5, ISO"
+
+[footer_nav_about]
+other = "Storia & Impianti dal 1999"
+
+[footer_nav_rfq]
+other = "Richiedi Preventivo / Invia Disegno"
+
+[footer_copyright]
+other = "POLFORM S.r.l. — Tutti i diritti riservati. Manifattura e lavorazione poliuretano espanso."
+
+[footer_privacy]
+other = "Informativa Privacy (GDPR)"
+
+[footer_legal]
+other = "Note Legali & Dati Societari (Art. 2250 C.C.)"
+
+[footer_tech]
+other = "Architettura statica JAMstack Hugo ad alte prestazioni. Zero tracciamento invasivo, zero cookie di terze parti."
+
+# -- Mobile Dock --
+[dock_call]
+other = "Chiama"
+
+[dock_wa]
+other = "WhatsApp"
+
+[dock_cad]
+other = "Invia CAD"
+
+# -- Header --
+[nav_cad_btn]
+other = "Invia CAD"
+
+# -- Accessibility --
+[skip_to_content]
+other = "Vai al contenuto principale"
+
+[nav_label]
+other = "Navigazione principale"
+
+[search_label]
+other = "Cerca nel catalogo (Ctrl+K)"
+
+[mobile_menu_label]
+other = "Apri menu di navigazione"
+
+[lang_switch_label]
+other = "Cambia lingua"
+
+[mobile_dock_label]
+other = "Contatto rapido mobile"
+
+[theme_label]
+other = "Selettore tema chiaro, scuro o sistema"
+
+[theme_light]
+other = "Tema chiaro"
+
+[theme_auto_title]
+other = "Segui impostazioni di sistema"
+
+[theme_auto]
+other = "Tema di sistema"
+
+[theme_dark]
+other = "Tema scuro"
+
+[lightbox_label]
+other = "Immagine ingrandita"
+
+[lightbox_open]
+other = "Apri immagine ingrandita"
+
+[lightbox_close]
+other = "Chiudi immagine ingrandita"
+
+[lightbox_previous]
+other = "Immagine precedente"
+
+[lightbox_next]
+other = "Immagine successiva"
+
+[single_cta_heading]
+other = "Richiedi Informazioni o Campioni su Questa Scheda"
+
+[single_cta_description]
+other = "I responsabili di produzione formulano quotazioni dimensionali da disegno CAD (.DXF, .DWG, .STEP) e inviano campionature fisiche su richiesta."
+
+[single_cta_phone_label]
+other = "Chiama:"
+
+[single_cta_whatsapp_label]
+other = "WhatsApp Tecnico"
+
+[single_cta_email_label]
+other = "Invia Email con Disegno"
+
+[single_cta_whatsapp_prefill]
+other = "Salve Polform, vorrei informazioni su: %s"
+
+[single_cta_mailto_subject]
+other = "Richiesta Info: %s"
+
+[single_cta_mailto_body]
+other = "Salve, vorrei maggiori dettagli su %s"

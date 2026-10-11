@@ -1,0 +1,460 @@
+# -- Hero Section --
+[hero_tag]
+other = "Polyurethanverarbeitung seit 1999 · Matera, Italien"
+
+[hero_title]
+other = "Polyurethanschaum nach Maß"
+
+[hero_subtitle]
+other = "Seit über 27 Jahren fertigen wir Bauteile aus Polyurethanschaum für Schutzverpackungen, Akustik, den Marinebereich, Arbeitsschutz und gewerbliche Einrichtungen."
+
+[hero_btn_call]
+other = "Werk anrufen"
+
+[hero_btn_whatsapp]
+other = "WhatsApp an Techniker"
+
+[hero_btn_cad]
+other = "CAD-Zeichnung senden / Angebot anfragen"
+
+[whatsapp_prefill]
+other = "Hallo Polform, ich möchte Informationen über eine Polyurethanschaum-Lieferung anfragen"
+
+[whatsapp_prefill_urgent]
+other = "Hallo Polform, ich habe eine dringende Zeichnung zur Bewertung"
+
+[whatsapp_prefill_quote]
+other = "Hallo Polform, ich schreibe bezüglich eines Angebots"
+
+[whatsapp_prefill_short]
+other = "Hallo Polform, ich möchte Informationen über eine Lieferung"
+
+# -- Metrics Strip --
+[metric_founded]
+other = "Gegründet in Matera"
+
+[metric_years]
+other = "Jahre ununterbrochener Tätigkeit"
+
+[metric_tolerance]
+other = "CNC-Schnitttoleranz"
+
+[metric_certipur]
+other = "CertiPUR-zertifizierte Schaumstoffe"
+
+# -- Sectors Section --
+[sectors_badge]
+other = "Industrielle Diversifizierung"
+
+[sectors_title]
+other = "Bediente Industriesektoren"
+
+[sectors_all_link]
+other = "Alle 8 Lieferbranchen"
+
+# -- Sector Cards --
+[sec01_title]
+other = "Maßeinlagen für Koffer und Verpackungen"
+
+[sec01_text]
+other = "Wir fertigen Schaumstoffeinlagen nach CAD/DXF-Zeichnungen, um Messgeräte, Drohnen, Optik und Flaschen zu schützen. Wir arbeiten auch mit Koffern von Explorer Cases, GT Line und Peli Cases."
+
+[sec01_spec_label]
+other = "BEARBEITUNGSSPEZIFIKATION"
+
+[sec01_spec_value]
+other = "CNC-Oszillierdraht-Konturschneidanlage / 3D-Fräsung"
+
+[sec01_tol_label]
+other = "TOLERANZ"
+
+[sec01_tol_value]
+other = "±0,5 mm bei komplexen Geometrien"
+
+[sec01_fmt_label]
+other = "KOMPATIBLE FORMATE"
+
+[sec01_fmt_value]
+other = ".DXF · .DWG · .STEP · .PDF"
+
+[sec01_link]
+other = "Technische Spezifikationen Schutzverpackung"
+
+[sec02_title]
+other = "Akustikplatten"
+
+[sec02_text]
+other = "Schaumstoffplatten zur Verringerung des Echos in Büros und Musikstudios sowie zur Auskleidung von Maschinengehäusen."
+
+[sec02_link]
+other = "Akustikplatten"
+
+[sec03_title]
+other = "Dryfeel-Schaumstoff für Boote"
+
+[sec03_text]
+other = "Offenzelliger Dryfeel-Schaumstoff für Außenpolster und Sonnenliegen. Wasser läuft durch den Schaumstoff ab, der in der Sonne schnell trocknet."
+
+[sec03_link]
+other = "Nautik-Drainageschaum Dryfeel"
+
+[sec04_title]
+other = "Schutz und Sicherheit"
+
+[sec04_text]
+other = "Schutz für Lagerregale und Laderampen, Einlagen für Knieschoner und Schaumstoff für Filter."
+
+[sec04_link]
+other = "Stoßschutz & PSA"
+
+[sec05_title]
+other = "Gesundheit und Orthopädie"
+
+[sec05_text]
+other = "Druckentlastende Kissen für Rollstühle und Pflegeeinrichtungen, Lagerungshilfen für die Physiotherapie und Matratzen für den Krankenhausbedarf. Erhältlich aus HR- und Memory-Schaum."
+
+[sec05_link]
+other = "Anti-Dekubitus-Produkte"
+
+[sec06_title]
+other = "Landwirtschaft und Camper"
+
+[sec06_text]
+other = "Sitze für Traktoren und Erdbaumaschinen zur Verringerung von Vibrationen sowie Matratzen nach Maß für Camper."
+
+[sec06_link]
+other = "Agritech & Camper"
+
+[sec08_title]
+other = "Polster und schwer entflammbarer Schaumstoff"
+
+[sec08_text]
+other = "Polster für Hotels, Kinos, Konferenzsäle und Schiffe, erhältlich mit den Klassifizierungen Klasse 1IM (UNI 9175) und British Standard Crib 5."
+
+[sec08_link]
+other = "Brandschutz-Schaumstoffe"
+
+# -- Call Invite Banner --
+[call_banner_badge]
+other = "KEINE TELEFONZENTRALE · SOFORTIGE ANTWORT"
+
+[call_banner_title]
+other = "Technische Zeichnung oder dringende Spezifikation?"
+
+[call_banner_text]
+other = "Rufen Sie das Werk in Matera direkt an. Ein Produktionstechniker prüft die CNC-Schnittmachbarkeit und antwortet in Echtzeit."
+
+[call_banner_btn]
+other = "Jetzt anrufen:"
+
+[call_banner_wa]
+other = "WhatsApp Techniker"
+
+# -- Materials Table --
+[materials_badge]
+other = "Physikalisch-mechanische Daten"
+
+[materials_title]
+other = "Schaumstoff-Vergleichsmatrix"
+
+[materials_all_link]
+other = "Alle 6 technischen Datenblätter"
+
+[th_foam_type]
+other = "Schaumstofftyp"
+
+[th_code]
+other = "Code"
+
+[th_density]
+other = "Dichte (ISO 845)"
+
+[th_hardness]
+other = "Stauchhärte 40% (ISO 2439)"
+
+[th_key_feature]
+other = "Schlüsselmerkmal"
+
+[th_fire]
+other = "Brandverhalten"
+
+[th_sheet]
+other = "Datenblatt"
+
+[details_link]
+other = "Details"
+
+# -- Materials Data --
+[mat01_name]
+other = "Hochelastisch (HR)"
+
+[mat01_feature]
+other = "Sofortige elastische Rückstellung (>55% Rückprall)"
+
+[mat02_name]
+other = "Viskoelastisch (Memory)"
+
+[mat02_feature]
+other = "Thermosensibel, keine vaskuläre Kompression"
+
+[mat03_name]
+other = "Retikuliert Drainagefähig (Dryfeel)"
+
+[mat03_feature]
+other = "100% offene Zellen, sofortiger Wasserabfluss"
+
+[mat04_name]
+other = "Noppenschaum Schallabsorbierend"
+
+[mat04_feature]
+other = "Noppen-Profilierung, NRC 0,65 – 0,85"
+
+[mat05_name]
+other = "Brandschutz 1IM"
+
+[mat05_feature]
+other = "Intumeszenz-Additive für öffentliche Einrichtungen"
+
+[mat06_name]
+other = "Verbundschaum (Agglomerat)"
+
+# -- Search --
+[search_dialog_label]
+other = "Katalog durchsuchen"
+
+[search_input_label]
+other = "Katalog durchsuchen"
+
+[search_input_placeholder]
+other = "Materialien, Branchen, Dichten und Brandschutzklassen suchen..."
+
+[search_close_label]
+other = "Suche schließen"
+
+[search_empty_prompt]
+other = "Geben Sie einen Suchbegriff ein, um Polform-Materialien und Branchen zu durchsuchen."
+
+[search_no_results_prompt]
+other = "Keine passenden Materialien oder Branchen für"
+
+[search_empty_state]
+other = "Geben Sie einen Suchbegriff ein, um alle Branchen und technischen Datenblätter von Polform zu durchsuchen."
+
+[mat06_feature]
+other = "Zirkuläres Recycling >85%, Trittschalldämmung unter Estrich"
+
+# -- Contact Hub --
+[contact_badge]
+other = "Direkter Kontakt"
+
+[contact_title]
+other = "Sprechen Sie mit uns"
+
+[contact_subtitle]
+other = "Kontaktieren Sie uns bei Fragen oder für ein Angebot. Rufen Sie an, schreiben Sie uns über WhatsApp oder senden Sie uns eine technische Zeichnung per E-Mail."
+
+[contact_phone_title]
+other = "Telefon"
+
+[contact_phone_text]
+other = "Unser Team informiert Sie über Materialien, Verfügbarkeit und die gewünschte Bearbeitung."
+
+[contact_phone_btn]
+other = "Anrufen:"
+
+[contact_wa_title]
+other = "WhatsApp"
+
+[contact_wa_text]
+other = "Senden Sie ein Foto des Musters, eine Sprachnachricht oder Ihre Frage."
+
+[contact_wa_btn]
+other = "WhatsApp-Chat öffnen"
+
+[contact_cad_title]
+other = "CAD-Zeichnung senden (.DXF)"
+
+[contact_cad_text]
+other = "Haben Sie eine Zeichnung oder eine DXF-Datei? Fügen Sie sie Ihrer E-Mail bei und nennen Sie Menge und Einzelheiten Ihrer Anfrage."
+
+[contact_cad_btn]
+other = "E-Mail schreiben"
+
+[mailto_subject]
+other = "[Polform Angebotsanfrage] Polyurethanverarbeitung"
+
+[mailto_body]
+other = "Firma:\nBranche:\nGeschätzte Menge:\n\n[Bitte CAD-Datei oder Spezifikationen anhängen]"
+
+# -- History Section --
+[history_tag]
+other = "Fertigungswurzeln"
+
+[history_title]
+other = "Über 27 Jahre Polyurethan-Meisterschaft"
+
+[history_p1]
+other = "Die Polform S.r.l. wurde im <strong>Januar 1999</strong> in Matera von den <strong>Gründungspartnern</strong> gegründet, nach über einem Jahrzehnt praktischer Betriebserfahrung in der Polyurethanschaum- und Dacron-Verarbeitung im Industriecluster Matera-Bari."
+
+[history_p2]
+other = "Tiefes Wissen über die physikalische Chemie der Schaumstoffe und Präzision im Konturschnitt haben das Unternehmen zu einem dauerhaften Referenzpunkt gemacht, das sich heute in die fortschrittlichsten italienischen technischen und industriellen Märkte weiterentwickelt."
+
+[history_badge1]
+other = "✓ Aktiv seit 1999"
+
+[history_badge2]
+other = "✓ Millimetergenaues CNC-Schneiden"
+
+[history_badge3]
+other = "✓ Schnelle Musterproduktion"
+
+[history_badge4]
+other = "✓ Lieferungen in ganz Italien & Europa"
+
+[history_facility]
+other = "Werk: Z.I. La Martella, Via Giovanni Agnelli s.n.c., 75100 Matera (MT), Italien"
+
+[history_link]
+other = "Firmengeschichte lesen"
+
+# -- Footer --
+[footer_desc]
+other = "Verarbeitungszentrum für CNC-Formschneidung, Spaltung und Verbund von flexiblem Polyurethanschaum für die italienische und europäische Industrie."
+
+[footer_registry]
+other = "HANDELSKAMMER MATERA · SEIT JANUAR 1999"
+
+[footer_facility_title]
+other = "Werk & Büros"
+
+[footer_hist_office]
+other = "Historischer Firmensitz: Via Rosselli 26 / Via Delle Arti 1"
+
+[footer_contact_title]
+other = "Direkte Werkskontakte"
+
+[footer_switchboard]
+other = "Telefonzentrale:"
+
+[footer_wa_label]
+other = "Technischer Produktions-Chat"
+
+[footer_email_label]
+other = "Offizielle E-Mail:"
+
+[footer_nav_title]
+other = "Schnellnavigation"
+
+[footer_nav_sectors]
+other = "Alle 8 Industriesektoren"
+
+[footer_nav_materials]
+other = "Schaumstoff-Technische Datenblätter"
+
+[footer_nav_certs]
+other = "CertiPUR, 1IM, Crib 5, ISO"
+
+[footer_nav_about]
+other = "Geschichte & Anlagen seit 1999"
+
+[footer_nav_rfq]
+other = "Angebot anfordern / Zeichnung senden"
+
+[footer_copyright]
+other = "POLFORM S.r.l. — Alle Rechte vorbehalten. Herstellung und Verarbeitung von Polyurethanschaum."
+
+[footer_privacy]
+other = "Datenschutzerklärung (DSGVO)"
+
+[footer_legal]
+other = "Impressum & Pflichtangaben (Art. 2250 C.C.)"
+
+[footer_tech]
+other = "Hochleistungs-JAMstack-Hugo-Architektur. Kein invasives Tracking, keine Drittanbieter-Cookies."
+
+# -- Mobile Dock --
+[dock_call]
+other = "Anrufen"
+
+[dock_wa]
+other = "WhatsApp"
+
+[dock_cad]
+other = "CAD senden"
+
+# -- Header --
+[nav_cad_btn]
+other = "CAD senden"
+
+# -- Accessibility --
+[skip_to_content]
+other = "Zum Hauptinhalt springen"
+
+[nav_label]
+other = "Hauptnavigation"
+
+[search_label]
+other = "Katalog durchsuchen (Strg+K)"
+
+[mobile_menu_label]
+other = "Navigationsmenü öffnen"
+
+[lang_switch_label]
+other = "Sprache wechseln"
+
+[mobile_dock_label]
+other = "Mobiler Schnellkontakt"
+
+[theme_label]
+other = "Hell-, Dunkel- oder Systemdesign auswählen"
+
+[theme_light]
+other = "Helles Design"
+
+[theme_auto_title]
+other = "Systemeinstellungen folgen"
+
+[theme_auto]
+other = "Systemdesign"
+
+[theme_dark]
+other = "Dunkles Design"
+
+[lightbox_label]
+other = "Vergrößertes Bild"
+
+[lightbox_open]
+other = "Vergrößertes Bild öffnen"
+
+[lightbox_close]
+other = "Vergrößertes Bild schließen"
+
+[lightbox_previous]
+other = "Vorheriges Bild"
+
+[lightbox_next]
+other = "Nächstes Bild"
+
+[single_cta_heading]
+other = "Informationen oder Muster zu diesem Produkt anfragen"
+
+[single_cta_description]
+other = "Unser Produktionsteam erstellt auf Grundlage von CAD-Zeichnungen (.DXF, .DWG, .STEP) maßbezogene Angebote und versendet auf Anfrage physische Muster."
+
+[single_cta_phone_label]
+other = "Anrufen:"
+
+[single_cta_whatsapp_label]
+other = "Technisches Team per WhatsApp kontaktieren"
+
+[single_cta_email_label]
+other = "Zeichnung per E-Mail senden"
+
+[single_cta_whatsapp_prefill]
+other = "Hallo Polform, ich hätte gern Informationen zu: %s"
+
+[single_cta_mailto_subject]
+other = "Informationsanfrage: %s"
+
+[single_cta_mailto_body]
+other = "Guten Tag, ich hätte gern weitere Informationen zu %s"

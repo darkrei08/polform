@@ -1,0 +1,176 @@
+[span] POLFORM
+[span] Matera · 1999
+[a] Materiali
+[a] Chi Siamo
+[a] Certificazioni
+[span] Ctrl K
+[span] Invia CAD
+[div] Manifattura del Poliuretano dal 1999 · Matera
+[h1] Sagomatura e Trasformazione di Poliuretano Espanso ad Alta Precisione
+[p] Oltre 27 anni di perizia industriale nel taglio CNC, pantografatura a filo e accoppiamento di schiume tecniche per packaging protettivo, acustica ambientale, nautica, sicurezza sul lavoro e arredo contract.
+[a] Chiama Stabilimento (+39 0835 309182)
+[a] WhatsApp con i Tecnici
+[a] Invia Disegno CAD / Richiedi RFQ
+[span] 1999
+[span] Anno di fondazione a Matera
+[span] 27+
+[span] Anni di attività ininterrotta
+[span] ±0.5 mm
+[span] Tolleranza di taglio CNC
+[span] 100%
+[span] Espansi certificati CertiPUR
+[span] Diversificazione Manifatturiera
+[h2] Settori Industriali Serviti
+[a] Tutti gli 8 settori di fornitura →
+[span] SEC-01 // PACKAGING TECNICO
+[a] Inserti Sagomati per Valigie Ermetiche & Dunnage Industriale
+[p] Alloggiamenti fresati e sagomati su disegno CAD/DXF per valigie di sicurezza (Explorer Cases, GT Line, Peli Cases), elettronica di misura, droni, ottiche e packaging luxury per bottiglie di pregio.
+[strong] SPECIFICHE LAVORAZIONE
+[div] Pantografo CNC a filo oscillante / fresatura 3D
+[strong] TOLLERANZA
+[div] ±0.5 mm su geometrie complesse
+[strong] FORMATI COMPATIBILI
+[div] .DXF · .DWG · .STEP · .PDF
+[a] Specifiche tecniche packaging protettivo →
+[span] SEC-02 // ACUSTICA
+[a] Fonoassorbimento & Acustica Ambientale
+[p] Pannelli bugnati e piramidali per correzione del riverbero in uffici, studi musicali e insonorizzazione carter macchinari.
+[div] COEFF. ASSORBIMENTO: NRC 0.65 – 0.85
+[a] Pannelli acustici →
+[span] SEC-03 // NAUTICA
+[a] Nautica, Yachting & Drenante Dryfeel
+[p] Poliuretano reticolato a celle aperte per cuscinerie esterne e prendisole: l'acqua defluisce per gravità, asciugatura ultra-rapida al sole, totale immunità a muffe e funghi.
+[span] 100% RETICOLATO
+[span] TRATTAMENTO ANTIMUFFA
+[span] NORMA IMO FTP PART 8
+[a] Drenante nautico Dryfeel →
+[span] SEC-05 // MEDICALE
+[a] Sanità, Ortopedia & Silver Economy
+[p] Cuscini compositi antidecubito in HR e Memory Foam per carrozzine e degenza RSA, cunei di posizionamento per fisioterapia e lastre ergonomiche ospedaliere.
+[span] CE MDR CLASSE I
+[span] MEMORY VISCOELASTICO
+[span] DETRAIBILE 19%
+[a] Presidi antidecubito →
+[span] SEC-04 // SICUREZZA
+[a] Sicurezza & DPI
+[p] Paracolpi industriali bicolore per scaffali e banchine carico; imbottiture per ginocchiere professionali e filtri reticolati.
+[a] Paracolpi & DPI →
+[span] SEC-06 // AGRITECH
+[a] Agritech & Camper
+[p] Sedili antivibranti ad alta densità per trattori e macchine movimento terra; materassi snodati su misura per van conversion.
+[a] Agritech & camper →
+[span] SEC-08 // CONTRACT
+[a] Contract 1IM & Teatri
+[p] Imbottiture ignifughe omologate Classe 1IM (UNI 9175) e British Standard Crib 5 per hotel, cinema, sale conferenze e navi.
+[a] Espansi ignifughi →
+[span] NESSUN CENTRALINO · RISPOSTA IMMEDIATA
+[h3] Hai un disegno tecnico o un capitolato urgente?
+[p] Chiama direttamente lo stabilimento di Matera. Un tecnico di produzione esamina la fattibilità del taglio CNC e ti risponde in tempo reale.
+[a] Chiama Ora: +39 0835 309182
+[a] WhatsApp Tecnico
+[span] Dati Fisico-Meccanici
+[h2] Matrice Comparativa delle Schiume
+[a] Tutte le 6 schede tecniche →
+[th] Tipologia Schiuma
+[th] Codice
+[th] Densità (ISO 845)
+[th] Portanza 40% (ISO 2439)
+[th] Caratteristica Chiave
+[th] Reazione al Fuoco
+[th] Scheda
+[strong] Alta Resilienza (HR)
+[span] MAT-01
+[span] 35 – 45 kg/m³
+[span] 3.2 – 4.5 kPa
+[td] Ritorno elastico istantaneo (>55% rebound)
+[td] CertiPUR / Standard
+[a] Dettagli →
+[strong] Viscoelastico (Memory)
+[span] MAT-02
+[span] 45 – 55 kg/m³
+[span] 1.2 – 1.8 kPa
+[td] Termosensibile, zero compressione vascolare
+[td] OEKO-TEX Cl. I / MDR
+[a] Dettagli →
+[strong] Reticolato Drenante (Dryfeel)
+[span] MAT-03
+[span] 30 – 35 kg/m³
+[span] 2.8 – 3.4 kPa
+[td] Celle 100% aperte, deflusso acqua immediato
+[td] IMO FTP Part 8 opt.
+[a] Dettagli →
+[strong] Fonoassorbente Bugnato
+[span] MAT-04
+[span] 28 – 35 kg/m³
+[span] 2.5 – 3.2 kPa
+[td] Profilatura alveolare, NRC 0.65 – 0.85
+[td] UL 94 HF-1 Autoest.
+[a] Dettagli →
+[strong] Ignifugo Omologato 1IM
+[span] MAT-05
+[span] 30 – 50 kg/m³
+[span] 3.0 – 5.0 kPa
+[td] Additivi intumescenti per luoghi pubblici
+[strong] Classe 1IM / Crib 5
+[a] Dettagli →
+[strong] Agglomerato (Bonded Foam)
+[span] MAT-06
+[span] 80 – 220 kg/m³
+[span] > 8.0 kPa
+[td] Riciclo circolare >85%, anticalpestio sottomassetto
+[td] EN 13501-1 Cl. E
+[a] Dettagli →
+[span] Nessun Modulo Complesso · Risposta Diretta
+[h2] Canali di Contatto con lo Stabilimento
+[p] Scegli la modalità più comoda: consulenza vocale immediata, chat tecnica WhatsApp o invio disegno CAD per quotazione.
+[h3] Chiamata Telefonica
+[p] Parla direttamente con la Direzione di Stabilimento per verificare densità, disponibilità e fattibilità immediata.
+[a] Chiama: +39 0835 309182
+[h3] WhatsApp Diretto
+[p] Invia fotografie di campioni da replicare, note vocali o richieste veloci direttamente al responsabile di produzione.
+[a] Apri Chat WhatsApp
+[h3] Invio Disegno CAD (.DXF)
+[p] Hai già un file tecnico o una dima vettoriale? Mandalo con un clic dalla tua posta aziendale con oggetto preimpostato.
+[a] Invia Email con File CAD
+[div] Radici Manifatturiere
+[h2] Oltre 27 Anni di Maestria nel Poliuretano
+[p] La Polform S.r.l. nasce nel
+[strong] gennaio 1999
+[p] a Matera dall'iniziativa dei
+[strong] Soci Fondatori
+[p] , dopo oltre un decennio di esperienza operativa diretta nella trasformazione del poliuretano espanso e del dacron nel polo industriale di Matera e Bari.
+[p] La profonda conoscenza chimico-fisica delle schiume e la precisione nel taglio a pantografo hanno reso l'azienda un punto di riferimento duraturo, capace oggi di evolvere verso i più avanzati mercati tecnici e industriali italiani.
+[span] ✓ Attività dal 1999
+[span] ✓ Taglio CNC millimetrico
+[span] ✓ Campionature rapide
+[span] ✓ Forniture in tutta Italia
+[h3] POLFORM S.r.l.
+[p] Stabilimento: Z.I. La Martella, Via Giovanni Agnelli s.n.c., 75100 Matera (MT)
+[a] Leggi la storia aziendale →
+[h4] POLFORM S.r.l.
+[p] Centro di trasformazione, sagomatura CNC e accoppiamento di poliuretano espanso flessibile per l'industria italiana ed europea.
+[p] REG. IMPRESE MATERA · DAL GENNAIO 1999
+[h4] Stabilimento & Sede
+[p] Via Giovanni Agnelli s.n.c., Z.I. La Martella, 75100 Matera (MT), Italia
+[p] Sede Legale Storica: Via Rosselli 26 / Via Delle Arti 1
+[span] 00671260776
+[h4] Contatti Diretti di Fabbrica
+[p] Centralino:
+[strong] +39 0835 309182
+[p] WhatsApp:
+[a] Chat Tecnica di Produzione
+[p] Email Ufficiale:
+[a] info@polform.com
+[h4] Navigazione Veloce
+[a] Tutti gli 8 Settori Industriali
+[a] Catalogo Schede Tecniche Schiume
+[a] CertiPUR, 1IM, Crib 5, ISO
+[a] Storia & Impianti dal 1999
+[a] Richiedi Preventivo / Invia Disegno
+[div] © 2026 POLFORM S.r.l. — Tutti i diritti riservati. Manifattura e lavorazione poliuretano espanso.
+[div] Architettura statica JAMstack Hugo ad alte prestazioni. Zero tracciamento invasivo, zero cookie di terze parti.
+[button] Esc
+[div] Inizia a digitare per cercare tra tutti i settori industriali e le schede tecniche dei materiali Polform.
+[span] Chiama
+[span] WhatsApp
+[span] Invia CAD
