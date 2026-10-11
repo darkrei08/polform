@@ -4,7 +4,7 @@ Feature: `polform-ui-polish`
 Status: complete
 Created: 2026-10-11
 Issue: follow-up to approved site work; preserve current brand and make only evidence-backed UI corrections
-Branch: `feat/hugo-localized-language-switch`
+Branch: `master` (published at commit `294a92f`)
 
 ## Objective
 Review the existing navy/amber design tokens and reduce mobile header height caused by wrapped actions, without replacing the site's visual identity.

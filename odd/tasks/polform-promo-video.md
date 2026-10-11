@@ -1,10 +1,10 @@
 # ODD Tasks: HyperFrames GitHub Promo Video
 
 Feature: `polform-promo-video`
-Status: in progress
+Status: complete
 Created: 2026-10-11
 Issue: follow-up to approved site work; user explicitly requested video production and publication
-Branch: `feat/hugo-localized-language-switch`
+Branch: `master` (published at commit `294a92f`)
 
 ## Inferred brief
 - Route: HyperFrames `product-launch-video`.
@@ -21,7 +21,7 @@ Branch: `feat/hugo-localized-language-switch`
 - [x] T3: Preview, render, verify MP4, and prepare GitHub publication artifact.
   Evidence: preview reviewed; `renders/video.mp4` is 1920×1080, H.264, 30fps, 45.0s, 11.0 MB; `ffprobe` passed.
 - [x] T4: Publish only after final preview/render evidence and ordinary repository delivery checks.
-  Evidence: HyperFrames project published; project id `8495111e-b040-4291-a345-7cadc3aaa0c9`. HyperFrames reports sign-in required to claim/edit the public project; the one-time claim URL was emitted by the publish command and is not stored in repository memory.
+  Evidence: HyperFrames project published; project id `8495111e-b040-4291-a345-7cadc3aaa0c9`. The repository publication artifact is committed under `video/polform-github-promo/`; the rendered MP4 is also documented in `README.md` and copied to `docs/media/`. HyperFrames reports sign-in required to claim/edit the public project; the one-time claim URL was emitted by the publish command and is intentionally not stored in the repository.
 
 ## Constraints
 - Do not present generic Wikimedia foam images as Polform product photos.
@@ -29,3 +29,8 @@ Branch: `feat/hugo-localized-language-switch`
 - Do not publish a rendered video or push repository changes before the final preview and delivery checks.
 - User explicitly approved render and publication on 2026-10-11; no additional approval gate is required for this feature run.
 - Preserve all existing Hugo worktree changes.
+
+## Final verification
+- `ffprobe` confirms H.264, 1920×1080, 30fps, 45.0 seconds, 11,483,796 bytes.
+- GitHub raw delivery of `video/polform-github-promo/renders/video.mp4` returns HTTP 200.
+- Commit `294a92f` is deployed on `master`; the Hugo Pages workflow completed successfully.

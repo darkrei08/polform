@@ -1,10 +1,10 @@
 # ODD Tasks: Improve Hugo Template Accessibility
 
 Feature: `polform-template-accessibility`
-Status: in progress
+Status: complete
 Created: 2026-10-11
-Issue: [#3](https://github.com/darkrei08/polform/issues/3) (open, approved). Existing issue #2 covers public copy and privacy, not template accessibility.
-Branch: `feat/hugo-localized-language-switch` (dirty; preserve all existing changes)
+Issue: [#3](https://github.com/darkrei08/polform/issues/3) (open, approved; issue closure remains a maintainer decision). Existing issue #2 covers public copy and privacy, not template accessibility.
+Branch: `master` (published at commit `294a92f`)
 
 ## Objective
 Fix concrete keyboard, accessible-name, language, and semantic issues in the shared Hugo templates without changing the site's visual direction or adding dependencies.
@@ -40,4 +40,7 @@ Fix concrete keyboard, accessible-name, language, and semantic issues in the sha
 - T2 complete: zoom images are keyboard triggers; runtime overlay has dialog semantics, localized names, visible close control, focus entry/containment/return, Escape, and retained backdrop/arrows behavior. Writer checks passed: `node --check assets/js/main.js`, Hugo minified build to `/tmp/polform-t2`, generated locale/marker assertions, and `git diff --check`.
 - T3 complete. Hugo `--minify` build passed to `/tmp/polform-accessibility-final` with 32 IT, 31 EN, and 31 DE pages; `node --check assets/js/main.js` and `git diff --check` passed.
 - Headless Chromium 154 smoke tests passed on generated pages: Ctrl+K search opens/closes; theme dark/light buttons update `data-theme` and active state; a temporary in-page `.zoomable` fixture opened via Enter and Space, exposed a dialog, focused the close control, wrapped Tab/Shift+Tab, navigated arrows, closed with Escape, and returned focus to the trigger. Fixture was temporary because generated content contains no `.zoomable` image.
-- Static generated-output assertions confirmed localized search/theme/lightbox names in IT/EN/DE. No assistive technology, production deployed site, or full WCAG audit was performed.
+- Static generated-output assertions confirmed localized search/theme/lightbox names in IT/EN/DE. No assistive technology audit, production deployed interaction audit, or full WCAG conformance audit was performed; these remain explicit scope limits rather than incomplete T1-T3 work.
+
+## Completion
+T1-T3 are complete within the approved bounded template scope on published `master` commit `294a92f`. Full WCAG conformance and assistive-technology certification are not claimed.

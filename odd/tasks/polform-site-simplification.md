@@ -1,10 +1,10 @@
 # ODD Tasks: Simplify Polform Website Copy and Privacy Information
 
 Feature: `polform-site-simplification`
-Status: in progress
+Status: complete
 Created: 2026-10-11
-Issue: [#2](https://github.com/darkrei08/polform/issues/2) (approved)
-Branch: `feat/hugo-localized-language-switch` (existing dirty feature branch; preserve all existing changes)
+Issue: [#2](https://github.com/darkrei08/polform/issues/2) (approved; issue closure remains a maintainer decision)
+Branch: `master` (published at commit `294a92f`)
 
 ## Objective
 Make the public-facing Hugo site easier for industrial buyers to understand, while keeping technical specifications available and keeping privacy/AI statements limited to evidence-backed facts.
@@ -37,9 +37,10 @@ Make the public-facing Hugo site easier for industrial buyers to understand, whi
 ## Evidence and progress
 - Issue #2 was created and then explicitly approved by the user; target-host readback confirmed `status:approved` on 2026-10-11.
 - The previous working tree already contained uncommitted homepage/localization/accessibility changes; do not overwrite unrelated edits.
-- Previous Hugo build after localization/privacy edits succeeded: 32 IT / 31 EN / 31 DE pages. Browser verification remains pending.
-- T1 verifier evidence: `hugo --minify --destination /tmp/polform-copy-check` exited 0 (32 IT / 31 EN / 31 DE); `git diff --check` exited 0. Generated IT/EN/DE homepages contain localized plain-language hero, sector, and contact copy; the comparison table retains technical values and ISO/fire references. Browser behavior was not checked.
-- Repository scan found theme preference stored in `localStorage`, outbound WhatsApp links, and no analytics/pixel code in the scanned templates and assets. A deployed-site network audit remains pending.
+- Previous Hugo build after localization/privacy edits succeeded: 32 IT / 31 EN / 31 DE pages.
+- T1 verifier evidence: `hugo --minify --destination /tmp/polform-copy-check` exited 0 (32 IT / 31 EN / 31 DE); `git diff --check` exited 0. Generated IT/EN/DE homepages contain localized plain-language hero, sector, and contact copy; the comparison table retains technical values and ISO/fire references.
+- Fresh Chromium checks loaded IT/EN/DE homepage, sector, material, and privacy routes with HTTP 200 and expected localized language/H1. Generated HTML contains no external script/style URLs; expected WhatsApp links and the GitHub Pages canonical URL remain.
+- A live network audit and external legal review were not performed; the site copy remains deliberately scoped to observable site behavior and controller-confirmable facts.
 - Privacy pages previously acquired unsupported claims about DPO exemption, provider transfer safeguards, retention periods, and factory AI use. These must be checked and removed or qualified before publication.
 - Provider research: current DNS MX is `10 in.arubabusiness.it.` and SPF includes `_spf.arubabusiness.it`, indicating Aruba Business handles Polform email routing. Aruba Business's official privacy notice v2.5 (2025-07-07) states its mail-service traffic data is retained six years and its service logs up to 12 months; those are provider metadata/log periods, not the retention period for Polform's email contents or CAD attachments.
 - Hosting research: the repository deploys to GitHub Pages. GitHub says Pages visitor IPs are logged for security; its general privacy statement describes EU transfer safeguards (DPF/SCCs). Cloudflare is not evidenced in the current source and must not be listed as a Polform provider without evidence.
@@ -47,5 +48,5 @@ Make the public-facing Hugo site easier for industrial buyers to understand, whi
 - Retention rule for the notice: state criteria rather than inventing durations for inquiries/CAD: retain while needed to handle the request and any resulting relationship, then delete or restrict unless a legal obligation or claim requires retention. Accounting records follow applicable statutory retention. Keep Aruba's metadata retention clearly separate.
 - Unverified internal facts (e.g. company-wide AI use and exact contractual roles) must not be asserted; keep public wording scoped to evidenced site behavior and link to provider notices.
 
-## Next step
-T1 and T2 implementation and their recorded static checks are complete. Browser verification remains pending. Continue with the separate template-accessibility feature tracked in `odd/tasks/polform-template-accessibility.md`.
+## Completion
+T1 and T2 are complete within the approved static-site scope on published `master` commit `294a92f`. No consent manager, tracker, runtime dependency, or unsupported legal claim was added. A live network audit and external legal review remain outside this task and must not be inferred from the static checks.

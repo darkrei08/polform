@@ -1,10 +1,10 @@
 # ODD Tasks: Complete Hugo Localization and Language Switching
 
 Feature: `hugo-localized-language-switch`
-Status: blocked
+Status: complete
 Created: 2026-10-11
-Issue: [#1](https://github.com/darkrei08/polform/issues/1) (approved)
-Branch: `feat/hugo-localized-language-switch`
+Issue: [#1](https://github.com/darkrei08/polform/issues/1) (approved; issue closure remains a maintainer decision)
+Branch: `master` (published at commit `294a92f`)
 
 ## Objective
 Make every generated Italian, English, and German Hugo page consistently use its selected language, especially the homepage and shared site chrome, and keep language switching on the equivalent page whenever available.
@@ -29,7 +29,7 @@ The homepage template contains Italian prose and labels directly, so Hugo render
 - [x] T3: Localize the shared single-page contact CTA and mailto/WhatsApp labels on translated material and sector pages.
   - Allowed edit surfaces: `layouts/_default/single.html`, `i18n/it.toml`, `i18n/en.toml`, `i18n/de.toml`.
   - Acceptance: generated EN/DE single pages contain no Italian CTA labels; titles, WhatsApp prefill, and mailto subject/body use the page language; IT output remains unchanged except for localized key wiring.
-  - Verification: `hugo --minify --destination /tmp/polform-single-cta` passed (32 IT / 31 EN / 31 DE); generated IT/EN/DE assertions passed for acoustic-sector and memory-foam pages; `git diff --check` passed. Browser behavior was not verified.
+  - Verification: `hugo --minify --destination /tmp/polform-single-cta` passed (32 IT / 31 EN / 31 DE); generated IT/EN/DE assertions passed for acoustic-sector and memory-foam pages; Chromium loaded the corresponding generated IT/EN/DE pages and confirmed localized WhatsApp prefill, mailto subject/body, and CTA labels; `git diff --check` passed.
 
 ## Acceptance criteria
 - `hugo --minify --destination /tmp/polform-public` succeeds.
@@ -41,8 +41,9 @@ The homepage template contains Italian prose and labels directly, so Hugo render
 ## Checks and evidence
 - Hugo 0.131.0 Extended build passed: `hugo --minify --destination /tmp/polform-public` (32 IT / 31 EN / 31 DE).
 - Static HTML spot checks confirmed localized IT/EN/DE homepage copy and localized footer labels.
-- Browser route and language-switch checks passed for the bounded 12-route matrix; full link crawl, broader page coverage, and WCAG conformance remain outside this check.
-- Preserve all existing uncommitted translations and reference files.
+- Browser route and language-switch checks passed for the bounded 12-route matrix plus localized single-page CTA checks; full link crawl, broader page coverage, and WCAG conformance remain outside this check.
+- Fresh generated-site browser checks confirmed IT/EN/DE homepage, acoustic sector, memory material, and privacy routes return the expected locale and H1.
+- Preserve all existing translations and reference files; no unrelated changes were lost.
 
 ## Progress and next step
-Issue #1 remains open and marked `status:approved`; branch `feat/hugo-localized-language-switch` is active. T1, T2, and T3 are complete. Preserve the dirty footer, translated content, and reference files. Full link crawling, browser verification of the new single-page CTA, and WCAG conformance are not claimed.
+Issue #1 remains open and marked `status:approved`; issue closure is outside this repository task. T1, T2, and T3 are complete on published `master` commit `294a92f`. Full link crawling and WCAG conformance remain explicitly outside scope.
