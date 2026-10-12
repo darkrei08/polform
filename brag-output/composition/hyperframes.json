@@ -1,0 +1,8 @@
+{
+  "$schema": "https://hyperframes.dev/schema.json",
+  "name": "polform-brag-social",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "duration": 18.0
+}

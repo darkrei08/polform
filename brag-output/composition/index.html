@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1920, height=1080, initial-scale=1" />
+    <title>Polform S.r.l. — Brag Social Video</title>
+    <style>
+      *, *::before, *::after { box-sizing: border-box; }
+      html, body {
+        margin: 0; padding: 0; width: 1920px; height: 1080px; overflow: hidden;
+        background: #0a0e17; color: #f1f5f9; font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+      }
+      #root {
+        position: relative; width: 1920px; height: 1080px; overflow: hidden;
+        background: radial-gradient(circle at 80% 20%, #152238 0%, #0a0e17 70%);
+      }
+      .grid-layer {
+        position: absolute; inset: 0; opacity: 0.12;
+        background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+        background-size: 60px 60px; pointer-events: none;
+      }
+      .scene { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; opacity: 0; }
+
+      /* Scene 1: Hook */
+      #scene-1 { padding: 80px 100px; justify-content: space-between; }
+      .s1-left { max-width: 900px; z-index: 2; }
+      .badge-tag {
+        display: inline-flex; align-items: center; gap: 8px; font-family: ui-monospace, monospace;
+        font-size: 18px; font-weight: 700; color: #f59e0b; background: rgba(245, 158, 11, 0.12);
+        border: 1px solid rgba(245, 158, 11, 0.35); padding: 6px 18px; border-radius: 30px;
+        text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 24px;
+      }
+      .main-title {
+        font-size: 72px; line-height: 1.08; font-weight: 800; letter-spacing: -0.03em; margin: 0 0 20px;
+      }
+      .main-subtitle { font-size: 28px; line-height: 1.5; color: #94a3b8; margin: 0 0 32px; max-width: 780px; }
+      .s1-meta { display: flex; gap: 20px; font-family: ui-monospace, monospace; font-size: 20px; color: #60a5fa; font-weight: 700; }
+      .s1-img-shell {
+        width: 760px; height: 580px; border-radius: 20px; overflow: hidden;
+        border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+      }
+      .s1-img { width: 100%; height: 100%; object-fit: cover; }
+
+      /* Scene 2: Workflow */
+      #scene-2 { flex-direction: column; text-align: center; padding: 60px; }
+      .s2-header { margin-bottom: 50px; }
+      .s2-steps { display: flex; gap: 32px; justify-content: center; width: 100%; max-width: 1600px; }
+      .s2-card {
+        flex: 1; background: #141c2c; border: 1px solid #223049; border-radius: 18px;
+        padding: 40px 32px; text-align: left; box-shadow: 0 16px 40px rgba(0,0,0,0.4);
+      }
+      .s2-num { font-family: ui-monospace, monospace; font-size: 22px; font-weight: 800; color: #f59e0b; margin-bottom: 12px; }
+      .s2-title { font-size: 32px; font-weight: 700; margin: 0 0 12px; color: #f1f5f9; letter-spacing: -0.02em; }
+      .s2-desc { font-size: 20px; color: #94a3b8; line-height: 1.5; margin: 0; }
+      .s2-callout {
+        margin-top: 50px; font-size: 28px; font-weight: 700; font-family: ui-monospace, monospace;
+        color: #60a5fa; background: #1b263b; padding: 14px 36px; border-radius: 40px; border: 1px solid #2b3d5c;
+      }
+
+      /* Scene 3: 4 Core Sectors */
+      #scene-3 { flex-direction: column; padding: 50px 80px; }
+      .s3-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; width: 100%; max-width: 1720px; }
+      .s3-card {
+        background: #141c2c; border: 1px solid #223049; border-radius: 16px; overflow: hidden;
+        box-shadow: 0 16px 36px rgba(0,0,0,0.35); display: flex; flex-direction: column;
+      }
+      .s3-card-img { width: 100%; height: 260px; object-fit: cover; }
+      .s3-card-body { padding: 24px; }
+      .s3-code { font-family: ui-monospace, monospace; font-size: 15px; font-weight: 700; color: #f59e0b; margin-bottom: 6px; }
+      .s3-title { font-size: 26px; font-weight: 700; margin: 0 0 8px; color: #f1f5f9; }
+      .s3-desc { font-size: 17px; color: #94a3b8; line-height: 1.45; margin: 0; }
+
+      /* Scene 4: Outro */
+      #scene-4 { flex-direction: column; text-align: center; }
+      .s4-logo { max-width: 240px; margin-bottom: 24px; }
+      .s4-title { font-size: 64px; font-weight: 800; letter-spacing: -0.03em; margin: 0 0 16px; }
+      .s4-subtitle { font-size: 28px; color: #94a3b8; margin: 0 0 36px; }
+      .s4-badge {
+        font-family: ui-monospace, monospace; font-size: 24px; color: #f59e0b;
+        background: rgba(245, 158, 11, 0.12); border: 1px solid rgba(245, 158, 11, 0.4);
+        padding: 12px 32px; border-radius: 30px; display: inline-block; margin-bottom: 30px;
+      }
+      .s4-url {
+        font-family: ui-monospace, monospace; font-size: 32px; font-weight: 700;
+        color: #60a5fa; text-decoration: none;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-duration="18.0" data-width="1920" data-height="1080">
+      <div id="bg-grid" class="grid-layer clip" data-start="0" data-duration="18"></div>
+
+      <!-- Scene 1: Hook (0s - 4.5s) -->
+      <div id="scene-1" class="scene clip" data-start="0" data-duration="4.5">
+        <div class="s1-left">
+          <div id="s1-badge" class="badge-tag">Matera (Italia) · Dal 1999</div>
+          <h1 id="s1-title" class="main-title">MANIFATTURA INDUSTRIALE</h1>
+          <p id="s1-desc" class="main-subtitle">Trasformazione del poliuretano espanso e sagomatura CNC millimetrica per l'industria europea.</p>
+          <div id="s1-meta" class="s1-meta">
+            <span>27+ ANNI DI ESPERIENZA</span>
+            <span>·</span>
+            <span>TAGLIO CNC ±0.5 MM</span>
+          </div>
+        </div>
+        <div id="s1-img-shell" class="s1-img-shell">
+          <img id="s1-img" class="s1-img" src="assets/cnc-router-workshop.jpg" alt="Impianto CNC Polform" />
+        </div>
+      </div>
+
+      <!-- Scene 2: Workflow (4.5s - 9.0s) -->
+      <div id="scene-2" class="scene clip" data-start="4.5" data-duration="4.5">
+        <div class="s2-header">
+          <div id="s2-badge" class="badge-tag">WORKFLOW INGEGNERISTICO</div>
+          <h2 id="s2-title" class="main-title" style="font-size: 58px;">Dal Disegno CAD alla Forma Finita</h2>
+        </div>
+        <div class="s2-steps">
+          <div id="s2-card-1" class="s2-card">
+            <div class="s2-num">FASE 01</div>
+            <h3 class="s2-title">Modello 3D CAD</h3>
+            <p class="s2-desc">Elaborazione diretta di file .STEP, .DWG e .DXF senza complessità burocratiche.</p>
+          </div>
+          <div id="s2-card-2" class="s2-card">
+            <div class="s2-num">FASE 02</div>
+            <h3 class="s2-title">Sagomatura CNC</h3>
+            <p class="s2-desc">Taglio a filo e lama oscillante su schiume vergini, spaccatura e incollaggio.</p>
+          </div>
+          <div id="s2-card-3" class="s2-card">
+            <div class="s2-num">FASE 03</div>
+            <h3 class="s2-title">Collaudo & Consegna</h3>
+            <p class="s2-desc">Precisione dimensionale verificata, prontezza d'uso e spedizioni rapide.</p>
+          </div>
+        </div>
+        <div id="s2-callout" class="s2-callout">TOLLERANZA CONTROLLATA ±0.5 MM // READY TO SPEC</div>
+      </div>
+
+      <!-- Scene 3: 4 Core Sectors (9.0s - 13.5s) -->
+      <div id="scene-3" class="scene clip" data-start="9.0" data-duration="4.5">
+        <div style="margin-bottom: 24px; text-align: center;">
+          <div id="s3-badge" class="badge-tag">PRODUZIONE B2B CONSOLIDATA</div>
+          <h2 id="s3-heading" class="main-title" style="font-size: 48px; margin: 0;">I 4 Settori Produttivi Chiave</h2>
+        </div>
+        <div class="s3-grid">
+          <div id="s3-card-1" class="s3-card">
+            <img class="s3-card-img" src="assets/cnc-router-workshop.jpg" alt="Packaging Tecnico" />
+            <div class="s3-card-body">
+              <div class="s3-code">SEC-01 // PACKAGING</div>
+              <h3 class="s3-title">Packaging Tecnico</h3>
+              <p class="s3-desc">Dunnage industriale e inserti per valigie stagne di precisione.</p>
+            </div>
+          </div>
+          <div id="s3-card-2" class="s3-card">
+            <img class="s3-card-img" src="assets/acoustic-foam.jpg" alt="Acustica" />
+            <div class="s3-card-body">
+              <div class="s3-code">SEC-02 // ACUSTICA</div>
+              <h3 class="s3-title">Acustica & Fono</h3>
+              <p class="s3-desc">Pannelli bugnati e piramidali per insonorizzazione e riverbero.</p>
+            </div>
+          </div>
+          <div id="s3-card-3" class="s3-card">
+            <img class="s3-card-img" src="assets/reticulated-foam.jpg" alt="Nautica" />
+            <div class="s3-card-body">
+              <div class="s3-code">SEC-03 // NAUTICA</div>
+              <h3 class="s3-title">Nautica Dryfeel</h3>
+              <p class="s3-desc">Schiuma reticolata idro-drenante a rapida asciugatura.</p>
+            </div>
+          </div>
+          <div id="s3-card-4" class="s3-card">
+            <img class="s3-card-img" src="assets/cnc-router-workshop.jpg" alt="Contract" />
+            <div class="s3-card-body">
+              <div class="s3-code">SEC-04 // CONTRACT</div>
+              <h3 class="s3-title">Arredo Contract</h3>
+              <p class="s3-desc">Sedute sagomate su misura e imbottiti ignifughi su capitolato.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scene 4: Outro (13.5s - 18.0s) -->
+      <div id="scene-4" class="scene clip" data-start="13.5" data-duration="4.5">
+        <img id="s4-logo" class="s4-logo" src="assets/logo.gif" alt="Logo Polform" />
+        <div id="s4-badge" class="s4-badge">ZERO INTERMEDIARI · CONTATTO DIRETTO IN FABBRICA</div>
+        <h2 id="s4-title" class="s4-title">POLFORM S.r.l.</h2>
+        <p id="s4-desc" class="s4-subtitle">Matera (Italia) · Centralino +39 0835 309182 · Invia il tuo disegno CAD</p>
+        <a id="s4-url" class="s4-url" href="https://darkrei08.github.io/polform/">darkrei08.github.io/polform</a>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+
+      // Scene 1: 0.0s - 4.5s
+      tl.to("#scene-1", { opacity: 1, duration: 0.4 }, 0.0)
+        .fromTo("#s1-badge", { y: -20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "power2.out" }, 0.2)
+        .fromTo("#s1-title", { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 0.4)
+        .fromTo("#s1-desc", { x: -30, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 0.6)
+        .fromTo("#s1-meta", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 0.8)
+        .fromTo("#s1-img-shell", { scale: 0.92, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.7, ease: "power2.out" }, 0.3)
+        .to("#scene-1", { opacity: 0, scale: 1.04, duration: 0.35, ease: "power2.in" }, 4.15);
+
+      // Scene 2: 4.5s - 9.0s
+      tl.to("#scene-2", { opacity: 1, duration: 0.4 }, 4.5)
+        .fromTo("#s2-badge", { y: -20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4 }, 4.65)
+        .fromTo("#s2-title", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 4.8)
+        .fromTo("#s2-card-1", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "back.out(1.4)" }, 5.1)
+        .fromTo("#s2-card-2", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "back.out(1.4)" }, 5.3)
+        .fromTo("#s2-card-3", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "back.out(1.4)" }, 5.5)
+        .fromTo("#s2-callout", { scale: 0.9, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.45, ease: "power2.out" }, 5.8)
+        .to("#scene-2", { opacity: 0, scale: 0.96, duration: 0.35, ease: "power2.in" }, 8.65);
+
+      // Scene 3: 9.0s - 13.5s
+      tl.to("#scene-3", { opacity: 1, duration: 0.4 }, 9.0)
+        .fromTo("#s3-badge", { y: -20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4 }, 9.15)
+        .fromTo("#s3-heading", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 9.3)
+        .fromTo("#s3-card-1", { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" }, 9.5)
+        .fromTo("#s3-card-2", { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" }, 9.65)
+        .fromTo("#s3-card-3", { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" }, 9.8)
+        .fromTo("#s3-card-4", { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" }, 9.95)
+        .to("#scene-3", { opacity: 0, duration: 0.35, ease: "power2.in" }, 13.15);
+
+      // Scene 4: 13.5s - 18.0s
+      tl.to("#scene-4", { opacity: 1, duration: 0.4 }, 13.5)
+        .fromTo("#s4-logo", { scale: 0.8, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }, 13.7)
+        .fromTo("#s4-badge", { y: -15, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4 }, 13.9)
+        .fromTo("#s4-title", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 14.1)
+        .fromTo("#s4-desc", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 14.3)
+        .fromTo("#s4-url", { scale: 0.95, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: "power2.out" }, 14.5);
+
+      tl.to({}, { duration: 18.0 }, 0);
+    </script>
+  </body>
+</html>
