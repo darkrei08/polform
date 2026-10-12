@@ -4,6 +4,9 @@ description: "Fully open-cell reticulated foam for outdoor marine upholstery, wa
 code: "MAT-03"
 icon: "anchor"
 category: "Marine Foam"
+image: "img/materials/reticulated-foam.jpg"
+image_alt: "Reticulated open-cell outdoor draining foam structure"
+image_caption: "Illustrative example of open-cell reticulated foam matrix for marine and outdoor moisture drainage."
 ---
 
 Engineered specifically to endure continuous rain, spray, and humidity. Its completely open reticulated cell matrix lets water drain through instantly via gravity.

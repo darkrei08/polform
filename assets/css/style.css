@@ -4,29 +4,39 @@
 
 /* ---------- 1. Token e Variabili Globali ---------- */
 :root {
-  /* Brand Identitario: Blu Notte Ingegneristico & Ambra Poliuretano */
+  /* Brand Identitario: Blu Notte Ingegneristico & Ambra Industriale */
   --brand-blue: #0b2545;
-  --brand-blue-hover: #133966;
+  --brand-blue-hover: #1e3a8a;
   --brand-blue-ink: #07192f;
-  --brand-accent: #f4a261;
-  --brand-accent-ink: #c25910;
+  --brand-accent: #d97706;
+  --brand-accent-ink: #92400e;
   --brand-green: #2a9d8f;
 
-  /* Superfici e Testo (Tema Chiaro) */
-  --bg: #fdfbff;
-  --bg-subtle: #f8f6f9;
+  /* Superfici e Testo (Tema Chiaro: Pulito, Rilassante, Alto Contrasto) */
+  --bg: #f8fafc;
+  --bg-subtle: #f1f5f9;
   --surface: #ffffff;
-  --surface-2: #f4f6f8;
-  --surface-3: #e9ecef;
-  --text: #17151a;
-  --text-soft: #2d3139;
-  --muted: #6b6570;
-  --border: #eceaf0;
-  --border-subtle: #f3f1f6;
+  --surface-2: #f8fafc;
+  --surface-3: #e2e8f0;
+  --text: #0f172a;
+  --text-soft: #334155;
+  --muted: #475569;
+  --border: #e2e8f0;
+  --border-subtle: #f1f5f9;
   --border-focus: #0b2545;
-  --shadow-sm: 0 1px 2px rgba(20,10,30,0.04);
-  --shadow: 0 2px 4px rgba(20,10,30,0.04), 0 8px 24px rgba(20,10,30,0.05);
-  --shadow-hover: 0 4px 8px rgba(20,10,30,0.08), 0 12px 32px rgba(20,10,30,0.08);
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.06), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+  --shadow-hover: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.05);
+
+  /* Elementi di Azione e Banner */
+  --btn-primary-bg: #0b2545;
+  --btn-primary-text: #ffffff;
+  --banner-bg: linear-gradient(135deg, #0b2545 0%, #07192f 100%);
+  --banner-border: 1px solid rgba(255, 255, 255, 0.12);
+  --banner-text: #ffffff;
+  --banner-muted: rgba(255, 255, 255, 0.85);
+  --banner-btn-bg: #ffffff;
+  --banner-btn-text: #0b2545;
 
   /* Layout */
   --max: 54rem;
@@ -43,71 +53,101 @@
 /* Fallback Automatico Media Query se nessun attributo manuale è impostato */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0f0e12;
-    --bg-subtle: #17151b;
-    --surface: #17151b;
-    --surface-2: #211e26;
-    --surface-3: #2d2935;
-    --text: #eae7ee;
-    --text-soft: #c8c3cf;
-    --muted: #a29bab;
-    --border: #272430;
-    --border-subtle: #1f1c25;
-    --border-focus: #58a6ff;
+    --bg: #0a0e17;
+    --bg-subtle: #101624;
+    --surface: #141c2c;
+    --surface-2: #1b263b;
+    --surface-3: #24324d;
+    --text: #f1f5f9;
+    --text-soft: #cbd5e1;
+    --muted: #94a3b8;
+    --border: #223049;
+    --border-subtle: #182235;
+    --border-focus: #60a5fa;
     --shadow-sm: none;
-    --shadow: none;
-    --shadow-hover: 0 0 0 1px #58a6ff, 0 8px 24px rgba(0,0,0,0.5);
-    --brand-blue: #58a6ff;
-    --brand-blue-hover: #79c0ff;
-    --brand-blue-ink: #79c0ff;
-    --brand-accent: #f0883e;
-    --brand-accent-ink: #ffa657;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.35);
+
+    --brand-blue: #60a5fa;
+    --brand-blue-hover: #93c5fd;
+    --brand-blue-ink: #3b82f6;
+    --brand-accent: #f59e0b;
+    --brand-accent-ink: #fbbf24;
+
+    --btn-primary-bg: #2563eb;
+    --btn-primary-text: #ffffff;
+    --banner-bg: linear-gradient(135deg, #132238 0%, #0d1726 100%);
+    --banner-border: 1px solid #2b3d5c;
+    --banner-text: #f1f5f9;
+    --banner-muted: #94a3b8;
+    --banner-btn-bg: #60a5fa;
+    --banner-btn-text: #0a0e17;
   }
 }
 
 /* Sovrascrittura Esplicita Manuale da data-theme */
 [data-theme="dark"] {
-  --bg: #0f0e12;
-  --bg-subtle: #17151b;
-  --surface: #17151b;
-  --surface-2: #211e26;
-  --surface-3: #2d2935;
-  --text: #eae7ee;
-  --text-soft: #c8c3cf;
-  --muted: #a29bab;
-  --border: #272430;
-  --border-subtle: #1f1c25;
-  --border-focus: #58a6ff;
+  --bg: #0a0e17;
+  --bg-subtle: #101624;
+  --surface: #141c2c;
+  --surface-2: #1b263b;
+  --surface-3: #24324d;
+  --text: #f1f5f9;
+  --text-soft: #cbd5e1;
+  --muted: #94a3b8;
+  --border: #223049;
+  --border-subtle: #182235;
+  --border-focus: #60a5fa;
   --shadow-sm: none;
-  --shadow: none;
-  --shadow-hover: 0 0 0 1px #58a6ff, 0 8px 24px rgba(0,0,0,0.5);
-  --brand-blue: #58a6ff;
-  --brand-blue-hover: #79c0ff;
-  --brand-blue-ink: #79c0ff;
-  --brand-accent: #f0883e;
-  --brand-accent-ink: #ffa657;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.35);
+
+  --brand-blue: #60a5fa;
+  --brand-blue-hover: #93c5fd;
+  --brand-blue-ink: #3b82f6;
+  --brand-accent: #f59e0b;
+  --brand-accent-ink: #fbbf24;
+
+  --btn-primary-bg: #2563eb;
+  --btn-primary-text: #ffffff;
+  --banner-bg: linear-gradient(135deg, #132238 0%, #0d1726 100%);
+  --banner-border: 1px solid #2b3d5c;
+  --banner-text: #f1f5f9;
+  --banner-muted: #94a3b8;
+  --banner-btn-bg: #60a5fa;
+  --banner-btn-text: #0a0e17;
 }
 
 [data-theme="light"] {
-  --bg: #fdfbff;
-  --bg-subtle: #f8f6f9;
+  --bg: #f8fafc;
+  --bg-subtle: #f1f5f9;
   --surface: #ffffff;
-  --surface-2: #f4f6f8;
-  --surface-3: #e9ecef;
-  --text: #17151a;
-  --text-soft: #2d3139;
-  --muted: #6b6570;
-  --border: #eceaf0;
-  --border-subtle: #f3f1f6;
+  --surface-2: #f8fafc;
+  --surface-3: #e2e8f0;
+  --text: #0f172a;
+  --text-soft: #334155;
+  --muted: #475569;
+  --border: #e2e8f0;
+  --border-subtle: #f1f5f9;
   --border-focus: #0b2545;
-  --shadow-sm: 0 1px 2px rgba(20,10,30,0.04);
-  --shadow: 0 2px 4px rgba(20,10,30,0.04), 0 8px 24px rgba(20,10,30,0.05);
-  --shadow-hover: 0 4px 8px rgba(20,10,30,0.08), 0 12px 32px rgba(20,10,30,0.08);
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.06), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+  --shadow-hover: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.05);
+
   --brand-blue: #0b2545;
-  --brand-blue-hover: #133966;
+  --brand-blue-hover: #1e3a8a;
   --brand-blue-ink: #07192f;
-  --brand-accent: #f4a261;
-  --brand-accent-ink: #c25910;
+  --brand-accent: #d97706;
+  --brand-accent-ink: #92400e;
+
+  --btn-primary-bg: #0b2545;
+  --btn-primary-text: #ffffff;
+  --banner-bg: linear-gradient(135deg, #0b2545 0%, #07192f 100%);
+  --banner-border: 1px solid rgba(255, 255, 255, 0.12);
+  --banner-text: #ffffff;
+  --banner-muted: rgba(255, 255, 255, 0.85);
+  --banner-btn-bg: #ffffff;
+  --banner-btn-text: #0b2545;
 }
 
 /* ---------- 2. Reset e Tipografia ---------- */
@@ -188,7 +228,7 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
 }
 .nav-link:hover { color: var(--text); background: var(--surface-2); text-decoration: none; }
 .nav-btn {
-  background: var(--brand-blue); color: #ffffff !important;
+  background: var(--btn-primary-bg); color: var(--btn-primary-text) !important;
   font-weight: 600; font-size: 0.88rem; padding: 0.45rem 0.9rem;
   border-radius: var(--radius); text-decoration: none !important;
   display: inline-flex; align-items: center; gap: 0.4rem;
@@ -307,13 +347,21 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
 
 /* Banner Invito Chiamata Immediata */
 .call-invite-banner {
-  background: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-blue-ink) 100%);
-  color: #ffffff; padding: 2.25rem; border-radius: var(--radius-lg); margin: 3rem 0;
+  background: var(--banner-bg);
+  color: var(--banner-text);
+  border: var(--banner-border);
+  padding: 2.25rem; border-radius: var(--radius-lg); margin: 3rem 0;
   display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap;
+  box-shadow: var(--shadow);
 }
-.call-invite-text h3 { margin: 0 0 0.5rem; font-size: 1.4rem; color: #ffffff; }
-.call-invite-text p { margin: 0; color: rgba(255,255,255,0.85); font-size: 0.95rem; max-width: 36rem; }
+.call-invite-text h3 { margin: 0 0 0.5rem; font-size: 1.4rem; color: var(--banner-text); }
+.call-invite-text p { margin: 0; color: var(--banner-muted); font-size: 0.95rem; max-width: 36rem; line-height: 1.6; }
 .call-invite-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+.call-invite-banner .btn-banner-action {
+  background: var(--banner-btn-bg);
+  color: var(--banner-btn-text) !important;
+  font-weight: 700;
+}
 
 /* ---------- 5. Bento Grid Industriale ---------- */
 .bento-grid {
@@ -342,8 +390,8 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
   border-color: color-mix(in srgb, var(--brand-blue) 40%, var(--border));
 }
 .bento-featured {
-  background: linear-gradient(135deg, var(--surface) 60%, color-mix(in srgb, var(--brand-accent) 6%, var(--surface)) 100%);
-  border-color: color-mix(in srgb, var(--brand-accent) 40%, var(--border));
+  background: linear-gradient(135deg, var(--surface) 75%, color-mix(in srgb, var(--brand-accent) 4%, var(--surface)) 100%);
+  border-color: color-mix(in srgb, var(--brand-accent) 25%, var(--border));
 }
 
 .card-header-bar {
@@ -374,11 +422,23 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
 .schematic-grid { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
 .schematic-col strong { color: var(--text); display: block; margin-bottom: 0.25rem; font-size: 0.85rem; }
 
+/* Badge di Sezione */
+.brand-badge {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.05em; font-family: var(--font-mono);
+  color: var(--brand-accent-ink);
+  background: color-mix(in srgb, var(--brand-accent) 12%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--brand-accent) 24%, var(--border));
+  padding: 0.2rem 0.65rem; border-radius: 20px;
+}
+
 /* Box Avvisi & Stile Le Alternative */
 .avviso {
-  background: color-mix(in srgb, var(--brand-accent) 8%, var(--surface));
+  background: color-mix(in srgb, var(--brand-accent) 6%, var(--surface));
   border: 1px solid var(--border); border-left: 4px solid var(--brand-accent);
   padding: 1rem 1.25rem; border-radius: var(--radius); margin: 1.8rem 0; font-size: 0.95rem;
+  color: var(--text);
 }
 .avviso p { margin: 0; }
 
@@ -390,7 +450,7 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
   transition: transform 0.1s, box-shadow 0.15s, opacity 0.15s;
   border: 1px solid transparent;
 }
-.btn-primary { background: var(--brand-blue); color: #fff !important; }
+.btn-primary { background: var(--btn-primary-bg); color: var(--btn-primary-text) !important; }
 .btn-primary:hover { opacity: 0.92; transform: translateY(-1px); }
 .btn-whatsapp { background: #25d366; color: #fff !important; }
 .btn-whatsapp:hover { opacity: 0.92; transform: translateY(-1px); }

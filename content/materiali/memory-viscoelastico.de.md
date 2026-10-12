@@ -4,6 +4,9 @@ description: "Thermoelastischer Schaumstoff mit verzögerter Rückstellung zur p
 code: "MAT-02"
 icon: "health"
 category: "Viskoschaum"
+image: "img/materials/memory-foam.jpg"
+image_alt: "Verzögerte Rückstellung nach Druckbelastung auf viskoelastischem Memory-Schaum"
+image_caption: "Beispielhafte Darstellung des thermoelastischen Memory-Effekts bei punktueller Kompression."
 ---
 
 **Viskoelastischer Schaumstoff (Memory Foam)** passt sich unter Einwirkung von Körperwärme und Auflagedruck exakt an die Körperkonturen an.

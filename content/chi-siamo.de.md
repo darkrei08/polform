@@ -1,6 +1,9 @@
 ---
 title: "Über Uns — Industrieerfahrung seit 1999"
 description: "Über 27 Jahre Erfahrung in der industriellen Verarbeitung und im CNC-Zuschnitt von Polyurethan-Schaumstoffen in Matera, Italien."
+image: "img/machinery/cnc-router-workshop.jpg"
+image_alt: "Industrielle CNC-Fräs- und Konturenschneidemaschine"
+image_caption: "Beispielhafte Industrie-CNC-Anlage für den millimetergenauen Formschnitt von Schaumstoffen nach CAD-Zeichnung."
 ---
 
 ## Tradition und Präzision in der Schaumstoffverarbeitung

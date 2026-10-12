@@ -4,6 +4,9 @@ description: "Mikrozellulärer Polyurethanschaumstoff mit hoher Rückstellkraft,
 code: "MAT-01"
 icon: "armchair"
 category: "HR-Kaltschaum"
+image: "img/materials/open-cell-foam.jpg"
+image_alt: "Mikrozellulare offenzellige Struktur von hochelastischem HR-Schaum"
+image_caption: "Beispielhafte offenzellige Schaumstruktur für progressive Federung und Langlebigkeit."
 ---
 
 **High Resilience (HR) Kaltschaumstoff** zeichnet sich durch eine unregelmäßige, hochelastische Porenstruktur aus, die für progressive Federung und Langlebigkeit sorgt.

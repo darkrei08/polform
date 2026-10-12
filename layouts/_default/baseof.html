@@ -6,6 +6,14 @@
   <title>{{ if not .IsHome }}{{ .Title }} — {{ end }}{{ .Site.Title }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <link rel="icon" href="{{ "img/logo.gif" | relURL }}">
+
+  <!-- Security Headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self' mailto: tel: https://wa.me;">
+
+  <!-- SEO & Social Meta Tags -->
+  {{ partial "seo.html" . }}
   
   <!-- Anti-FOUC Theme Script (Light / Dark nativo con persistenza) -->
   <script>
@@ -51,7 +59,7 @@
       {{ partial "icon.html" (dict "name" "phone" "size" "18") }}
       <span>{{ i18n "dock_call" }}</span>
     </a>
-    <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text={{ i18n "whatsapp_prefill_short" | urlquery }}" class="dock-btn dock-btn-wa" target="_blank" rel="noopener">
+    <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text={{ i18n "whatsapp_prefill_short" | urlquery }}" class="dock-btn dock-btn-wa" target="_blank" rel="noopener noreferrer">
       {{ partial "icon.html" (dict "name" "whatsapp" "size" "18") }}
       <span>{{ i18n "dock_wa" }}</span>
     </a>

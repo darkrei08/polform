@@ -1,6 +1,9 @@
 ---
 title: "Raw Material Provenance, Standards & Certifications"
 description: "Industrial transparency: CertiPUR, OEKO-TEX standards, Class 1IM / Crib 5 flame retardancy, and CNC quality control."
+_build:
+  render: never
+  list: never
 ---
 
 In precision polyurethane conversion, industrial credibility relies on **complete supply-chain traceability**. Polform sources exclusively certified raw foam blocks and supplies full documentation required for procurement contracts and international tenders.

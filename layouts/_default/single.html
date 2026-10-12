@@ -27,6 +27,17 @@
     {{ end }}
   </header>
 
+  {{ with .Params.image }}
+    <figure style="margin: 0 0 2rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border); background: var(--surface-2);">
+      <img src="{{ . | relURL }}" alt="{{ $.Params.image_alt | default $.Title }}" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" loading="lazy">
+      {{ with $.Params.image_caption }}
+        <figcaption style="font-size: 0.85rem; color: var(--muted); padding: 0.5rem 0.75rem; border-top: 1px solid var(--border);">
+          {{ . }}
+        </figcaption>
+      {{ end }}
+    </figure>
+  {{ end }}
+
   <div class="content" style="font-size: 1.05rem; line-height: 1.75;">
     {{ .Content }}
   </div>
@@ -41,7 +52,7 @@
         {{ partial "icon.html" (dict "name" "phone" "size" "16") }}
         {{ i18n "single_cta_phone_label" }} {{ .Site.Params.phone }}
       </a>
-      <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text={{ printf (i18n "single_cta_whatsapp_prefill") .Title | urlquery }}" class="btn btn-whatsapp" target="_blank" rel="noopener">
+      <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text={{ printf (i18n "single_cta_whatsapp_prefill") .Title | urlquery }}" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
         {{ partial "icon.html" (dict "name" "whatsapp" "size" "16") }}
         {{ i18n "single_cta_whatsapp_label" }}
       </a>

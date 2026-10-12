@@ -4,6 +4,9 @@ description: "Profilierte offenzellige Akustikschaumstoffplatten zur Reduzierung
 code: "MAT-04"
 icon: "sound"
 category: "Akustikschaum"
+image: "img/materials/acoustic-foam.jpg"
+image_alt: "Profilierte Oberfläche von Akustikschaumstoff"
+image_caption: "Beispielhafte Noppenstruktur zur Schallabsorption und Hallminderung in Räumen und Einhausungen."
 ---
 
 Die strukturierte Noppen- oder Pyramidenoberfläche vergrößert die wirksame Absorptionsfläche und dämpft Schallwellen durch innere Reibung.

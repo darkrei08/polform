@@ -4,6 +4,9 @@ description: "Schiume con additivi intumescenti per il rispetto delle normative 
 code: "MAT-05"
 icon: "flame"
 category: "Schiuma Ignifuga"
+image: "img/materials/polyether-foam.jpg"
+image_alt: "Lastra in poliuretano espanso per imbottiture tecniche e contract"
+image_caption: "Esempio illustrativo di lastra in poliuretano flessibile per trasformazione contract e requisiti antifiamma."
 ---
 
 Formulato specificamente per resistere a sorgenti di fiamma diretta ed evitare la propagazione dell'incendio in ambienti comunitari e ricettivi.

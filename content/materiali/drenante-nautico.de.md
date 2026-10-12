@@ -4,6 +4,9 @@ description: "Vollständig offenzelliger Filterschaumstoff für maritime Outdoor
 code: "MAT-03"
 icon: "anchor"
 category: "Maritimer Schaum"
+image: "img/materials/reticulated-foam.jpg"
+image_alt: "Offenzellige Struktur von retikuliertem Drainageschaum"
+image_caption: "Beispielhafte retikulierte Schaumstruktur für schnellen Wasserabfluss im Außen- und Yachtbereich."
 ---
 
 Entwickelt für dauerhafte Witterungs- und Nässeeinwirkung. Durch die netzartige Zellstruktur fließt Regen- und Spritzwasser ungehindert nach unten ab.

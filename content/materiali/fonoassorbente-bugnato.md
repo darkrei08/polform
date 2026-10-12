@@ -4,6 +4,9 @@ description: "Pannelli profilati a rulli con superficie alveolare per l'abbattim
 code: "MAT-04"
 icon: "sound"
 category: "Schiuma Acustica"
+image: "img/materials/acoustic-foam.jpg"
+image_alt: "Superficie sagomata di pannello poliuretanico fonoassorbente"
+image_caption: "Esempio illustrativo di profilo fonoassorbente alveolare per correzione acustica e riduzione del riverbero."
 ---
 
 L'andamento geometrico sinusoidale (bugnato) o piramidale massimizza la superficie utile esposta all'onda sonora, disperdendo l'energia per attrito viscoso all'interno dei pori.

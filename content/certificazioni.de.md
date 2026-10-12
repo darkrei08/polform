@@ -1,6 +1,9 @@
 ---
 title: "Rohstoffherkunft, Normen & Zertifizierungen"
 description: "Industrielle Transparenz: CertiPUR- und OEKO-TEX-Standards, Brandschutzklasse 1IM / Crib 5 und CNC-Qualitätssicherung."
+_build:
+  render: never
+  list: never
 ---
 
 In der industriellen Schaumstoffverarbeitung basiert Vertrauen auf **lückenloser Transparenz der Lieferkette**. Polform verarbeitet ausschließlich zertifizierte Rohschaumblöcke und stellt alle geforderten Prüfzeugnisse für Industrie- und Ausschreibungsprojekte bereit.

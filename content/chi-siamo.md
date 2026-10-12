@@ -1,6 +1,9 @@
 ---
 title: "Chi Siamo — La Nostra Storia"
 description: "Da oltre 27 anni maestri nella trasformazione del poliuretano espanso e dacron a Matera."
+image: "img/machinery/cnc-router-workshop.jpg"
+image_alt: "Impianto di sagomatura e pantografo CNC industriale"
+image_caption: "Esempio illustrativo di impianto CNC per la sagomatura e il taglio millimetrico di espansi su disegno CAD."
 ---
 
 ## Radici Manifatturiere nel Distretto del Poliuretano

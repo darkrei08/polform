@@ -1,6 +1,9 @@
 ---
 title: "About Us — Industrial Heritage"
 description: "Over 27 years of manufacturing excellence in polyurethane foam and dacron processing in Matera, Italy."
+image: "img/machinery/cnc-router-workshop.jpg"
+image_alt: "Industrial CNC routing and foam contouring machine"
+image_caption: "Illustrative CNC machinery setup for precision industrial foam contouring from CAD drawings."
 ---
 
 ## Manufacturing Heritage in Southern Italy

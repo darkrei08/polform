@@ -4,6 +4,9 @@ description: "Zirkulärer Recycling-Verbundschaumstoff für Estrich-Trittschalld
 code: "MAT-06"
 icon: "layers"
 category: "Recycling-Schaum"
+image: "img/materials/polyether-foam.jpg"
+image_alt: "Hochverdichteter Verbundschaumstoff für Dämpfung und Schutz"
+image_caption: "Beispielhafte Verbundschaum-Struktur für Trittschalldämmung und industrielle Stoßdämpfung."
 ---
 
 **Verbundschaumstoff (Rebonded Foam)** entsteht durch die mechanische Zerkleinerung sauberer postindustrieller Schnittabfälle, die unter hohem Druck mit umweltfreundlichen Polyurethan-Bindemitteln homogen verpresst werden.

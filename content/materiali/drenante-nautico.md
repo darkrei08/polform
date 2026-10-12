@@ -4,6 +4,9 @@ description: "Espanso a celle completamente aperte per cuscinerie esterne marine
 code: "MAT-03"
 icon: "anchor"
 category: "Schiuma Nautica"
+image: "img/materials/reticulated-foam.jpg"
+image_alt: "Struttura a celle aperte di poliuretano reticolato drenante"
+image_caption: "Esempio illustrativo di schiuma reticolata a celle aperte ad alto drenaggio per nautica e arredo outdoor."
 ---
 
 Progettato specificamente per resistere a pioggia, onde e umidità continua. La totale assenza di membrane occlusive consente all'acqua di attraversare il materiale per semplice gravità.

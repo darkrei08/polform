@@ -1,6 +1,9 @@
 ---
 title: "Origine Materie Prime, Normative e Certificazioni"
 description: "Trasparenza industriale: standard CertiPUR, OEKO-TEX, omologazioni ignifughe 1IM e controllo qualità di taglio Polform."
+_build:
+  render: never
+  list: never
 ---
 
 Nel settore della trasformazione del poliuretano espanso, la credibilità industriale si fonda sulla **trasparenza assoluta della filiera produttiva**. Polform seleziona esclusivamente materie prime certificate e fornisce tutta la documentazione tecnica richiesta da capitolati d'appalto e commesse internazionali.

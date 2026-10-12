@@ -4,6 +4,9 @@ description: "Microcellular high-elasticity foam with instant shape recovery, no
 code: "MAT-01"
 icon: "armchair"
 category: "HR Foam"
+image: "img/materials/open-cell-foam.jpg"
+image_alt: "Microcellular open-cell structure of High Resilience HR foam"
+image_caption: "Illustrative microcellular open-cell structure offering progressive elasticity and shape recovery."
 ---
 
 **High Resilience (HR)** polyurethane foam features an irregular open-cell microcellular structure that delivers progressive support and superior elasticity.

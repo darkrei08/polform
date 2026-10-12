@@ -4,6 +4,9 @@ description: "Roller-profiled open-cell acoustic foam panels for noise reduction
 code: "MAT-04"
 icon: "sound"
 category: "Acoustic Foam"
+image: "img/materials/acoustic-foam.jpg"
+image_alt: "Profiled open-cell acoustic sound absorption foam surface"
+image_caption: "Illustrative example of convoluted acoustic foam surface profile for reverberation control."
 ---
 
 The convoluted sinusoidal or pyramidal surface profile increases acoustic exposure area, dissipating sound wave energy via viscous air friction.

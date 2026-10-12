@@ -1,0 +1,116 @@
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{- if .IsTranslated }}
+  {{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.LanguageCode | default .Language.Lang }}" href="{{ .Permalink }}">
+  {{- end }}
+  {{- with .AllTranslations }}
+    {{- range where . "Language.Lang" "it" }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+<!-- OpenGraph Meta Tags -->
+<meta property="og:site_name" content="Polform S.r.l.">
+<meta property="og:title" content="{{ if not .IsHome }}{{ .Title }} — {{ end }}{{ .Site.Title }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:locale" content="{{ replace (.Site.LanguageCode | default "it-IT") "-" "_" }}">
+{{- with .Params.image }}
+<meta property="og:image" content="{{ . | absURL }}">
+{{- else }}
+<meta property="og:image" content="{{ "img/logo.gif" | absURL }}">
+{{- end }}
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ if not .IsHome }}{{ .Title }} — {{ end }}{{ .Site.Title }}">
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+{{- with .Params.image }}
+<meta name="twitter:image" content="{{ . | absURL }}">
+{{- else }}
+<meta name="twitter:image" content="{{ "img/logo.gif" | absURL }}">
+{{- end }}
+
+<!-- Schema.org JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "{{ .Site.BaseURL }}#organization",
+      "name": "Polform S.r.l.",
+      "url": "{{ .Site.BaseURL }}",
+      "logo": "{{ "img/logo.gif" | absURL }}",
+      "telephone": "{{ .Site.Params.phone }}",
+      "email": "{{ .Site.Params.email }}",
+      "vatID": "{{ .Site.Params.piva }}",
+      "foundingDate": "{{ .Site.Params.founded }}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Giovanni Agnelli s.n.c., Z.I. La Martella",
+        "addressLocality": "Matera",
+        "addressRegion": "MT",
+        "postalCode": "75100",
+        "addressCountry": "IT"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.6865,
+        "longitude": 16.5385
+      },
+      "areaServed": ["IT", "EU"],
+      "priceRange": "$$",
+      "knowsAbout": [
+        "Polyurethane Foam Conversion",
+        "CNC Contour Cutting",
+        "Technical Protective Packaging",
+        "Acoustic Soundproofing Foam",
+        "Marine Reticulated Foam"
+      ]
+    }
+    {{- if .IsPage }}
+    ,{
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "{{ site.Home.Permalink }}"
+        }
+        {{- with .Parent }}
+        ,{
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{{ .Title }}",
+          "item": "{{ .Permalink }}"
+        }
+        {{- end }}
+        ,{
+          "@type": "ListItem",
+          "position": {{ if .Parent }}3{{ else }}2{{ end }},
+          "name": "{{ .Title }}",
+          "item": "{{ .Permalink }}"
+        }
+      ]
+    }
+    {{- if eq .Section "materiali" }}
+    ,{
+      "@type": "Product",
+      "name": "{{ .Title }}",
+      "description": "{{ .Description }}",
+      "sku": "{{ .Params.code }}",
+      "category": "{{ .Params.category }}",
+      "manufacturer": {
+        "@id": "{{ .Site.BaseURL }}#organization"
+      }
+    }
+    {{- end }}
+    {{- end }}
+  ]
+}
+</script>

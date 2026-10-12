@@ -33,10 +33,6 @@ defaultContentLanguageInSubdir = false
         url = 'chi-siamo/'
         weight = 30
       [[languages.it.menu.main]]
-        name = 'Certificazioni'
-        url = 'certificazioni/'
-        weight = 40
-      [[languages.it.menu.main]]
         identifier = 'preventivo'
         name = 'Invia Disegno CAD'
         url = 'preventivo/'
@@ -63,10 +59,6 @@ defaultContentLanguageInSubdir = false
         url = 'chi-siamo/'
         weight = 30
       [[languages.en.menu.main]]
-        name = 'Certifications'
-        url = 'certificazioni/'
-        weight = 40
-      [[languages.en.menu.main]]
         identifier = 'preventivo'
         name = 'Request RFQ / CAD'
         url = 'preventivo/'
@@ -92,10 +84,6 @@ defaultContentLanguageInSubdir = false
         name = 'Über Uns'
         url = 'chi-siamo/'
         weight = 30
-      [[languages.de.menu.main]]
-        name = 'Zertifizierungen'
-        url = 'certificazioni/'
-        weight = 40
       [[languages.de.menu.main]]
         identifier = 'preventivo'
         name = 'CAD-Anfrage senden'

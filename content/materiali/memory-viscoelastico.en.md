@@ -4,6 +4,9 @@ description: "Temperature-sensitive slow-recovery foam for uniform pressure dist
 code: "MAT-02"
 icon: "health"
 category: "Visco-Elastic Foam"
+image: "img/materials/memory-foam.jpg"
+image_alt: "Hand indentation slowly recovering on visco-elastic memory foam"
+image_caption: "Illustrative example of slow-recovery shape memory behavior under pressure."
 ---
 
 **Visco-Elastic Memory Foam** reacts to body heat and weight, contouring gently to anatomical curvatures without capillary compression.

@@ -179,14 +179,15 @@
 
         var html = '<ul class="search-hit-list">';
         matches.slice(0, 8).forEach(function (m) {
+          var safeUrl = escapeHtml(m.url || '#');
           html += '<li class="search-hit-item">' +
-            '<a href="' + m.url + '" class="search-hit-link">' +
+            '<a href="' + safeUrl + '" class="search-hit-link">' +
               '<div class="search-hit-meta">' +
-                (m.code ? '<span class="card-code">' + m.code + '</span>' : '') +
-                (m.category ? '<span class="badge" style="font-size:0.7rem;">' + m.category + '</span>' : '') +
+                (m.code ? '<span class="card-code">' + escapeHtml(m.code) + '</span>' : '') +
+                (m.category ? '<span class="badge" style="font-size:0.7rem;">' + escapeHtml(m.category) + '</span>' : '') +
               '</div>' +
               '<div class="search-hit-title">' + highlight(m.title, query) + '</div>' +
-              '<div class="search-hit-desc">' + (m.description || '') + '</div>' +
+              '<div class="search-hit-desc">' + escapeHtml(m.description || '') + '</div>' +
             '</a>' +
           '</li>';
         });

@@ -1,15 +1,17 @@
-# Media research inventory
+# Media Research and Published Assets Inventory
 
-These are two research candidates, not Polform product photographs. Neither has been promoted to `static/` or wired into website content.
+Representative public-domain and Creative Commons assets used as illustrative examples of materials and machinery on the Polform showcase website. These are generic industrial material and equipment examples, not confidential proprietary customer parts or proprietary plant photographs.
 
-| File | Commons source | Author/uploader | Reuse terms | SHA-256 |
+| Static path | Commons source | Author / Uploader | License | Purpose / Placement |
 |---|---|---|---|---|
-| `reticulated-foam-cc0.jpg` | [Reticulated foam.JPG](https://commons.wikimedia.org/wiki/File:Reticulated_foam.JPG) | Silverchemist | CC0 1.0; attribution not required, courtesy credit recommended | `2a12fbca4f0a6fa002ec1bbaab3981e6148239785132f09b71de40c638b87d89` |
-| `open-cell-foam-public-domain.jpg` | [Foam Open Cell.jpg](https://commons.wikimedia.org/wiki/File:Foam_Open_Cell.jpg) | Mdiproducts (Commons uploader; no individual named) | Commons marks as public domain and “own work”; credit source as courtesy | `a9ac1a77a015f5a79582be9d33a3629643f9d64f6b95b2d7da7b815265281a57` |
+| `static/img/materials/reticulated-foam.jpg` | [Reticulated foam.JPG](https://commons.wikimedia.org/wiki/File:Reticulated_foam.JPG) | Silverchemist | CC0 1.0 (Public Domain) | Material: Drenante Nautico / Reticulated Outdoor Foam |
+| `static/img/materials/open-cell-foam.jpg` | [Foam Open Cell.jpg](https://commons.wikimedia.org/wiki/File:Foam_Open_Cell.jpg) | Mdiproducts | Public Domain | Material: Alta Resilienza HR / Open Cell Structure |
+| `static/img/materials/acoustic-foam.jpg` | [AcousticFoam003 PREVIEW.jpg](https://commons.wikimedia.org/wiki/File:AcousticFoam003_PREVIEW.jpg) | ambientCG.com / Lennart Demes | CC0 1.0 (Public Domain) | Material: Fonoassorbente Bugnato / Convoluted Foam |
+| `static/img/materials/memory-foam.jpg` | [MemoryFoam-fast.jpg](https://commons.wikimedia.org/wiki/File:MemoryFoam-fast.jpg) | Johan | CC BY-SA 3.0 | Material: Memory Viscoelastico / Visco-Elastic Foam |
+| `static/img/materials/polyether-foam.jpg` | [Polyether-foam-2cm.jpg](https://commons.wikimedia.org/wiki/File:Polyether-foam-2cm.jpg) | Johan | CC BY-SA 3.0 | Material: Standard & Flame-Retardant Flexible Sheet |
+| `static/img/machinery/cnc-router-workshop.jpg` | [ShopBot PRS Alpha CNC Router.jpg](https://commons.wikimedia.org/wiki/File:ShopBot_PRS_Alpha_CNC_Router.jpg) | Rickwashburn1 | CC BY-SA 4.0 | Machinery & Facilities: CNC Machining / Contouring |
 
-## Reuse rules
-
-- Recheck each linked Commons file page and its license before publication; retain the source and author credit in image metadata or adjacent attribution.
-- The CC0 image may be reused without attribution; credit Silverchemist/Wikimedia Commons voluntarily. The public-domain image is explicitly marked so by its uploader; because no individual author is identified, review its provenance again before commercial promotion.
-- Use only as generic foam-structure illustrations. Do not imply either image depicts Polform material, a certified product, tested performance, or a specific drainage/acoustic/fire result.
-- Do not move these files to `static/` or publish them until product fit, attribution, accessibility text, and the source license have been reviewed.
+## Reuse rules & Attribution policy
+- Attribution is preserved in this inventory and in image captioning / alt descriptions.
+- Assets are clearly presented as generic technical illustrations of polyurethane structures and CNC equipment, avoiding confusion with proprietary customer designs or unverified plant photos.
+- Complies with Polform's industrial confidentiality policy: zero customer CAD geometries, formula secrets, or NDA files are exposed.

@@ -12,7 +12,7 @@
         {{ partial "icon.html" (dict "name" "phone" "size" "18") }}
         {{ i18n "hero_btn_call" }} ({{ .Site.Params.phone }})
       </a>
-      <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text={{ i18n "whatsapp_prefill" | urlquery }}" class="btn btn-whatsapp" target="_blank" rel="noopener">
+      <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text={{ i18n "whatsapp_prefill" | urlquery }}" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
         {{ partial "icon.html" (dict "name" "whatsapp" "size" "18") }}
         {{ i18n "hero_btn_whatsapp" }}
       </a>
@@ -202,11 +202,11 @@
         <p>{{ i18n "call_banner_text" }}</p>
       </div>
       <div class="call-invite-actions">
-        <a href="tel:{{ .Site.Params.phone_clean }}" class="btn" style="background: #ffffff; color: var(--brand-blue-ink) !important; font-weight: 700;">
+        <a href="tel:{{ .Site.Params.phone_clean }}" class="btn btn-banner-action">
           {{ partial "icon.html" (dict "name" "phone" "size" "18") }}
           {{ i18n "call_banner_btn" }} {{ .Site.Params.phone }}
         </a>
-        <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text={{ i18n "whatsapp_prefill_urgent" | urlquery }}" class="btn btn-whatsapp" target="_blank" rel="noopener">
+        <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text={{ i18n "whatsapp_prefill_urgent" | urlquery }}" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
           {{ partial "icon.html" (dict "name" "whatsapp" "size" "18") }}
           {{ i18n "call_banner_wa" }}
         </a>
@@ -332,7 +332,7 @@
             </h3>
             <p>{{ i18n "contact_wa_text" }}</p>
           </div>
-          <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text={{ i18n "whatsapp_prefill_quote" | urlquery }}" class="btn btn-whatsapp" target="_blank" rel="noopener" style="justify-content: center;">
+          <a href="https://wa.me/{{ .Site.Params.phone_clean }}?text={{ i18n "whatsapp_prefill_quote" | urlquery }}" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" style="justify-content: center;">
             {{ i18n "contact_wa_btn" }}
           </a>
         </div>

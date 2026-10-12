@@ -4,6 +4,9 @@ description: "Intumescent additive foams certified to Italian Class 1IM (UNI 917
 code: "MAT-05"
 icon: "flame"
 category: "Fire-Rated Foam"
+image: "img/materials/polyether-foam.jpg"
+image_alt: "Flexible polyurethane foam sheet for technical and contract upholstery"
+image_caption: "Illustrative example of flexible polyurethane sheet conversion for contract furniture specifications."
 ---
 
 Formulated with flame-retardant additives to resist ignition and self-extinguish when exposed to open flame sources in public venues.

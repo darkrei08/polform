@@ -4,6 +4,9 @@ description: "Flammgeschützte Schaumstoffe mit italienischer Zulassung Klasse 1
 code: "MAT-05"
 icon: "flame"
 category: "Brandschutzschaum"
+image: "img/materials/polyether-foam.jpg"
+image_alt: "Polyurethan-Schaumstoffplatte für technische und Objektpolster"
+image_caption: "Beispielhafte flexible Schaumstoffplatte für den Brandschutz- und Objektmöbeleinsatz."
 ---
 
 Speziell formuliert mit intumeszierenden Additiven zur Brandhemmung und Selbstverlöschung bei Beflammung im öffentlichen Raum.

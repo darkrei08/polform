@@ -4,6 +4,9 @@ description: "Schiuma a lento ritorno elastico termosensibile, ideale per la dis
 code: "MAT-02"
 icon: "health"
 category: "Schiuma Viscoelastica"
+image: "img/materials/memory-foam.jpg"
+image_alt: "Impronta a lento ritorno su poliuretano memory viscoelastico"
+image_caption: "Esempio illustrativo di risposta a lento ritorno elastico (effetto memoria) sotto compressione."
 ---
 
 Il **Memory Foam Viscoelastico** reagisce alla temperatura corporea e alla pressione, modellandosi fedelmente sulle forme anatomiche ed eliminando le compressioni vascolari.

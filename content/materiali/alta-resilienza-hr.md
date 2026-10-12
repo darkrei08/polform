@@ -4,6 +4,9 @@ description: "Schiuma microcellulare ad altissima elasticità, indeformabile nel
 code: "MAT-01"
 icon: "armchair"
 category: "Schiuma HR"
+image: "img/materials/open-cell-foam.jpg"
+image_alt: "Microstruttura cellulare aperta di poliuretano HR"
+image_caption: "Esempio illustrativo di struttura microcellulare elastica ad alta resilienza (HR)."
 ---
 
 Il poliuretano espanso **High Resilience (HR)** è caratterizzato da una struttura a cellule aperte irregolari che garantisce un comfort progressivo e un'eccellente memoria di ritorno.

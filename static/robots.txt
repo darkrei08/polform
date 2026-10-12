@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://darkrei08.github.io/polform/sitemap.xml
+Sitemap: https://darkrei08.github.io/polform/it/sitemap.xml
+Sitemap: https://darkrei08.github.io/polform/en/sitemap.xml
+Sitemap: https://darkrei08.github.io/polform/de/sitemap.xml
