@@ -93,3 +93,17 @@ MCP tool to get raw text.
 - Reading very small files (<1KB) where compression can't help.
 
 <!-- END sqz-claude-guidance -->
+
+## Agent skills
+
+### Issue tracker
+
+Issues and specs live in GitHub Issues via `gh`. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Canonical roles: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context layout (`GLOSSARY.md` + `docs/adr/`). See `docs/agents/domain.md`.
