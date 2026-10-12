@@ -215,6 +215,24 @@
   </div>
 </section>
 
+<!-- Video Presentazione Aziendale -->
+<section id="promo-video" style="padding: 4.5rem 0; background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="wrap">
+    <div style="text-align: center; max-width: 44rem; margin: 0 auto 2rem;">
+      <span class="brand-badge">{{ if eq $.Site.Language.Lang "en" }}Company Showcase Video{{ else if eq $.Site.Language.Lang "de" }}Unternehmensvideo{{ else }}Video Presentazione Aziendale{{ end }}</span>
+      <h2 style="font-size: 2.2rem; margin: 0.5rem 0 0.5rem; letter-spacing: -0.025em;">{{ if eq $.Site.Language.Lang "en" }}Polform Industrial Conversion in 45 Seconds{{ else if eq $.Site.Language.Lang "de" }}Polform Schaumstoffverarbeitung im Video{{ else }}La Trasformazione Industriale Polform in 45 Secondi{{ end }}</h2>
+      <p style="color: var(--muted); margin: 0; line-height: 1.6;">{{ if eq $.Site.Language.Lang "en" }}Precision CNC contour cutting, splitting, and bonding of flexible polyurethane foam for international B2B procurement.{{ else if eq $.Site.Language.Lang "de" }}Präziser CNC-Formschnitt, Spalten und Verkleben von Polyurethan-Weichschaum für die europäische Industrie.{{ else }}Sagomatura CNC millimetrica, spaccatura e incollaggio di poliuretano espanso per capitolati industriali B2B.{{ end }}</p>
+    </div>
+
+    <div style="max-width: 56rem; margin: 0 auto; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow); background: #000;">
+      <video controls preload="metadata" poster="{{ "video/polform-promo-poster.png" | relURL }}" style="width: 100%; height: auto; display: block; aspect-ratio: 16/9;">
+        <source src="{{ "video/polform-promo.mp4" | relURL }}" type="video/mp4">
+        <p style="padding: 1.5rem; color: #fff; text-align: center;">Il tuo browser non supporta il tag video. <a href="{{ "video/polform-promo.mp4" | relURL }}" style="color: var(--brand-blue);">Scarica il video promo (MP4)</a></p>
+      </video>
+    </div>
+  </div>
+</section>
+
 <!-- 3. Matrice Comparativa Materiali & Schede Tecniche -->
 <section style="background: var(--surface); padding: 4.5rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
   <div class="wrap">
@@ -224,6 +242,65 @@
         <h2 style="font-size: 2.2rem; margin: 0.5rem 0 0; letter-spacing: -0.025em;">{{ i18n "materials_title" }}</h2>
       </div>
       <a href="{{ "materiali/" | relURL }}" style="font-weight: 600; font-size: 0.95rem;">{{ i18n "materials_all_link" }} &rarr;</a>
+    </div>
+
+    <!-- Anteprime Visive Materiali -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1.25rem; margin-bottom: 2.5rem;">
+      <a href="{{ "materiali/drenante-nautico/" | relURL }}" class="bento-card" style="padding: 0; overflow: hidden; text-decoration: none;">
+        <div style="height: 140px; background: var(--surface-2); border-bottom: 1px solid var(--border); overflow: hidden;">
+          <img src="{{ "img/materials/reticulated-foam.jpg" | relURL }}" alt="{{ i18n "mat03_name" }}" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
+        </div>
+        <div style="padding: 1rem 1.25rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+            <span class="card-code">MAT-03</span>
+            <span class="badge" style="font-size: 0.7rem;">Nautica</span>
+          </div>
+          <h4 style="margin: 0 0 0.25rem; font-size: 1.05rem; color: var(--text);">{{ i18n "mat03_name" }}</h4>
+          <span style="font-size: 0.85rem; color: var(--brand-blue); font-weight: 600;">{{ i18n "details_link" }} &rarr;</span>
+        </div>
+      </a>
+
+      <a href="{{ "materiali/memory-viscoelastico/" | relURL }}" class="bento-card" style="padding: 0; overflow: hidden; text-decoration: none;">
+        <div style="height: 140px; background: var(--surface-2); border-bottom: 1px solid var(--border); overflow: hidden;">
+          <img src="{{ "img/materials/memory-foam.jpg" | relURL }}" alt="{{ i18n "mat02_name" }}" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
+        </div>
+        <div style="padding: 1rem 1.25rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+            <span class="card-code">MAT-02</span>
+            <span class="badge" style="font-size: 0.7rem;">Medicale</span>
+          </div>
+          <h4 style="margin: 0 0 0.25rem; font-size: 1.05rem; color: var(--text);">{{ i18n "mat02_name" }}</h4>
+          <span style="font-size: 0.85rem; color: var(--brand-blue); font-weight: 600;">{{ i18n "details_link" }} &rarr;</span>
+        </div>
+      </a>
+
+      <a href="{{ "materiali/fonoassorbente-bugnato/" | relURL }}" class="bento-card" style="padding: 0; overflow: hidden; text-decoration: none;">
+        <div style="height: 140px; background: var(--surface-2); border-bottom: 1px solid var(--border); overflow: hidden;">
+          <img src="{{ "img/materials/acoustic-foam.jpg" | relURL }}" alt="{{ i18n "mat04_name" }}" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
+        </div>
+        <div style="padding: 1rem 1.25rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+            <span class="card-code">MAT-04</span>
+            <span class="badge" style="font-size: 0.7rem;">Acustica</span>
+          </div>
+          <h4 style="margin: 0 0 0.25rem; font-size: 1.05rem; color: var(--text);">{{ i18n "mat04_name" }}</h4>
+          <span style="font-size: 0.85rem; color: var(--brand-blue); font-weight: 600;">{{ i18n "details_link" }} &rarr;</span>
+        </div>
+      </a>
+
+      <a href="{{ "materiali/alta-resilienza-hr/" | relURL }}" class="bento-card" style="padding: 0; overflow: hidden; text-decoration: none;">
+        <div style="height: 140px; background: var(--surface-2); border-bottom: 1px solid var(--border); overflow: hidden;">
+          <img src="{{ "img/materials/open-cell-foam.jpg" | relURL }}" alt="{{ i18n "mat01_name" }}" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
+        </div>
+        <div style="padding: 1rem 1.25rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+            <span class="card-code">MAT-01</span>
+            <span class="badge" style="font-size: 0.7rem;">Comfort HR</span>
+          </div>
+          <h4 style="margin: 0 0 0.25rem; font-size: 1.05rem; color: var(--text);">{{ i18n "mat01_name" }}</h4>
+          <span style="font-size: 0.85rem; color: var(--brand-blue); font-weight: 600;">{{ i18n "details_link" }} &rarr;</span>
+        </div>
+      </a>
     </div>
 
     <div class="spec-table-wrap">
@@ -374,11 +451,17 @@
           <span class="badge">{{ i18n "history_badge4" }}</span>
         </div>
       </div>
-      <div style="background: var(--surface); border: 1px solid var(--border); padding: 2.25rem; border-radius: var(--radius-lg); text-align: center; box-shadow: var(--shadow);">
-        <img src="{{ "img/logo.gif" | relURL }}" alt="Logo Storico Polform" style="margin: 0 auto 1.5rem; max-width: 180px;">
-        <h3 style="margin: 0 0 0.5rem; font-size: 1.25rem;">POLFORM S.r.l.</h3>
-        <p style="color: var(--muted); font-size: 0.92rem; margin: 0 0 1.5rem;">{{ i18n "history_facility" }}</p>
-        <a href="{{ "chi-siamo/" | relURL }}" class="btn btn-outline" style="width: 100%; justify-content: center;">{{ i18n "history_link" }} &rarr;</a>
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow);">
+        <div style="position: relative; height: 180px; background: var(--surface-2); border-bottom: 1px solid var(--border);">
+          <img src="{{ "img/machinery/cnc-router-workshop.jpg" | relURL }}" alt="Impianto di sagomatura e pantografo CNC Polform" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
+          <span class="badge" style="position: absolute; bottom: 0.65rem; left: 0.65rem; background: rgba(10, 14, 23, 0.85); color: #fff; border-color: rgba(255,255,255,0.2);">CNC // MACHINING</span>
+        </div>
+        <div style="padding: 1.75rem; text-align: center;">
+          <img src="{{ "img/logo.gif" | relURL }}" alt="Logo Storico Polform" style="margin: 0 auto 1.25rem; max-width: 150px;">
+          <h3 style="margin: 0 0 0.5rem; font-size: 1.25rem;">POLFORM S.r.l.</h3>
+          <p style="color: var(--muted); font-size: 0.92rem; margin: 0 0 1.5rem;">{{ i18n "history_facility" }}</p>
+          <a href="{{ "chi-siamo/" | relURL }}" class="btn btn-outline" style="width: 100%; justify-content: center;">{{ i18n "history_link" }} &rarr;</a>
+        </div>
       </div>
     </div>
   </div>

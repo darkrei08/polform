@@ -15,24 +15,30 @@
 
   <div class="bento-grid">
     {{ range .Pages }}
+      {{ $p := . }}
       <div class="bento-card bento-col-4">
         <div>
+          {{ with $p.Params.image }}
+            <a href="{{ $p.RelPermalink }}" style="display: block; border-radius: var(--radius); overflow: hidden; margin-bottom: 1.25rem; border: 1px solid var(--border); height: 180px; background: var(--surface-2);">
+              <img src="{{ . | relURL }}" alt="{{ $p.Params.image_alt | default $p.Title }}" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
+            </a>
+          {{ end }}
           <div class="card-header-bar">
-            {{ with .Params.code }}
+            {{ with $p.Params.code }}
               <span class="card-code">{{ . }}</span>
             {{ else }}
               <span class="card-code">POLFORM // TECH</span>
             {{ end }}
-            {{ with .Params.icon }}
+            {{ with $p.Params.icon }}
               <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" . "size" "20") }}</div>
             {{ end }}
           </div>
           <h2 class="card-title">
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>
           </h2>
-          <p class="card-text">{{ .Description }}</p>
+          <p class="card-text">{{ $p.Description }}</p>
         </div>
-        <a href="{{ .RelPermalink }}" class="card-link">Visualizza scheda tecnica &rarr;</a>
+        <a href="{{ $p.RelPermalink }}" class="card-link">{{ i18n "details_link" | default "Dettagli" }} &rarr;</a>
       </div>
     {{ end }}
   </div>

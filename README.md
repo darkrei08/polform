@@ -11,8 +11,11 @@
 
 <video controls preload="metadata" poster="docs/media/polform-promo-poster.png" width="100%">
   <source src="docs/media/polform-promo.mp4" type="video/mp4">
-  [Download the promo video](docs/media/polform-promo.mp4)
+  [Download the promo video (MP4, 3.1 MB)](docs/media/polform-promo.mp4)
 </video>
+
+* **Watch in High Definition on the Live Site:** [https://darkrei08.github.io/polform/#promo-video](https://darkrei08.github.io/polform/#promo-video)
+* **Direct Repository Render Artifact:** [`video/polform-github-promo/renders/`](video/polform-github-promo/renders/) *(Faststart H.264, 3.1 MB)*
 
 Industrial B2B showcase website, strategic market intelligence, and diversification architecture for **POLFORM S.r.l.** (Matera, Italy), built with **Hugo JAMstack** and a custom **Zero-Framework Design System**.
 
