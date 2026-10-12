@@ -9,6 +9,8 @@ Representative public-domain and Creative Commons assets used as illustrative ex
 | `static/img/materials/acoustic-foam.jpg` | [AcousticFoam003 PREVIEW.jpg](https://commons.wikimedia.org/wiki/File:AcousticFoam003_PREVIEW.jpg) | ambientCG.com / Lennart Demes | CC0 1.0 (Public Domain) | Material: Fonoassorbente Bugnato / Convoluted Foam |
 | `static/img/materials/memory-foam.jpg` | [MemoryFoam-fast.jpg](https://commons.wikimedia.org/wiki/File:MemoryFoam-fast.jpg) | Johan | CC BY-SA 3.0 | Material: Memory Viscoelastico / Visco-Elastic Foam |
 | `static/img/materials/polyether-foam.jpg` | [Polyether-foam-2cm.jpg](https://commons.wikimedia.org/wiki/File:Polyether-foam-2cm.jpg) | Johan | CC BY-SA 3.0 | Material: Standard & Flame-Retardant Flexible Sheet |
+| `static/img/materials/technical-packaging-foam.jpg` | [Road-case-custom-foam-vol-case.jpg](https://commons.wikimedia.org/wiki/File:Road-case-custom-foam-vol-case.jpg) | Vol-Case | CC0 1.0 (Public Domain) | Sector: Packaging Tecnico & Flight Case Inserts |
+| `static/img/materials/bonded-foam-underlay.jpg` | [Yoga Mat Made of Carpet Underlay.jpg](https://commons.wikimedia.org/wiki/File:Yoga_Mat_Made_of_Carpet_Underlay.jpg) | Uploader | CC BY-SA 4.0 | Material: Agglomerato Bonded Foam & Sport Tatami |
 | `static/img/machinery/cnc-router-workshop.jpg` | [ShopBot PRS Alpha CNC Router.jpg](https://commons.wikimedia.org/wiki/File:ShopBot_PRS_Alpha_CNC_Router.jpg) | Rickwashburn1 | CC BY-SA 4.0 | Machinery & Facilities: CNC Machining / Contouring |
 
 ## Reuse rules & Attribution policy

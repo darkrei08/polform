@@ -4,9 +4,9 @@ description: "Materassi di caduta per bouldering, tatami modulari in agglomerato
 code: "SEC-07"
 icon: "shield"
 category: "Settore Sportivo"
-image: "img/materials/polyether-foam.jpg"
-image_alt: "Materassi da caduta e tatami sportivi in schiuma ad alta densità"
-image_caption: "Anime e materassi per bouldering, ginnastica e arti marziali con risposta cinetica ad alto assorbimento."
+image: "img/materials/bonded-foam-underlay.jpg"
+image_alt: "Anime in agglomerato per tatami e protezioni sportive"
+image_caption: "Struttura in agglomerato compatto ad alta densità per tatami da arti marziali e materassi di caduta."
 ---
 
 ## Assorbimento d'Impatto e Sicurezza negli Ambienti Sportivi

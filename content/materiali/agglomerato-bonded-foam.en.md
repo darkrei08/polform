@@ -4,9 +4,9 @@ description: "Circular recycled composite foam for impact sound underlayment, ma
 code: "MAT-06"
 icon: "layers"
 category: "Recycled Foam"
-image: "img/materials/polyether-foam.jpg"
-image_alt: "High-density foam structure for impact and acoustic protection"
-image_caption: "Illustrative example of compact polyurethane composite for impact protection and sound underlayment."
+image: "img/materials/bonded-foam-underlay.jpg"
+image_alt: "High-density bonded polyurethane foam underlayment sheet"
+image_caption: "Illustrative example of compact bonded foam for acoustic impact underlayment, tatami, and shock dissipation."
 ---
 
 **Bonded Polyurethane Foam** is produced by granulating post-industrial virgin cutting scraps into uniform flakes, which are then compressed and steam-cured with eco-friendly polyurethane prepolymers.

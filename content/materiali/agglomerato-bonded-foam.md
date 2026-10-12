@@ -4,9 +4,9 @@ description: "Materiale riciclato compatto ad altissima densità per isolamento 
 code: "MAT-06"
 icon: "layers"
 category: "Schiuma Riciclata"
-image: "img/materials/polyether-foam.jpg"
-image_alt: "Materiale poliuretanico ad alta densità per isolamento e protezione"
-image_caption: "Esempio illustrativo di poliuretano compatto per assorbimento urti e sottopavimento anticalpestio."
+image: "img/materials/bonded-foam-underlay.jpg"
+image_alt: "Pannello in agglomerato di poliuretano riciclato ad alta densità (bonded foam)"
+image_caption: "Esempio illustrativo di agglomerato compatto per sottopavimento anticalpestio, tatami e assorbimento urti."
 ---
 
 L'**Agglomerato di Poliuretano (Bonded Foam)** nasce dal riciclo post-industriale degli sfridi vergini di taglio, triturati a pezzatura uniforme e riagglomerati sotto pressa con resine poliuretaniche ecologiche.

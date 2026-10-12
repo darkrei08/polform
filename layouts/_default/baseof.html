@@ -29,11 +29,11 @@
     })();
   </script>
 
-  {{ $css := resources.Get "css/style.css" | minify }}
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  {{ $css := resources.Get "css/style.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 
-  {{ $js := resources.Get "js/main.js" | minify }}
-  <script src="{{ $js.RelPermalink }}" defer></script>
+  {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
 </head>
 <body data-search-url="{{ "index.json" | relURL }}"
       data-lightbox-label="{{ i18n "lightbox_label" }}"

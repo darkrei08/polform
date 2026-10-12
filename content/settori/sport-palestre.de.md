@@ -4,9 +4,9 @@ description: "Bouldermatten, Verbundschaum-Kerne für Kampfsport-Tatami und Pral
 code: "SEC-07"
 icon: "shield"
 category: "Sportbereich"
-image: "img/materials/polyether-foam.jpg"
-image_alt: "Fallschutzmatten und hochverdichtete Tatami-Kerne"
-image_caption: "Kinetische Aufpralldämpfung für Boulderhallen, Kampfsport-Tatami und weiche Wandverkleidungen in Turnhallen."
+image: "img/materials/bonded-foam-underlay.jpg"
+image_alt: "Hochverdichteter Verbundschaum-Kern für Sportmatten und Tatami"
+image_caption: "Kompakter Verbundschaumstoff für definierte Aufprallenergie-Absorption bei Kampfsport-Tatami und Bouldermatten."
 ---
 
 ## Aufpralldämpfung und Sicherheit im Sport
