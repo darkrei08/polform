@@ -1,9 +1,12 @@
 ---
 title: "Healthcare, Orthopedics & Silver Economy"
 description: "CNC-milled anti-decubitus cushions and visco-elastic composite foam mattresses for nursing homes, clinics, and postural care."
-code: "SEC-05"
+code: "SEC-08"
 icon: "health"
 category: "Healthcare Sector"
+image: "img/materials/memory-foam.jpg"
+image_alt: "Ergonomic pressure relief and memory foam postural cushions"
+image_caption: "Multi-density composite elements combining HR foam and visco-elastic memory foam for anatomical pressure redistribution."
 ---
 
 ## Pressure Relief & Decubitus Ulcer Prevention

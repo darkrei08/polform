@@ -4,6 +4,9 @@ description: "Profiled convoluted and pyramidal sound-absorbing foam panels for 
 code: "SEC-02"
 icon: "sound"
 category: "Acoustic Sector"
+image: "img/materials/acoustic-foam.jpg"
+image_alt: "Convoluted and pyramidal acoustic foam panels"
+image_caption: "Open-cell acoustic foam surfaces engineered for sound wave dispersion and reverberation control."
 ---
 
 ## Reverberation Control & Industrial Acoustic Dampening

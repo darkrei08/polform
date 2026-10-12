@@ -49,8 +49,8 @@
   <div class="wrap">
     <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2.5rem; flex-wrap: wrap; gap: 1rem;">
       <div>
-        <span class="brand-badge">{{ i18n "sectors_badge" }}</span>
-        <h2 style="font-size: 2.2rem; margin: 0.5rem 0 0; letter-spacing: -0.025em;">{{ i18n "sectors_title" }}</h2>
+        <span class="brand-badge">{{ i18n "tier1_badge" }}</span>
+        <h2 style="font-size: 2.2rem; margin: 0.5rem 0 0; letter-spacing: -0.025em;">{{ i18n "tier1_title" }}</h2>
       </div>
       <a href="{{ "settori/" | relURL }}" style="font-weight: 600; font-size: 0.95rem;">{{ i18n "sectors_all_link" }} &rarr;</a>
     </div>
@@ -134,63 +134,105 @@
         <a href="{{ "settori/nautica-drenante/" | relURL }}" class="card-link">{{ i18n "sec03_link" }} &rarr;</a>
       </div>
 
-      <!-- Card Sanità (Spanning 6 cols) -->
+      <!-- Card Contract (Spanning 6 cols) -->
       <div class="bento-card bento-col-6">
         <div>
           <div class="card-header-bar">
-            <span class="card-code">SEC-05 // MEDICALE</span>
-            <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "health" "size" "20") }}</div>
+            <span class="card-code">SEC-04 // CONTRACT</span>
+            <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "flame" "size" "20") }}</div>
           </div>
-          <h3 class="card-title">
-            <a href="{{ "settori/sanita-silver-economy/" | relURL }}">{{ i18n "sec05_title" }}</a>
-          </h3>
-          <p class="card-text">
-            {{ i18n "sec05_text" }}
-          </p>
+          <h3 class="card-title"><a href="{{ "settori/arredo-contract/" | relURL }}">{{ i18n "sec04_title" }}</a></h3>
+          <p class="card-text">{{ i18n "sec04_text" }}</p>
           <div class="badge-list">
-            <span class="badge">CE MDR CLASSE I</span>
-            <span class="badge">MEMORY VISCOELASTICO</span>
-            <span class="badge">DETRAIBILE 19%</span>
+            <span class="badge">ARREDO PROFESSIONALE</span>
+            <span class="badge">ESPANSIONE IGNIFUGA</span>
           </div>
         </div>
-        <a href="{{ "settori/sanita-silver-economy/" | relURL }}" class="card-link">{{ i18n "sec05_link" }} &rarr;</a>
+        <a href="{{ "settori/arredo-contract/" | relURL }}" class="card-link">{{ i18n "sec04_link" }} &rarr;</a>
       </div>
+    </div>
 
-      <!-- 4 Card Compatte per gli altri settori (4 cols ciascuna) -->
+    <!-- Tier 2: Linee Specialistiche e Ricerca Applicata -->
+    <div style="margin: 3.5rem 0 1.5rem; display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; border-top: 1px solid var(--border); padding-top: 2rem;">
+      <div>
+        <span class="brand-badge" style="font-size: 0.72rem;">{{ i18n "tier2_badge" }}</span>
+        <h3 style="font-size: 1.5rem; margin: 0.35rem 0 0; letter-spacing: -0.02em;">{{ i18n "tier2_title" }}</h3>
+      </div>
+    </div>
+
+    <div class="bento-grid" style="margin-top: 0;">
+      <!-- SEC-05 Sicurezza & DPI (4 cols) -->
       <div class="bento-card bento-col-4">
         <div>
           <div class="card-header-bar">
-            <span class="card-code">SEC-04 // SICUREZZA</span>
+            <span class="card-code">SEC-05 // SICUREZZA</span>
             <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "safety" "size" "20") }}</div>
           </div>
-          <h3 class="card-title"><a href="{{ "settori/sicurezza-dpi/" | relURL }}">{{ i18n "sec04_title" }}</a></h3>
-          <p class="card-text">{{ i18n "sec04_text" }}</p>
+          <h4 class="card-title" style="font-size: 1.15rem;"><a href="{{ "settori/sicurezza-dpi/" | relURL }}">{{ i18n "sec05_title" }}</a></h4>
+          <p class="card-text">{{ i18n "sec05_text" }}</p>
         </div>
-        <a href="{{ "settori/sicurezza-dpi/" | relURL }}" class="card-link">{{ i18n "sec04_link" }} &rarr;</a>
+        <a href="{{ "settori/sicurezza-dpi/" | relURL }}" class="card-link">{{ i18n "sec05_link" }} &rarr;</a>
       </div>
 
+      <!-- SEC-06 Agritech & Camper (4 cols) -->
       <div class="bento-card bento-col-4">
         <div>
           <div class="card-header-bar">
             <span class="card-code">SEC-06 // AGRITECH</span>
             <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "truck" "size" "20") }}</div>
           </div>
-          <h3 class="card-title"><a href="{{ "settori/automotive-agritech/" | relURL }}">{{ i18n "sec06_title" }}</a></h3>
+          <h4 class="card-title" style="font-size: 1.15rem;"><a href="{{ "settori/automotive-agritech/" | relURL }}">{{ i18n "sec06_title" }}</a></h4>
           <p class="card-text">{{ i18n "sec06_text" }}</p>
         </div>
         <a href="{{ "settori/automotive-agritech/" | relURL }}" class="card-link">{{ i18n "sec06_link" }} &rarr;</a>
       </div>
 
+      <!-- SEC-07 Sport & Palestre (4 cols) -->
       <div class="bento-card bento-col-4">
         <div>
           <div class="card-header-bar">
-            <span class="card-code">SEC-08 // CONTRACT</span>
-            <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "flame" "size" "20") }}</div>
+            <span class="card-code">SEC-07 // SPORT</span>
+            <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "shield" "size" "20") }}</div>
           </div>
-          <h3 class="card-title"><a href="{{ "settori/arredo-contract/" | relURL }}">{{ i18n "sec08_title" }}</a></h3>
-          <p class="card-text">{{ i18n "sec08_text" }}</p>
+          <h4 class="card-title" style="font-size: 1.15rem;"><a href="{{ "settori/sport-palestre/" | relURL }}">{{ i18n "sec07_title" }}</a></h4>
+          <p class="card-text">{{ i18n "sec07_text" }}</p>
         </div>
-        <a href="{{ "settori/arredo-contract/" | relURL }}" class="card-link">{{ i18n "sec08_link" }} &rarr;</a>
+        <a href="{{ "settori/sport-palestre/" | relURL }}" class="card-link">{{ i18n "sec07_link" }} &rarr;</a>
+      </div>
+
+      <!-- SEC-08 Sanità & Ergonomia (6 cols) -->
+      <div class="bento-card bento-col-6">
+        <div>
+          <div class="card-header-bar">
+            <span class="card-code">SEC-08 // ERGONOMIA</span>
+            <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "health" "size" "20") }}</div>
+          </div>
+          <h4 class="card-title" style="font-size: 1.15rem;"><a href="{{ "settori/sanita-silver-economy/" | relURL }}">{{ i18n "sec08_title" }}</a></h4>
+          <p class="card-text">{{ i18n "sec08_text" }}</p>
+          <div class="badge-list">
+            <span class="badge">PRESIDIO POSTURALE</span>
+            <span class="badge">BICOMPONENTE HR + MEMORY</span>
+          </div>
+        </div>
+        <a href="{{ "settori/sanita-silver-economy/" | relURL }}" class="card-link">{{ i18n "sec08_link" }} &rarr;</a>
+      </div>
+
+      <!-- SEC-09 Ricerca & Sviluppo (6 cols) -->
+      <div class="bento-card bento-col-6 bento-featured">
+        <div>
+          <div class="card-header-bar">
+            <span class="card-code">SEC-09 // APPLIED R&D</span>
+            <div class="card-icon-wrap">{{ partial "icon.html" (dict "name" "layers" "size" "20") }}</div>
+          </div>
+          <h4 class="card-title" style="font-size: 1.15rem;"><a href="{{ "settori/sviluppo-ricerca-applicata/" | relURL }}">{{ i18n "sec09_title" }}</a></h4>
+          <p class="card-text">{{ i18n "sec09_text" }}</p>
+          <div class="badge-list">
+            <span class="badge">AEROSPAZIO</span>
+            <span class="badge">CIRCOLARITÀ SFRIDI</span>
+            <span class="badge">CO-DESIGN DA CAD</span>
+          </div>
+        </div>
+        <a href="{{ "settori/sviluppo-ricerca-applicata/" | relURL }}" class="card-link">{{ i18n "sec09_link" }} &rarr;</a>
       </div>
     </div>
 

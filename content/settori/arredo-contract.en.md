@@ -1,9 +1,12 @@
 ---
 title: "Contract Furniture, Hospitality & Theaters"
 description: "Fire-rated foam cushions certified to Italian Class 1IM (UNI 9175) and British Standard BS 5852 Crib 5 for hotels and venues."
-code: "SEC-08"
+code: "SEC-04"
 icon: "flame"
 category: "Contract Sector"
+image: "img/materials/polyether-foam.jpg"
+image_alt: "Contoured foam cushioning for contract and hospitality furniture"
+image_caption: "Precision CNC contouring of high-resilience and flame-rated foams for hotels, auditoriums, and commercial interiors."
 ---
 
 ## Upholstered Elements for Public Venues & Luxury Hospitality

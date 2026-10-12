@@ -4,6 +4,9 @@ description: "Pannelli fonoassorbenti bugnati, piramidali e carter insonorizzati
 code: "SEC-02"
 icon: "sound"
 category: "Settore Acustico"
+image: "img/materials/acoustic-foam.jpg"
+image_alt: "Pannelli fonoassorbenti piramidali e bugnati"
+image_caption: "Superfici alveolari a celle aperte conformate per la dispersione dell'energia sonora e il controllo del riverbero."
 ---
 
 ## Controllo del Riverbero e Comfort Acustico

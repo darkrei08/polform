@@ -1,9 +1,12 @@
 ---
 title: "Sanità, Ortopedia & Silver Economy"
 description: "Cuscini e lastre antidecubito sagomate in HR e memory foam viscoelastico per degenza RSA, cliniche e presidi posturali."
-code: "SEC-05"
+code: "SEC-08"
 icon: "health"
 category: "Settore Medicale"
+image: "img/materials/memory-foam.jpg"
+image_alt: "Presidi posturali ed elementi antidecubito in memory foam"
+image_caption: "Sagomatura ergonomica bicomponente in memory foam e schiuma HR per la redistribuzione della pressione corporea."
 ---
 
 ## Presidi Posturali e Prevenzione delle Lesioni da Decubito

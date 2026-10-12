@@ -4,6 +4,9 @@ description: "Sedili antivibranti per trattori, cabine macchine movimento terra 
 code: "SEC-06"
 icon: "truck"
 category: "Settore Automotive"
+image: "img/materials/open-cell-foam.jpg"
+image_alt: "Sedute sagomate per macchine agricole e van conversion"
+image_caption: "Schiume ad alta resilienza per l'assorbimento delle vibrazioni in cabina e materassi articolati per camper."
 ---
 
 ## Imbottiture Strutturali e Resilienza Meccanica

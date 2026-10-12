@@ -4,6 +4,9 @@ description: "Noppen- und Pyramidenschaumstoffplatten zur Nachhallreduzierung in
 code: "SEC-02"
 icon: "sound"
 category: "Akustikbereich"
+image: "img/materials/acoustic-foam.jpg"
+image_alt: "Noppen- und Pyramidenschaumstoff für die Raumakustik"
+image_caption: "Offenzellige strukturierte Schaumstoffoberflächen zur Dämpfung von Schallwellen und Nachhall."
 ---
 
 ## Nachhallkontrolle und wirksame Schalldämmung

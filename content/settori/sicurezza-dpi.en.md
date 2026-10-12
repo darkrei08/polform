@@ -1,9 +1,12 @@
 ---
 title: "Workplace Safety, Industrial Protection & PPE"
 description: "Two-tone crash protection bumpers for warehouses, ergonomic PPE inserts, and reticulated filter foams."
-code: "SEC-04"
+code: "SEC-05"
 icon: "safety"
 category: "Safety Sector"
+image: "img/materials/open-cell-foam.jpg"
+image_alt: "Industrial impact protection bumpers and PPE padding"
+image_caption: "High-visibility impact-damping foam components for warehouse rack protection and worker PPE inserts."
 ---
 
 ## Active Impact Protection & Industrial Compliance

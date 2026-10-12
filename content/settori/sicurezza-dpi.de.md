@@ -1,9 +1,12 @@
 ---
 title: "Arbeitsschutz, Rammschutz & PSA-Polster"
 description: "Zweifarbige Prallschutzelemente für Lagerhallen, ergonomische PSA-Einlagen und retikulierte Filterschaumstoffe."
-code: "SEC-04"
+code: "SEC-05"
 icon: "safety"
 category: "Sicherheitsbereich"
+image: "img/materials/open-cell-foam.jpg"
+image_alt: "Industrieller Rammschutz und PSA-Dämpfungspolster"
+image_caption: "Signalstarke Prallschutzelemente für Regalstützen, Laderampen und ergonomische Knieschoner-Einlagen."
 ---
 
 ## Wirksamer Stoßschutz und Arbeitssicherheit

@@ -4,6 +4,9 @@ description: "Custom CNC milled and wire-cut foam inserts for airtight cases, op
 code: "SEC-01"
 icon: "box"
 category: "Industrial Packaging"
+image: "img/machinery/cnc-router-workshop.jpg"
+image_alt: "CNC machining of technical protective packaging inserts"
+image_caption: "Precision CNC contouring and cavity milling for airtight cases and industrial dunnage trays."
 ---
 
 ## Millimeter Protection for High-Value Equipment

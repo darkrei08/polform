@@ -4,6 +4,9 @@ description: "Reticulated open-cell quick-drying foams for boat sunbeds and IMO 
 code: "SEC-03"
 icon: "anchor"
 category: "Marine Sector"
+image: "img/materials/reticulated-foam.jpg"
+image_alt: "Reticulated open-cell marine draining foam cushions"
+image_caption: "Advanced open-cell reticulated foam engineered for rapid drainage and mildew resistance on yachts and outdoor decks."
 ---
 
 ## High-Performance Marine Outdoor Cushioning

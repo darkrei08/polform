@@ -4,6 +4,9 @@ description: "Vibrationsdämpfende Traktorsitze, Baumaschinen-Polster und maßge
 code: "SEC-06"
 icon: "truck"
 category: "Automotive-Bereich"
+image: "img/materials/open-cell-foam.jpg"
+image_alt: "Formschnitt-Sitze für Landmaschinen und Camper-Ausbau"
+image_caption: "Hochelastische Schaumstoffpolster für vibrationsarme Traktorkabinen und maßgenaue Wohnmobil-Matratzen."
 ---
 
 ## Schwingungsdämpfung und individueller Camper-Zuschnitt

@@ -99,40 +99,70 @@ other = "Offenzelliger Dryfeel-Schaumstoff für Außenpolster und Sonnenliegen. 
 other = "Nautik-Drainageschaum Dryfeel"
 
 [sec04_title]
-other = "Schutz und Sicherheit"
+other = "Objektmöbel & Hotellerie"
 
 [sec04_text]
-other = "Schutz für Lagerregale und Laderampen, Einlagen für Knieschoner und Schaumstoff für Filter."
+other = "Formschnitt-Polster für Hotels, Theater, Kinos und Schiffe aus hochdichten und schwerentflammbaren Schaumstoffen nach Vorgabe."
 
 [sec04_link]
-other = "Stoßschutz & PSA"
+other = "Objektmöbel & Brandschutz"
 
 [sec05_title]
-other = "Gesundheit und Orthopädie"
+other = "Arbeitsschutz & PSA-Polster"
 
 [sec05_text]
-other = "Druckentlastende Kissen für Rollstühle und Pflegeeinrichtungen, Lagerungshilfen für die Physiotherapie und Matratzen für den Krankenhausbedarf. Erhältlich aus HR- und Memory-Schaum."
+other = "Zweifarbige Prallschutzelemente für Regale und Laderampen, Knieschoner-Einlagen und industrielle Filterschäume."
 
 [sec05_link]
-other = "Anti-Dekubitus-Produkte"
+other = "Rammschutz & PSA"
 
 [sec06_title]
-other = "Landwirtschaft und Camper"
+other = "Agrartechnik & Wohnmobil-Ausbau"
 
 [sec06_text]
-other = "Sitze für Traktoren und Erdbaumaschinen zur Verringerung von Vibrationen sowie Matratzen nach Maß für Camper."
+other = "Vibrationsdämpfende Traktorsitze, Baumaschinen-Polster und maßgefertigte Klappmatratzen für Camper-Umbauten."
 
 [sec06_link]
-other = "Agritech & Camper"
+other = "Agritech & Camper-Ausbau"
+
+[sec07_title]
+other = "Sport, Fitness & Turnhallen"
+
+[sec07_text]
+other = "Fallschutzmatten für Bouldern, hochverdichtete Verbundschaum-Tatami-Kerne und Prallschutzwände für Sporthallen."
+
+[sec07_link]
+other = "Fallschutz & Tatami"
 
 [sec08_title]
-other = "Polster und schwer entflammbarer Schaumstoff"
+other = "Ergonomie & Lagerungshilfen"
 
 [sec08_text]
-other = "Polster für Hotels, Kinos, Konferenzsäle und Schiffe, erhältlich mit den Klassifizierungen Klasse 1IM (UNI 9175) und British Standard Crib 5."
+other = "Ergonomische Rollstuhlsitze, Reha-Lagerungshilfen und Verbundelemente aus HR-Kaltschaum und thermoelastischem Memory-Schaum."
 
 [sec08_link]
-other = "Brandschutz-Schaumstoffe"
+other = "Ergonomische Hilfen"
+
+[sec09_title]
+other = "Angewandte F&E & Zukunftsfelder"
+
+[sec09_text]
+other = "Schnelles 3D-CAD-Prototyping, Schutzinlays für Luftfahrt-Sensorik, Schnittabfall-Upcycling und technisches Co-Design."
+
+[sec09_link]
+other = "F&E & Co-Design"
+
+[tier1_badge]
+other = "KERNFERTIGUNG"
+
+[tier1_title]
+other = "4 Etablierte Produktionsbereiche"
+
+[tier2_badge]
+other = "SPEZIALISIERUNG & F&E"
+
+[tier2_title]
+other = "Spezialbereiche & Zukunftsanwendungen"
 
 # -- Call Invite Banner --
 [call_banner_badge]

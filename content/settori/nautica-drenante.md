@@ -4,6 +4,9 @@ description: "Schiume reticolate idro-drenanti per esterni barca e imbottiture i
 code: "SEC-03"
 icon: "anchor"
 category: "Settore Nautico"
+image: "img/materials/reticulated-foam.jpg"
+image_alt: "Cuscineria marina in schiuma reticolata drenante"
+image_caption: "Poliuretano reticolato a celle aperte per arredo navale ed esterno con drenaggio immediato dell'acqua."
 ---
 
 ## Cuscineria Marina ad Alte Prestazioni

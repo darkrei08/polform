@@ -4,6 +4,9 @@ description: "Vibration-damping tractor seating, earthmoving machinery cab paddi
 code: "SEC-06"
 icon: "truck"
 category: "Automotive Sector"
+image: "img/materials/open-cell-foam.jpg"
+image_alt: "Contoured seat cushions for agricultural machinery and camper conversions"
+image_caption: "High-density polyurethane seating for heavy-duty tractor cabs and articulated camper van mattresses."
 ---
 
 ## Heavy-Duty Vibration Damping & Custom Van Life Cushions

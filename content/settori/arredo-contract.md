@@ -1,9 +1,12 @@
 ---
 title: "Arredo Contract, Teatri & Ospitalità"
 description: "Imbottiture sagomate ignifughe con omologazione Ministero dell'Interno Classe 1IM e British Standard BS 5852 Crib 5."
-code: "SEC-08"
+code: "SEC-04"
 icon: "armchair"
 category: "Settore Contract"
+image: "img/materials/polyether-foam.jpg"
+image_alt: "Imbottiture sagomate per arredo professionale e contract"
+image_caption: "Sagomatura di precisione di espansi ad alta resilienza e ignifughi per hotel, teatri e contract."
 ---
 
 ## Manufatti Imbottiti per Luoghi Pubblici e Hotel

@@ -4,6 +4,9 @@ description: "Bouldering crash pads, high-density bonded foam tatami cores for m
 code: "SEC-07"
 icon: "shield"
 category: "Sports Sector"
+image: "img/materials/polyether-foam.jpg"
+image_alt: "Athletic crash pads and high-density martial arts tatami foam"
+image_caption: "Progressive impact-absorbing foam composites for bouldering gyms, martial arts tatami, and school wall padding."
 ---
 
 ## Kinetic Energy Dissipation & Athletic Safety

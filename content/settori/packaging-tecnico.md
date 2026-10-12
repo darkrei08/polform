@@ -4,6 +4,9 @@ description: "Inserti sagomati e fresati CNC in gommapiuma e polietilene per val
 code: "SEC-01"
 icon: "box"
 category: "Settore Industriale"
+image: "img/machinery/cnc-router-workshop.jpg"
+image_alt: "Sagomatura CNC di packaging tecnico protettivo"
+image_caption: "Fresatura e taglio millimetrico di alloggiamenti su misura per valigie tecniche e dunnage industriale."
 ---
 
 ## Protezione Millimetrica per Beni di Alto Valore

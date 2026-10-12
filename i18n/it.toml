@@ -99,40 +99,70 @@ other = "Schiuma Dryfeel a celle aperte per cuscini da esterno e prendisole. L'a
 other = "Drenante nautico Dryfeel"
 
 [sec04_title]
-other = "Protezione e sicurezza"
-
-[sec04_text]
-other = "Protezione per scaffali e banchine di carico, imbottiture per ginocchiere e schiume per filtri."
-
-[sec04_link]
-other = "Paracolpi & DPI"
-
-[sec05_title]
-other = "Sanità e ortopedia"
-
-[sec05_text]
-other = "Cuscini antidecubito per carrozzine e strutture assistenziali, supporti per fisioterapia e materassi per uso ospedaliero. Disponibili in schiuma HR e Memory."
-
-[sec05_link]
-other = "Presidi antidecubito"
-
-[sec06_title]
-other = "Agricoltura e camper"
-
-[sec06_text]
-other = "Sedili per trattori e macchine da movimento terra per aiutare a ridurre le vibrazioni; materassi su misura per camper e van."
-
-[sec06_link]
-other = "Agritech & camper"
-
-[sec08_title]
 other = "Arredo e imbottiture ignifughe"
 
+[sec04_text]
+other = "Imbottiture sagomate per hotel, cinema, sale conferenze e navi, con schiume ad alta densità e classificazione ignifuga su capitolato."
+
+[sec04_link]
+other = "Arredo contract & ignifughi"
+
+[sec05_title]
+other = "Protezione e sicurezza sul lavoro"
+
+[sec05_text]
+other = "Paracolpi bicolore per scaffali industriali e banchine di carico, inserti per ginocchiere da lavoro e schiume filtranti."
+
+[sec05_link]
+other = "Paracolpi & DPI"
+
+[sec06_title]
+other = "Agricoltura e allestimento camper"
+
+[sec06_text]
+other = "Sedili per trattori e macchine da movimento terra per ridurre le vibrazioni; materassi e cuscinerie su misura per camper van."
+
+[sec06_link]
+other = "Agritech & camper van"
+
+[sec07_title]
+other = "Sport, fitness e palestre"
+
+[sec07_text]
+other = "Materassi di caduta crash pad per bouldering, anime per tatami arti marziali e pannelli murali antitrauma per palestre."
+
+[sec07_link]
+other = "Crash pad & tatami"
+
+[sec08_title]
+other = "Sanità ed ergonomia posturale"
+
 [sec08_text]
-other = "Imbottiture per hotel, cinema, sale conferenze e navi, disponibili con classificazione Classe 1IM (UNI 9175) e British Standard Crib 5."
+other = "Cuscini ergonomici per carrozzine e degenza, supporti fisioterapici e sagomati bicomponente in schiuma HR e memory viscoelastico."
 
 [sec08_link]
-other = "Espansi ignifughi"
+other = "Presidi ergonomici"
+
+[sec09_title]
+other = "Ricerca, sviluppo & nuove applicazioni"
+
+[sec09_text]
+other = "Prototipazione rapida da CAD 3D, alloggiamenti per sensoristica aerospaziale, circolarità degli sfridi e co-design industriale."
+
+[sec09_link]
+other = "Frontiere R&D & co-design"
+
+[tier1_badge]
+other = "PRODUZIONE CONSOLIDATA"
+
+[tier1_title]
+other = "I 4 Settori Produttivi Chiave"
+
+[tier2_badge]
+other = "SPECIALIZZAZIONI & R&D"
+
+[tier2_title]
+other = "Linee Specialistiche e Sviluppo Futuro"
 
 # -- Call Invite Banner --
 [call_banner_badge]

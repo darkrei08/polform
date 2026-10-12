@@ -1,9 +1,12 @@
 ---
 title: "Objektmöbel, Theater & Hotellerie"
 description: "Schwerentflammbare Schaumstoffpolster nach italienischer Brandklasse 1IM und British Standard BS 5852 Crib 5."
-code: "SEC-08"
+code: "SEC-04"
 icon: "flame"
 category: "Objektbereich"
+image: "img/materials/polyether-foam.jpg"
+image_alt: "Formschnitt-Polster für Objektmöbel und Hotellerie"
+image_caption: "CNC-Präzisionszuschnitt von hochelastischen und schwerentflammbaren Schaumstoffen für Hotels, Auditorien und Theater."
 ---
 
 ## Geprüfte Polsterteile für öffentliche Gebäude und Hotels

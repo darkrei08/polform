@@ -1,9 +1,12 @@
 ---
 title: "Sicurezza sul Lavoro, Protezione Industriale & DPI"
 description: "Paracolpi antitrauma per magazzini, imbottiture ergonomiche per DPI e filtri reticolati industriali."
-code: "SEC-04"
+code: "SEC-05"
 icon: "safety"
 category: "Settore Sicurezza"
+image: "img/materials/open-cell-foam.jpg"
+image_alt: "Protezioni antitrauma e paracolpi industriali"
+image_caption: "Elementi ammortizzanti sagomati ad alta visibilità per la protezione passiva di magazzini e operatori."
 ---
 
 ## Protezione Attiva e Rispetto del D.Lgs. 81/08

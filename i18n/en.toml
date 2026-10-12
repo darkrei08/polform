@@ -99,40 +99,70 @@ other = "Open-cell Dryfeel foam for outdoor cushions and sun pads. Water drains 
 other = "Dryfeel marine foam"
 
 [sec04_title]
-other = "Safety and protection"
+other = "Contract furniture & hospitality"
 
 [sec04_text]
-other = "Protection for warehouse racks and loading docks, knee pad inserts, and foam for filters."
+other = "Custom contoured seating for hotels, auditoriums, theaters, and cruise ships with high-density and fire-rated foams on specification."
 
 [sec04_link]
-other = "Bumpers & PPE"
+other = "Contract & fire-rated foam"
 
 [sec05_title]
-other = "Healthcare and orthopaedics"
+other = "Workplace safety & PPE"
 
 [sec05_text]
-other = "Pressure-relief cushions for wheelchairs and care facilities, supports for physiotherapy, and mattresses for hospital use. Available in HR and Memory foam."
+other = "Two-tone crash protection bumpers for warehouse racks and loading docks, knee pad inserts, and reticulated filter foams."
 
 [sec05_link]
-other = "Anti-decubitus devices"
+other = "Bumpers & PPE"
 
 [sec06_title]
-other = "Agriculture and camper vans"
+other = "Agritech & camper van conversions"
 
 [sec06_text]
-other = "Seats for tractors and earth-moving machinery, designed to help reduce vibration, and custom mattresses for camper vans."
+other = "Heavy-duty vibration-damping tractor cab seating, earthmoving machinery cushions, and custom camper van mattresses."
 
 [sec06_link]
-other = "Agritech & camper"
+other = "Agritech & camper vans"
+
+[sec07_title]
+other = "Sports, fitness & gym mats"
+
+[sec07_text]
+other = "Bouldering crash pads, high-density martial arts tatami cores, and impact wall padding for sports halls and schools."
+
+[sec07_link]
+other = "Crash pads & tatami"
 
 [sec08_title]
-other = "Upholstery and fire-rated foam"
+other = "Ergonomic & postural care"
 
 [sec08_text]
-other = "Upholstery for hotels, cinemas, conference halls, and ships, available with Class 1IM (UNI 9175) and British Standard Crib 5 ratings."
+other = "Ergonomic wheelchair seating, rehabilitation supports, and multi-density composite elements combining HR and memory foam."
 
 [sec08_link]
-other = "Fire-retardant foams"
+other = "Ergonomic supports"
+
+[sec09_title]
+other = "Applied R&D & engineering frontiers"
+
+[sec09_text]
+other = "Rapid 3D CAD prototyping, aerospace sensor protection dunnage, circular scrap upcycling, and technical co-design."
+
+[sec09_link]
+other = "R&D & co-design"
+
+[tier1_badge]
+other = "CONSOLIDATED CORE"
+
+[tier1_title]
+other = "4 Core Manufacturing Sectors"
+
+[tier2_badge]
+other = "SPECIALIZED LINES & R&D"
+
+[tier2_title]
+other = "Specialized Lines & Future Horizons"
 
 # -- Call Invite Banner --
 [call_banner_badge]

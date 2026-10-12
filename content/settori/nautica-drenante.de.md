@@ -4,6 +4,9 @@ description: "Vollständig retikulierte wasserdurchlässige Schaumstoffe für Ou
 code: "SEC-03"
 icon: "anchor"
 category: "Maritimer Sektor"
+image: "img/materials/reticulated-foam.jpg"
+image_alt: "Retikulierter Filterschaumstoff für Yacht- und Outdoor-Polster"
+image_caption: "Vollständig offenzellige Schaumstoffmatrix für schnellen Wasserabfluss und Schimmelresistenz im Yachtbau."
 ---
 
 ## Hochleistungsschaumstoffe für den maritimen Einsatz

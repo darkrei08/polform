@@ -4,6 +4,9 @@ description: "CNC-gefräste und konturgeschnittene Schaumstoffeinlagen für Schu
 code: "SEC-01"
 icon: "box"
 category: "Industrieverpackung"
+image: "img/machinery/cnc-router-workshop.jpg"
+image_alt: "CNC-Fräsung von technischen Schaumstoff-Schutzeinlagen"
+image_caption: "Präziser CNC-Formschnitt und Taschenfräsung für Schutzkoffer und industrielle Werkstückträger."
 ---
 
 ## Millimetergenauer Schutz für hochempfindliche Güter

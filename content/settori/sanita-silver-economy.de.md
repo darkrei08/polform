@@ -1,9 +1,12 @@
 ---
 title: "Gesundheitswesen, Orthopädie & Pflegewirtschaft"
 description: "CNC-konturierte Antidekubitus-Sitzkissen und Visko-Verbundmatratzen für Pflegeheime, Kliniken und Reha-Zentren."
-code: "SEC-05"
+code: "SEC-08"
 icon: "health"
 category: "Medizinbereich"
+image: "img/materials/memory-foam.jpg"
+image_alt: "Ergonomische Druckentlastungskissen aus Memory-Schaum"
+image_caption: "Anatomische Zweikomponenten-Elemente aus HR-Kaltschaum und thermoelastischem Memory-Schaum für den Rollstuhl- und Pflegeeinsatz."
 ---
 
 ## Druckentlastung und Dekubitusprophylaxe
