@@ -26,6 +26,13 @@ Lo stabilimento opera con una suddivisione rigida delle lavorazioni per garantir
 2. **Reparto Incollaggio e Accoppiatura:** banchi di incollaggio con collanti ecologici a base d'acqua o hot-melt a basso VOC per la creazione di manufatti compositi multistrato (sandwich di densità differenziate, resinatura con dacron e fibre tessili).
 3. **Reparto Finitura, Controllo Qualità e Confezionamento:** collaudo dimensionale dei pezzi, imballaggio protettivo e logistica rapida per il Sud, Centro e Nord Italia.
 
+### Guarda la Lavorazione in Stabilimento (Video 45s)
+
+<video controls preload="metadata" poster="/polform/video/polform-promo-poster.png" style="width: 100%; border-radius: 12px; margin: 1.5rem 0; aspect-ratio: 16/9; background: #000; display: block;">
+  <source src="/polform/video/polform-promo.mp4" type="video/mp4">
+  Il tuo browser non supporta il tag video. <a href="/polform/video/polform-promo.mp4">Scarica il video promozionale (MP4, 3.2 MB)</a>
+</video>
+
 ---
 
 ## Dati Societari e Recapiti Storici

@@ -21,6 +21,13 @@ With more than **27 years of continuous production**, Polform couples artisan ta
 * **Bonding & Composite Lamination:** Solvent-free waterborne and hot-melt bonding benches for multi-density sandwiches, fiber batting (dacron), and technical textile backing.
 * **Quality Assurance & Packaging:** Batch traceability, density verification, and roll-pack vacuum packaging to optimize international shipping volumes.
 
+### Factory Conversion in Action (45s Video)
+
+<video controls preload="metadata" poster="/polform/video/polform-promo-poster.png" style="width: 100%; border-radius: 12px; margin: 1.5rem 0; aspect-ratio: 16/9; background: #000; display: block;">
+  <source src="/polform/video/polform-promo.mp4" type="video/mp4">
+  Your browser does not support the video tag. <a href="/polform/video/polform-promo.mp4">Download promo video (MP4, 3.2 MB)</a>
+</video>
+
 ---
 
 ## Corporate Information

@@ -21,6 +21,13 @@ Mit **über 27 Jahren ununterbrochener Produktion** verbindet Polform handwerkli
 * **Verklebung & Kaschierung:** Lösemittelfreie Heißschmelz- und Dispersionsklebeplätze für Mehrschicht-Verbundschaumstoffe, Dacron-Vliese und technische Textilien.
 * **Qualitätssicherung & Rollverpackung:** Vakuumkomprimierte Rollverpackung zur Reduzierung der Frachtvolumina im europäischen Export um bis zu 70%.
 
+### Werksfertigung in Aktion (45s Video)
+
+<video controls preload="metadata" poster="/polform/video/polform-promo-poster.png" style="width: 100%; border-radius: 12px; margin: 1.5rem 0; aspect-ratio: 16/9; background: #000; display: block;">
+  <source src="/polform/video/polform-promo.mp4" type="video/mp4">
+  Ihr Browser unterstützt das Video-Tag nicht. <a href="/polform/video/polform-promo.mp4">Promovideo herunterladen (MP4, 3.2 MB)</a>
+</video>
+
 ---
 
 ## Unternehmensdaten & Kontakt

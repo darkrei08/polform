@@ -257,20 +257,61 @@
   </div>
 </section>
 
-<!-- Video Presentazione Aziendale -->
+<!-- Video Showcase B2B & Social Launch -->
 <section id="promo-video" style="padding: 4.5rem 0; background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
   <div class="wrap">
-    <div style="text-align: center; max-width: 44rem; margin: 0 auto 2rem;">
-      <span class="brand-badge">{{ if eq $.Site.Language.Lang "en" }}Company Showcase Video{{ else if eq $.Site.Language.Lang "de" }}Unternehmensvideo{{ else }}Video Presentazione Aziendale{{ end }}</span>
-      <h2 style="font-size: 2.2rem; margin: 0.5rem 0 0.5rem; letter-spacing: -0.025em;">{{ if eq $.Site.Language.Lang "en" }}Polform Industrial Conversion in 45 Seconds{{ else if eq $.Site.Language.Lang "de" }}Polform Schaumstoffverarbeitung im Video{{ else }}La Trasformazione Industriale Polform in 45 Secondi{{ end }}</h2>
-      <p style="color: var(--muted); margin: 0; line-height: 1.6;">{{ if eq $.Site.Language.Lang "en" }}Precision CNC contour cutting, splitting, and bonding of flexible polyurethane foam for international B2B procurement.{{ else if eq $.Site.Language.Lang "de" }}Präziser CNC-Formschnitt, Spalten und Verkleben von Polyurethan-Weichschaum für die europäische Industrie.{{ else }}Sagomatura CNC millimetrica, spaccatura e incollaggio di poliuretano espanso per capitolati industriali B2B.{{ end }}</p>
+    <div style="text-align: center; max-width: 44rem; margin: 0 auto 2.5rem;">
+      <span class="brand-badge">{{ if eq $.Site.Language.Lang "en" }}Video Showcase & Launch{{ else if eq $.Site.Language.Lang "de" }}Video-Showcase & Launch{{ else }}Video Vetrina & Lancio Industriale{{ end }}</span>
+      <h2 style="font-size: 2.2rem; margin: 0.5rem 0 0.5rem; letter-spacing: -0.025em;">{{ if eq $.Site.Language.Lang "en" }}Watch Polform Manufacturing in Action{{ else if eq $.Site.Language.Lang "de" }}Polform Fertigung in Aktion ansehen{{ else }}Guarda la Produzione Polform in Azione{{ end }}</h2>
+      <p style="color: var(--muted); margin: 0; line-height: 1.6;">{{ if eq $.Site.Language.Lang "en" }}Two video perspectives: comprehensive 45s industrial B2B tour and rapid 18s social launch overview.{{ else if eq $.Site.Language.Lang "de" }}Zwei Videoperspektiven: Ausführliche 45s-Industrietour und schneller 18s-Social-Launch-Überblick.{{ else }}Due prospettive video: tour tecnico completo B2B da 45 secondi e sintesi dinamica di lancio da 18 secondi per i canali social.{{ end }}</p>
     </div>
 
-    <div style="max-width: 56rem; margin: 0 auto; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow); background: #000;">
-      <video controls preload="metadata" poster="{{ "video/polform-promo-poster.png" | relURL }}" style="width: 100%; height: auto; display: block; aspect-ratio: 16/9;">
-        <source src="{{ "video/polform-promo.mp4" | relURL }}" type="video/mp4">
-        <p style="padding: 1.5rem; color: #fff; text-align: center;">Il tuo browser non supporta il tag video. <a href="{{ "video/polform-promo.mp4" | relURL }}" style="color: var(--brand-blue);">Scarica il video promo (MP4)</a></p>
-      </video>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr)); gap: 2rem; max-width: 72rem; margin: 0 auto;">
+      <!-- Video 1: Tour Tecnico 45s -->
+      <div style="background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column;">
+        <div style="background: #000; position: relative;">
+          <video controls preload="metadata" poster="{{ "video/polform-promo-poster.png" | relURL }}" style="width: 100%; height: auto; display: block; aspect-ratio: 16/9;">
+            <source src="{{ "video/polform-promo.mp4" | relURL }}" type="video/mp4">
+            <p style="padding: 1rem; color: #fff; text-align: center;"><a href="{{ "video/polform-promo.mp4" | relURL }}" style="color: var(--brand-blue);">Scarica Video 45s (MP4)</a></p>
+          </video>
+        </div>
+        <div style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="card-code">45 SECONDI // FULL HD</span>
+              <span class="badge" style="font-size: 0.72rem;">B2B TOUR</span>
+            </div>
+            <h3 style="margin: 0 0 0.5rem; font-size: 1.25rem; color: var(--text);">{{ if eq $.Site.Language.Lang "en" }}Comprehensive B2B Technical Tour{{ else if eq $.Site.Language.Lang "de" }}Ausführliche B2B-Industrietour{{ else }}Tour Tecnico Industriale B2B{{ end }}</h3>
+            <p style="color: var(--muted); font-size: 0.92rem; line-height: 1.55; margin: 0 0 1rem;">{{ if eq $.Site.Language.Lang "en" }}Precision CNC contour cutting, horizontal splitting, material specifications, and certified virgin foam supply from Matera.{{ else if eq $.Site.Language.Lang "de" }}CNC-Formschnitt, Spalten, Werkstoffkennwerte und reine Rohschaumqualität direkt aus Matera.{{ else }}Sagomatura CNC millimetrica (±0.5 mm), spaccatura, tolleranze di taglio e panoramica completa dei 4 settori chiave.{{ end }}</p>
+          </div>
+          <div style="display: flex; gap: 0.5rem; font-size: 0.82rem; font-family: var(--font-mono); color: var(--muted); border-top: 1px solid var(--border); padding-top: 0.75rem;">
+            <span>H.264 Faststart</span> · <span>3.2 MB</span> · <span>1080p 30fps</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 2: Social Launch 18s -->
+      <div style="background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column;">
+        <div style="background: #000; position: relative;">
+          <video controls preload="metadata" poster="{{ "video/polform-brag-social.jpg" | relURL }}" style="width: 100%; height: auto; display: block; aspect-ratio: 16/9;">
+            <source src="{{ "video/polform-brag-social.mp4" | relURL }}" type="video/mp4">
+            <p style="padding: 1rem; color: #fff; text-align: center;"><a href="{{ "video/polform-brag-social.mp4" | relURL }}" style="color: var(--brand-blue);">Scarica Video 18s (MP4)</a></p>
+          </video>
+        </div>
+        <div style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="card-code">18 SECONDI // SOCIAL LAUNCH</span>
+              <span class="badge" style="font-size: 0.72rem;">FRAMEWORK /BRAG</span>
+            </div>
+            <h3 style="margin: 0 0 0.5rem; font-size: 1.25rem; color: var(--text);">{{ if eq $.Site.Language.Lang "en" }}Social Launch & Fast Overview{{ else if eq $.Site.Language.Lang "de" }}Social Launch & Schnellübersicht{{ else }}Clip di Lancio & Sintesi Social{{ end }}</h3>
+            <p style="color: var(--muted); font-size: 0.92rem; line-height: 1.55; margin: 0 0 1rem;">{{ if eq $.Site.Language.Lang "en" }}Fast-paced 18-second overview generated with Latent-Spaces /brag: 27+ years of manufacturing, CAD workflow, and direct factory access.{{ else if eq $.Site.Language.Lang "de" }}Dynamischer 18-Sekunden-Überblick mit /brag: Über 27 Jahre Erfahrung, CAD-Verarbeitung und direkter Werkstattkontakt.{{ else }}Sintesi dinamica da 18 secondi generata con framework /brag: 27+ anni di esperienza, flusso CAD-to-foam e contatto diretto senza intermediari.{{ end }}</p>
+          </div>
+          <div style="display: flex; gap: 0.5rem; font-size: 0.82rem; font-family: var(--font-mono); color: var(--muted); border-top: 1px solid var(--border); padding-top: 0.75rem;">
+            <span>H.264 Faststart</span> · <span>4.5 MB</span> · <span>LinkedIn / X Ready</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
